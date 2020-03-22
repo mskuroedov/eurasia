@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+@import url('http://db.onlinewebfonts.com/c/90880752cbefe9cb63ba3311774d1f27?family=Magistral');
+body{
+  font-family: 'Lato', sans-serif;
+}
+.head{
+  font-family: 'Magistral',sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 38px;
+  line-height: 48px;
+}
+a,button,input{
+  &:focus{
+    outline: none;
+  }
+}
+//colors
+$black:#000;
+$black_0_7:rgba(0,0,0,.7);
+$gray:#5F5F5F;
+$lightgray:#D2D2D7;
+$primary:#FF6F00;
+$secondary:#F4F8FA;
+
+.color-primary{
+  color: $primary;
+}
+
+.--after-line:after{
+  content: '';
+  height: 4px;
+  width: 60px;
+  background: #FF6F00;
+  display: block;
+  margin-top: 18px;
+}
