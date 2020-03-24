@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Евразия эксперт</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -15,7 +13,6 @@
     <link rel="stylesheet" href="css/lightslider.min.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/build.css">
-
 </head>
 <body>
 <header class="header">
@@ -61,10 +58,18 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-6">
-                        <a href="#" class="popup-link">Купить <img src="./assets/icons/chevron_down.svg" alt=""></a>
-                        <a href="#" class="popup-link">Продать <img src="./assets/icons/chevron_down.svg" alt=""></a>
-                        <a href="#" class="popup-link">Все услуги <img src="./assets/icons/chevron_down.svg" alt=""></a>
-                        <a href="#" class="popup-link">Компания <img src="./assets/icons/chevron_down.svg" alt=""></a>
+                        <div class="popup-link" tabindex="-1" data-popover="buy">Купить
+                            <img src="./assets/icons/chevron_down.svg" alt="">
+                        </div>
+                        <div class="popup-link" tabindex="-1" data-popover="sell">Продать
+                            <img src="./assets/icons/chevron_down.svg" alt="">
+                        </div>
+                        <div class="popup-link" tabindex="-1" data-popover="all">Все услуги
+                            <img src="./assets/icons/chevron_down.svg" alt="">
+                        </div>
+                        <div class="popup-link" tabindex="-1" data-popover="company">Компания
+                            <img src="./assets/icons/chevron_down.svg" alt="">
+                        </div>
                     </div>
                     <div class="col-auto ml-auto">
                         <div class="phone-block">
@@ -321,7 +326,50 @@
         </div>
     </div>
 </div>
-<div class="l2-stats d-none d-xl-block"></div>
+<div class="l-desktop" data-animate data-animation-classes="activated">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="items text-right">
+                    <div class="item">
+                        <div class="title">Технический осмотр уже сделан</div>
+                        <div class="text">Все авто проверены и на ходу</div>
+                    </div>
+                    <div class="item pr">
+                        <div class="title">Автомобили в полностью прозрачной историей</div>
+                        <div class="text">Никаких юридических ограничений на всех авто</div>
+                    </div>
+                    <div class="item">
+                        <div class="title">Комфортный осмотр авто в салоне</div>
+                        <div class="text">Самый большой выбор авто в Омске</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="animated__car">
+                    <img class="car-outlined" src="./assets/car_animated/car_outlined.png" alt="">
+                    <img class="car" src="./assets/car_animated/car.png" alt="">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="items">
+                    <div class="item">
+                        <div class="title">Технический осмотр уже сделан</div>
+                        <div class="text">Все авто проверены и на ходу</div>
+                    </div>
+                    <div class="item pl">
+                        <div class="title">Автомобили в полностью прозрачной историей</div>
+                        <div class="text">Никаких юридических ограничений на всех авто</div>
+                    </div>
+                    <div class="item">
+                        <div class="title">Комфортный осмотр авто в салоне</div>
+                        <div class="text">Самый большой выбор авто в Омске</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="l3">
     <div class="container">
         <div class="row">
@@ -469,7 +517,7 @@
                     <div>
                         <div class="feedback-item">
                             <div class="album">
-                                <img src="./assets/l3-1.png" alt="">
+                                <img src="./assets/fb-album-1.png" alt="">
                             </div>
                             <div class="avatar">
                                 <img src="./assets/feedback/avatar-2.png" alt="">
@@ -485,7 +533,7 @@
                     <div>
                         <div class="feedback-item">
                             <div class="album">
-                                <img src="./assets/l3-1.png" alt="">
+                                <img src="./assets/fb-album-1.png" alt="">
                             </div>
                             <div class="avatar">
                                 <img src="./assets/feedback/avatar-1.png" alt="">
@@ -503,7 +551,7 @@
                     <div>
                         <div class="feedback-item">
                             <div class="album">
-                                <img src="./assets/l3-1.png" alt="">
+                                <img src="./assets/fb-album-1.png" alt="">
                             </div>
                             <div class="avatar">
                                 <img src="./assets/feedback/avatar-1.png" alt="">
@@ -521,7 +569,7 @@
                     <div>
                         <div class="feedback-item">
                             <div class="album">
-                                <img src="./assets/l3-1.png" alt="">
+                                <img src="./assets/fb-album-1.png" alt="">
                             </div>
                             <div class="avatar">
                                 <img src="./assets/feedback/avatar-1.png" alt="">
@@ -539,7 +587,7 @@
                     <div>
                         <div class="feedback-item">
                             <div class="album">
-                                <img src="./assets/l3-1.png" alt="">
+                                <img src="./assets/fb-album-1.png" alt="">
                             </div>
                             <div class="avatar">
                                 <img src="./assets/feedback/avatar-1.png" alt="">
@@ -748,162 +796,20 @@
     </div>
 </footer>
 <script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/animate.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/landing.js"></script>
 <script>
-    // var latestSlider = $('.latest-items-slider');
-    // latestSlider.owlCarousel({
-    //     items: 4,
-    //     nav: true,
-    //     margin: 40,
-    //     dots: true,
-    //     navText: ["<img src='./assets/icons/arrow_prev.svg'>", "<img src='./assets/icons/arrow_next.svg'>"],
-    //     onInitialized: function () {
-    //         $('.latest-items-slider .owl-dots').insertBefore($('.latest-items-slider .owl-nav .owl-next'))
-    //     },
-    //     responsive: {
-    //         0: {
-    //             items: 1,
-    //             slideBy: 1
-    //         },
-    //         768: {
-    //             items: 2,
-    //             slideBy: 2
-    //         },
-    //         993: {
-    //             items: 3,
-    //             slideBy: 3
-    //         },
-    //         1200: {
-    //             items: 4,
-    //             slideBy: 4
-    //         }
-    //     }
-    // });
-    // $(document).ready(function () {
-    //     $('select').niceSelect();
-    // });
-</script>
-<script> //mobile-menu scripts
-$('.header .menu-btn').on('click', function () {
-    $('.mobile__menu').addClass('--open');
-    $('body').addClass('mobile-menu-opened')
-})
-$('.mobile__menu .menu-btn').on('click', function () {
-    $('.mobile__menu').addClass('--closing');
-    setTimeout(() => {
-        $('.level.second').addClass('d-none');
-        $('.level.main').removeClass('d-none');
-        $('.mobile__menu').removeClass('--open');
-        $('.mobile__menu').removeClass('--closing');
-        $('body').removeClass('mobile-menu-opened')
-    }, 250)
-})
-$('.mobile__menu__bg').on('click', function () {
-    $('.mobile__menu').addClass('--closing');
-    setTimeout(() => {
-        $('.level.second').addClass('d-none');
-        $('.level.main').removeClass('d-none');
-        $('.mobile__menu').removeClass('--open');
-        $('.mobile__menu').removeClass('--closing');
-        $('body').removeClass('mobile-menu-opened')
-    }, 250)
-});
-$('[mm-data]').on('click', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-    let section = $(this).attr('mm-data');
-    $('.level.second' + section).removeClass('d-none');
-    $('.level.main').addClass('d-none');
-})
-$('.level.second .back').on('click', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-    let id = $(this).parent().parent().attr('id');
-    $('.level.second#' + id).addClass('d-none');
-    $('.level.main').removeClass('d-none');
 
-})
-//header highlight on scroll
-$(window).on('scroll', function (e) {
-    if (window.innerWidth < 1200) {
-        return;
-    }
-    if (window.pageYOffset > 50) {
-        $('.header .desktop').addClass('--highlighten')
-    } else {
-        $('.header .desktop').removeClass('--highlighten')
-    }
-})
-</script>
-<script> //landing slider scripts
-var specsSlider = $('.specs-slider');
-specsSlider.owlCarousel({
-    items: 4,
-    margin: 2,
-    dots: false,
-    responsive: {
-        0: {
-            items: 1.73,
-            autoWidth: true,
-            slideBy: 1
-        },
-        800: {
-            items: 2.5,
-            autoWidth: true,
-            slideBy: 3
-        },
-        1200: {
-            items: 5,
-            slideBy: 3
-        },
-    }
-})
-var fbSlider = $('.feedback-slider');
-fbSlider.owlCarousel({
-    margin: 1,
-    dots: false,
-    responsive: {
-        0: {
-            items: 1.23,
-            autoWidth: true,
-            slideBy: 1
-        },
-        800: {
-            items: 1.23,
-            autoWidth: true,
-            margin: 20,
-            slideBy: 1
-        },
-        1200: {
-            items: 1.23,
-            autoWidth: true,
-            margin: 20,
-            slideBy: 1
-        }
-    }
-})
-var newsSlider = $('.news-slider');
-newsSlider.owlCarousel({
-    margin: 2,
-    dots: false,
-    responsive: {
-        0: {
-            items: 1.23,
-            slideBy: 1,
-            autoWidth: true,
-        },
-        800: {
-            items: 3,
-            slideBy: 3
-        },
-        1200: {
-            items: 3,
-            slideBy: 3
-        }
-    }
-})
+
+    // $('.header .popup-link').popover(menu_options)
+    $(document).ready(function () {
+
+    })
+
 </script>
 </body>
 </html>

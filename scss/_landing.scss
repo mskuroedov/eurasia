@@ -157,8 +157,11 @@
 
     @media (min-width: 1200px) {
       width: 52.4%;
-      margin-top: -34px;
+      margin-top: 0;
       display: inline-block;
+      .l1__search__block{
+        margin-top: 90px;
+      }
     }
   }
 
@@ -227,6 +230,7 @@
   }
   @media(min-width: 1200px) {
     padding-top: 110px;
+    padding-bottom: 100px;
     .l2__title {
       font-weight: 800;
       font-size: 30px;
@@ -284,10 +288,123 @@
       }
     }
   }
+  @media(min-width:1200px){
+    img{
+      margin-bottom: 13px
+    }
+  }
 }
 
-.l2-stats {
+.l-desktop {
   height: 450px;
+  padding-top: 75px;
+  padding-bottom: 74px;
+  position: relative;
+  background: white;
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+  }
+
+  .container {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 407px;
+      height: 201px;
+      background: url('../assets/landing-promo-decor-2.svg');
+      background-position-x: 13px;
+      left: -111px;
+      top: -74px;
+    }
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 49%;
+    border-radius: 27px 0 0 0;
+    right: 0;
+    top: 0;
+    background: $secondary;
+  }
+
+  .items {
+    width: 100%;
+
+    .item {
+      margin-bottom: 55px;
+      transition: all .9s;
+
+      &.pr {
+        padding-right: 0;
+        padding-left: 100px;
+      }
+
+      &.pl {
+        padding-right: 100px;
+        padding-left: 0;
+      }
+
+      .title {
+        font-size: 16px;
+        line-height: 22px;
+        color: $black;
+        margin-bottom: 5px;
+      }
+
+      .text {
+        font-size: 16px;
+        line-height: 22px;
+        color: #5F5F5F;
+        opacity: 0.8;
+      }
+    }
+
+  }
+
+  &.activated {
+    .items .pl {
+      padding-left: 100px;
+      padding-right: 0;
+    }
+
+    .items .pr {
+      padding-left: 0;
+      padding-right: 100px;
+    }
+
+    .animated__car {
+      .car {
+        transform: translateX(127px);
+      }
+
+      .car-outlined {
+        transform: translateX(-127px);
+      }
+    }
+  }
+}
+
+.animated__car {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 30px solid $primary;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .car, .car-outlined {
+    position: absolute;
+    transform: translateX(0);
+    transition: all .9s;
+  }
 }
 
 .l3 {
@@ -837,8 +954,8 @@
         border-right: 47px solid #F4F8FA;
       }
     }
-    @media(min-width: 1200px){
-      .common-text{
+    @media(min-width: 1200px) {
+      .common-text {
         font-size: 15px;
         line-height: 22px;
         letter-spacing: -0.1px;
@@ -913,6 +1030,7 @@
       height: 201.5px;
       overflow: hidden;
     }
+
     img {
       width: 100%;
     }
@@ -943,7 +1061,8 @@
       letter-spacing: -0.6px;
     }
   }
-  .description{
+
+  .description {
     display: none;
     @media (min-width: 1200px) {
       display: block;
@@ -951,6 +1070,7 @@
       padding-right: 30px;
     }
   }
+
   &:hover {
     text-decoration: none;
 
