@@ -2,7 +2,7 @@ body {
   padding-top: 70px;
   background: $secondary;
   @media(min-width: 1200px) {
-    padding-top: 125px;
+    padding-top: 38px;
   }
 
   &.mobile-menu-opened {
@@ -24,6 +24,9 @@ body {
     justify-content: space-between;
     padding-left: 5px;
     height: 70px;
+    @media (min-width: 1200px) {
+      display: none;
+    }
 
     .header__phone {
       margin-left: auto;
@@ -38,32 +41,223 @@ body {
       span {
         font-weight: bold;
       }
+
       @media (min-width: 800px) {
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0;
       }
     }
+
     .menu-btn {
       margin-left: -5px;
     }
   }
-  .tablet-btns{
+
+  .tablet-btns {
     display: none;
-    a{
+
+    a {
       text-align: center;
       display: inline-block;
-      &:first-of-type{
+
+      &:first-of-type {
         margin-left: 10px;
         width: 48px;
       }
-      &:last-of-type{
+
+      &:last-of-type {
         width: 49px;
         margin-right: -11px;
       }
     }
-    @media(min-width: 800px) and (max-width: 1200px){
+
+    @media(min-width: 800px) and (max-width: 1200px) {
       display: block;
+    }
+  }
+
+  .desktop {
+    display: none;
+    @media (min-width: 1200px) {
+      display: block;
+    }
+
+    .first-row {
+      background: $gray;
+      font-size: 15px;
+      line-height: 38px;
+      color: white;
+
+      .desktop__logo-block {
+        position: relative;
+      }
+
+      .desktop__logo {
+        background: white;
+        position: absolute;
+        border-radius: 0 0 3px 3px;
+        left: 15px;
+        top: 0;
+        width: 170px;
+        height: 125px;
+        padding-left: 29px;
+        padding-top: 32px;
+        transition: all .2s;
+
+        box-shadow: 0px 5px 15px rgba(95, 95, 95, 0.05);
+        svg {
+          width: 121px;
+          path{
+            transition: all .2s;
+          }
+        }
+      }
+
+
+      .address {
+        display: inline-block;
+        padding: 0 23px;
+      }
+
+      .call-back {
+        color: white;
+        display: inline-block;
+        padding: 0 24px;
+        background: $primary;
+        transition: all .2s;
+
+        &:hover {
+          text-decoration: none;
+          background: #FF5C00;
+        }
+
+        &:active {
+          background: #FF5200;
+        }
+      }
+    }
+
+    .second-row {
+      padding-top: 24px;
+
+      .popup-link {
+        margin-right: 26px;
+        color: $black;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        margin-top: 16px;
+        transition: all .2s;
+
+        img {
+          margin-left: 5px;
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: $primary;
+        }
+
+        &:first-of-type {
+          margin-left: 24px;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      .phone-block {
+        margin-top: -2px;
+        display: inline-block;
+        text-align: right;
+        padding-top: 13px;
+
+        .tel {
+          display: block;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 20px;
+          text-align: right;
+          letter-spacing: 0.02em;
+          transition: all .2s;
+          margin-bottom: 4px;
+          margin-top: 2px;
+          color: $black;
+
+          &:hover {
+            text-decoration: none;
+            color: $primary;
+          }
+        }
+
+        .link {
+          display: block;
+          color: $primary;
+          font-size: 15px;
+          line-height: 18px;
+
+          &:hover {
+            text-decoration: none;
+            color: #FF5C00;
+          }
+        }
+      }
+
+      .user-block {
+        display: inline-block;
+        margin-top: -15px;
+        margin-left: 18px;
+
+        a {
+          display: flex;
+          align-items: center;
+          color: $black;
+          transition: all .2s;
+          font-weight: bold;
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 17px;
+          svg path{
+            transition: all .2s;
+          }
+          .text {
+            display: inline-block;
+            margin-top: -3px;
+            letter-spacing: .5px;
+          }
+
+          &:hover {
+            color: $primary;
+            text-decoration: none;
+
+            svg path {
+              stroke: $primary
+            }
+          }
+        }
+      }
+
+    }
+
+    &.--highlighten{
+      background: white;
+      .desktop__logo{
+        background: $primary;
+        height: 140px;
+        svg path{
+          stroke: white;
+          fill: white;
+        }
+      }
+      .second-row{
+        padding-bottom: 20px;
+      }
     }
   }
 }
@@ -99,11 +293,13 @@ body {
   left: 0;
   top: 0;
   width: 0;
-  &__bg{
+
+  &__bg {
     width: 100%;
     height: 100%;
     position: absolute;
   }
+
   &.--open {
     width: 100%;
 
@@ -111,8 +307,10 @@ body {
       transform: translateX(0);
     }
   }
+
   &.--closing {
     width: 100%;
+
     .inner-block {
       transform: translateX(-100%);
     }
@@ -141,22 +339,26 @@ body {
     background: #474747;
     height: 100%;
     -ms-overflow-style: none;
+
     &::-webkit-scrollbar {
       display: none;
     }
   }
-  .level{
+
+  .level {
     display: flex;
     flex-direction: column;
     min-height: calc(100% - 70px);
-    &.second .link-item{
+
+    &.second .link-item {
       font-size: 15px;
     }
   }
 
   .lighten {
     background: $gray;
-    .link-item:last-of-type:after{
+
+    .link-item:last-of-type:after {
       opacity: 0;
     }
   }
@@ -174,12 +376,15 @@ body {
     background: rgba(255, 255, 255, 0);
     transition: all .2s;
     color: white;
-    &.back{
+
+    &.back {
       justify-content: flex-start;
-      img{
+
+      img {
         margin-left: -10px;
       }
     }
+
     &:after {
       position: absolute;
       content: '';
@@ -218,7 +423,8 @@ body {
     .footer__phone {
       margin-bottom: 25px;
     }
-    .socials-links{
+
+    .socials-links {
       width: 100%;
     }
   }
