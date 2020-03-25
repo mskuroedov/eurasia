@@ -428,7 +428,8 @@ body {
           font-weight: bold;
           text-transform: uppercase;
           font-size: 14px;
-          line-height: 17px; }
+          line-height: 17px;
+          cursor: pointer; }
           .header .desktop .second-row .user-block a svg path {
             transition: all .2s; }
           .header .desktop .second-row .user-block a .text {
