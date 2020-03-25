@@ -71,8 +71,17 @@ var animate_car_block = new Animate({
 });
 animate_car_block.init();
 
-// var animate_timeline_block = new Animate({
-//     target: '.--first',
-//     offset: [1, 0.25]
-// });
-// animate_timeline_block.init();
+var animate_timeline = new Animate({
+    target: '[animate-timeline]',
+    offset: [0.5, 0.5],
+    animatedClass: [''],
+    delay: 0,
+    callbackOnInView: () => {
+        for (let i = 1; i <= 3; i++) {
+            setTimeout(function (e) {
+                $('.timeline-' + i).addClass('js-animated');
+            }, 1000*i)
+        }
+    }
+});
+animate_timeline.init();

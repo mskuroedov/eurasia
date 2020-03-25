@@ -96,7 +96,7 @@ a:focus, button:focus, input:focus {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #5F5F5F; }
+  color: rgba(95, 95, 95, 0.91); }
 
 .link {
   font-size: 15px;
@@ -126,7 +126,7 @@ a:focus, button:focus, input:focus {
   position: relative; }
   .form-input label {
     position: absolute;
-    color: #5F5F5F;
+    color: rgba(95, 95, 95, 0.91);
     font-weight: normal;
     font-size: 15px;
     line-height: 50px;
@@ -177,7 +177,7 @@ a:focus, button:focus, input:focus {
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 0;
-  color: #5F5F5F; }
+  color: rgba(95, 95, 95, 0.91); }
   .form-checkbox label:before {
     display: inline-block;
     content: '';
@@ -220,7 +220,7 @@ a:focus, button:focus, input:focus {
     .simple-btn.--primary:active {
       background: #FF5200; }
   .simple-btn.--black {
-    background: #5F5F5F; }
+    background: rgba(95, 95, 95, 0.91); }
     .simple-btn.--black:hover {
       background: #414141; }
     .simple-btn.--black:active {
@@ -329,7 +329,7 @@ body {
       .header .desktop {
         display: block; } }
     .header .desktop .first-row {
-      background: #5F5F5F;
+      background: rgba(95, 95, 95, 0.91);
       font-size: 15px;
       line-height: 38px;
       color: white; }
@@ -529,7 +529,7 @@ body {
     .mobile__menu .level.second .link-item {
       font-size: 15px; }
   .mobile__menu .lighten {
-    background: #5F5F5F; }
+    background: rgba(95, 95, 95, 0.91); }
     .mobile__menu .lighten .link-item:last-of-type:after {
       opacity: 0; }
   .mobile__menu .link-item {
@@ -891,7 +891,7 @@ body {
       margin-bottom: 30px; }
     .l1__search__block .tab {
       border-radius: 3px 3px 0px 0px;
-      background: #5F5F5F;
+      background: rgba(95, 95, 95, 0.91);
       height: 45px;
       color: white;
       padding: 0px 20px;
@@ -916,7 +916,7 @@ body {
         font-weight: normal;
         font-size: 15px;
         line-height: 55px;
-        color: #5F5F5F;
+        color: rgba(95, 95, 95, 0.91);
         padding-left: 25px;
         padding-right: 50px;
         background: #FFFFFF;
@@ -924,7 +924,7 @@ body {
         border-radius: 0 5px 5px 5px;
         border: 0; }
         .l1__search__block .search input::placeholder {
-          color: #5F5F5F; }
+          color: rgba(95, 95, 95, 0.91); }
       .l1__search__block .search img {
         position: absolute;
         right: 0;
@@ -967,7 +967,7 @@ body {
         font-weight: normal;
         font-size: 15px;
         line-height: 20px;
-        color: #5F5F5F;
+        color: rgba(95, 95, 95, 0.91);
         letter-spacing: -0.2px; }
 
 .l2 {
@@ -1032,7 +1032,7 @@ body {
       margin-right: 12px; }
     .specs-item .price .old {
       text-decoration: line-through;
-      color: #5F5F5F; }
+      color: rgba(95, 95, 95, 0.91); }
     @media (min-width: 800px) {
       .specs-item .price {
         font-size: 18px;
@@ -1185,6 +1185,11 @@ body {
     .step-item {
       width: 31.6%;
       margin-bottom: 41px; } }
+  .step-item .image,
+  .step-item .time,
+  .step-item .title,
+  .step-item .text {
+    opacity: 0; }
   .step-item .image {
     width: 90px;
     height: 60px;
@@ -1243,8 +1248,7 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #5F5F5F;
-    opacity: .9;
+    color: rgba(95, 95, 95, 0.91);
     padding-right: 6px; }
     @media (min-width: 800px) {
       .step-item .text {
@@ -1262,7 +1266,9 @@ body {
     height: 10px;
     border-radius: 100%;
     left: 10px;
-    top: 25px; }
+    top: 25px;
+    opacity: 0;
+    transition: all .2s; }
     @media (min-width: 800px) {
       .step-item:before {
         left: 30px;
@@ -1273,7 +1279,7 @@ body {
         top: 171px; } }
   .step-item:after {
     content: '';
-    height: 127%;
+    height: 0;
     position: absolute;
     width: 2px;
     background: #FF6F00;
@@ -1285,7 +1291,7 @@ body {
       .step-item:after {
         opacity: 1;
         height: 2px;
-        width: 117%;
+        width: 0;
         left: 30px;
         top: 104px; } }
     @media (min-width: 1200px) {
@@ -1297,6 +1303,40 @@ body {
         top: 175px; } }
   .step-item:last-of-type:after {
     display: none; }
+  .step-item.js-animated .image {
+    animation: slideFromLeft .8s forwards;
+    animation-delay: 0s; }
+  .step-item.js-animated .time {
+    animation: slideFromLeft .8s forwards;
+    animation-delay: .05s; }
+  .step-item.js-animated .title {
+    animation: slideFromLeft .8s forwards;
+    animation-delay: .1s; }
+  .step-item.js-animated .text {
+    animation: slideFromLeft .8s forwards;
+    animation-delay: .15s; }
+  .step-item.js-animated:after {
+    height: 127%;
+    width: 2px; }
+    @media (min-width: 800px) {
+      .step-item.js-animated:after {
+        opacity: 1;
+        width: 117%;
+        height: 2px; } }
+    @media (min-width: 1200px) {
+      .step-item.js-animated:after {
+        opacity: 1;
+        width: 109%; } }
+  .step-item.js-animated:before {
+    opacity: 1; }
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50%); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
 
 .l4 {
   position: relative;
@@ -1420,7 +1460,7 @@ body {
             padding-left: 70px;
             font-size: 16px;
             line-height: 24px;
-            color: #5F5F5F;
+            color: rgba(95, 95, 95, 0.91);
             opacity: 0.9; }
             .l4__about .about-item .description + .description {
               opacity: .7;
@@ -1538,7 +1578,7 @@ body {
     .feedback-item .main .date {
       font-size: 12px;
       line-height: 24px;
-      color: #5F5F5F;
+      color: rgba(95, 95, 95, 0.91);
       opacity: .8; }
     @media (min-width: 800px) {
       .feedback-item .main {
@@ -1733,7 +1773,7 @@ body {
       opacity: 0; }
 
 .eu-modal .common-text {
-  color: #5F5F5F;
+  color: rgba(95, 95, 95, 0.91);
   line-height: 22px; }
 
 .eu-modal .socials {
@@ -1741,7 +1781,7 @@ body {
   justify-content: space-between;
   margin-bottom: 30px; }
   .eu-modal .socials .text {
-    color: #5F5F5F;
+    color: rgba(95, 95, 95, 0.91);
     width: 155px;
     font-weight: normal;
     font-size: 16px;
@@ -1755,7 +1795,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 22px;
-  color: #5F5F5F;
+  color: rgba(95, 95, 95, 0.91);
   letter-spacing: -0.2px; }
   .eu-modal .agreement a {
     color: #4087BE;

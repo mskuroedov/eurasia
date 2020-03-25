@@ -159,7 +159,7 @@
       width: 52.4%;
       margin-top: 0;
       display: inline-block;
-      .l1__search__block{
+      .l1__search__block {
         margin-top: 90px;
       }
     }
@@ -288,8 +288,9 @@
       }
     }
   }
-  @media(min-width:1200px){
-    img{
+
+  @media(min-width: 1200px) {
+    img {
       margin-bottom: 13px
     }
   }
@@ -483,7 +484,12 @@
     width: 31.6%;
     margin-bottom: 41px;
   }
-
+  .image,
+  .time,
+  .title,
+  .text{
+    opacity: 0;
+  }
   .image {
     width: 90px;
     height: 60px;
@@ -555,7 +561,6 @@
     font-size: 16px;
     line-height: 22px;
     color: $gray;
-    opacity: .9;
     padding-right: 6px;
     @media (min-width: 800px) {
       padding-left: 0;
@@ -576,6 +581,8 @@
     border-radius: 100%;
     left: 10px;
     top: 25px;
+    opacity: 0;
+    transition: all .2s;
     @media(min-width: 800px) {
       left: 30px;
       top: 100px;
@@ -588,7 +595,7 @@
 
   &:after {
     content: '';
-    height: 127%;
+    height: 0;
     position: absolute;
     width: 2px;
     background: $primary;
@@ -599,7 +606,8 @@
     @media (min-width: 800px) {
       opacity: 1;
       height: 2px;
-      width: 117%;
+      //width: 117%;
+      width: 0;
       left: 30px;
       top: 104px;
     }
@@ -618,6 +626,56 @@
     }
   }
 
+  &.js-animated {
+    .image {
+      animation: slideFromLeft .8s forwards;
+      animation-delay: 0s;
+    }
+
+    .time {
+      animation: slideFromLeft .8s forwards;
+      animation-delay: .05s;
+    }
+
+    .title {
+      animation: slideFromLeft .8s forwards;
+      animation-delay: .1s;
+    }
+
+    .text {
+      animation: slideFromLeft .8s forwards;
+      animation-delay: .15s;
+    }
+
+    &:after {
+      height: 127%;
+      width: 2px;
+      @media (min-width: 800px) {
+        opacity: 1;
+        width: 117%;
+        height: 2px;
+      }
+      @media (min-width: 1200px) {
+        opacity: 1;
+        width: 109%;
+      }
+    }
+
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .l4 {
