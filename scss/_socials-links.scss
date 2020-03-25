@@ -12,6 +12,8 @@
   &.--blue{
     .item{
       background: #B3CCD9;
+      width: 45px;
+      height: 45px;
       &:hover{
         background: $primary;
       }

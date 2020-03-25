@@ -37,3 +37,36 @@
   line-height: 24px;
   color: $gray;
 }
+
+.link {
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+  color: #4087BE;
+  transition: all .2s;
+
+  &:hover {
+    text-decoration: none;
+    color: $primary;
+  }
+  &.w-icon{
+    display: flex;
+    align-items: center;
+    .icon{
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+      svg{
+        width: 100%;
+        path{
+          transition: all .2s;
+        }
+      }
+    }
+    &:hover{
+      svg path{
+        fill:$primary
+      }
+    }
+  }
+}

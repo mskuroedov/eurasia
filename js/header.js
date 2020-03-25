@@ -83,28 +83,42 @@ let menu_content = {
 $('.header .popup-link[data-popover="buy"]').popover({
     html: true,
     placement: 'bottom',
-    trigger:'focus',
+    trigger: 'focus',
     template: '<div class="header-menu-popover popover" role="tooltip"><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
     content: menu_content.buy
 })
 $('.header .popup-link[data-popover="sell"]').popover({
     html: true,
     placement: 'bottom',
-    trigger:'focus',
+    trigger: 'focus',
     template: '<div class="header-menu-popover popover" role="tooltip"><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
     content: menu_content.sell
 })
 $('.header .popup-link[data-popover="all"]').popover({
     html: true,
     placement: 'bottom',
-    trigger:'focus',
+    trigger: 'focus',
     template: '<div class="header-menu-popover popover" role="tooltip"><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
     content: menu_content.all
 })
 $('.header .popup-link[data-popover="company"]').popover({
     html: true,
     placement: 'bottom',
-    trigger:'focus',
+    trigger: 'focus',
     template: '<div class="header-menu-popover popover" role="tooltip"><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
     content: menu_content.company
+})
+
+//auth modals scripts
+$('.modal-title[data-title]').on('click', function () {
+    if(!$(this).hasClass('not-active')){
+        return;
+    }
+    let target = $(this).attr('data-title'),
+        secondary = $(this).attr('data-title') === 'login' ? 'register' : 'login';
+
+    $(this).removeClass('not-active');
+    $('.modal-title[data-title='+secondary+']').addClass('not-active')
+    $('.' + target).show();
+    $('.' + secondary).hide();
 })

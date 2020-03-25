@@ -77,7 +77,7 @@
                             <a class="link" href="#">Заказать звонок</a>
                         </div>
                         <div class="user-block">
-                            <a href="#">
+                            <a data-target="#auth_modal" data-toggle="modal">
                                 <svg width="48" height="50" viewBox="0 0 49 50" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
                                     <path d="M28.1665 20C28.1665 22.2359 26.4115 24 24.3054 24C22.1994 24 20.4443 22.2359 20.4443 20C20.4443 17.7641 22.1994 16 24.3054 16C26.4115 16 28.1665 17.7641 28.1665 20Z"
@@ -215,7 +215,8 @@
     <div class="container">
         <div class="l1__text">
             <h1 class="heading-1">Сэкономьте время <br> и финансы, купив авто <br> у эксперта</h1>
-            <button class="simple-btn --primary">Выбрать свое авто <img src="./assets/icons/btn-arrow.svg" alt="">
+            <button class="simple-btn --primary" data-toggle="modal" data-target="#success_modal">Выбрать свое авто <img
+                    src="./assets/icons/btn-arrow.svg" alt="">
             </button>
         </div>
         <div class="l1__people">
@@ -795,6 +796,221 @@
         </div>
     </div>
 </footer>
+
+<!--modals-->
+<div class="modal fade eu-modal " tabindex="-1" role="dialog" id="auth_modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="./assets/icons/modal-cross.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="modal-title" data-title="login">
+                            Вход
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="modal-title not-active" data-title="register">
+                            Регистрация
+                        </div>
+                    </div>
+                </div>
+                <div class="login">
+                    <div class="common-text">Авторизуйтесь, если вы уже зарегистрированы на нашем сайте</div>
+                    <div class="form-input">
+                        <label for="reg-mail">E-mail</label>
+                        <input type="email" id="log-mail">
+                    </div>
+                    <div class="form-input">
+                        <label for="reg-password">Пароль</label>
+                        <input type="password" id="log-password">
+                        <div class="icon reveal-input-icon">
+                            <img src="./assets/icons/visible.svg" alt="">
+                        </div>
+                        <div class="icon password-input-icon">
+                            <img src="./assets/icons/not_visible.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="remember" checked>
+                                <label for="remember">Запомнить меня</label>
+                            </div>
+                        </div>
+                        <div class="col-auto ml-auto">
+                            <a href="#" class="link">Забыли пароль?</a>
+                        </div>
+                    </div>
+                    <button class="simple-btn --primary d-block w-100">Войти <img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                    <div class="socials">
+                        <div class="text">Или войдите
+                            через сервисы
+                        </div>
+                        <div class="socials-links --blue">
+                            <a href="#" class="item">
+                                <img src="./assets/socials/google.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="./assets/socials/yandex.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="./assets/socials/vk.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="./assets/socials/fb.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none" class="register">
+                    <div class="socials">
+                        <div class="text">Зарегистрируйтесь
+                            через сервисы
+                        </div>
+                        <div class="socials-links --blue">
+                            <a href="#" class="item">
+                                <img src="./assets/socials/google.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="./assets/socials/yandex.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="./assets/socials/vk.svg" alt="">
+                            </a>
+                            <a href="#" class="item">
+                                <img src="./assets/socials/fb.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="common-text">Или заполните поля ниже</div>
+                    <div class="form-input">
+                        <label for="reg-mail">E-mail</label>
+                        <input type="email" id="reg-mail">
+                    </div>
+                    <div class="form-input">
+                        <label for="reg-password">Пароль</label>
+                        <input type="password" id="reg-password">
+                    </div>
+                    <div class="form-input">
+                        <label for="reg-password-r" class="up">Повторите пароль</label>
+                        <input type="email" id="reg-password-r">
+                    </div>
+                    <div class="form-input">
+                        <label for="reg-phone">Номер телефона</label>
+                        <input type="email" id="reg-phone">
+                    </div>
+                    <button class="simple-btn --primary d-block w-100">Зарегистрироваться <img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                    <p class="agreement">Регистрируя аккаунт, вы принимаете условия
+                        <a href="#">Пользовательского соглашения</a> «Евразия Эксперт»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade eu-modal " tabindex="-1" role="dialog" id="success_modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="./assets/icons/modal-cross.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="modal-title" data-title="login">
+                            Благодарим! Вы успешно зарегистрировали свой аккаунт
+                        </div>
+                    </div>
+                </div>
+                <div class="success">
+                    <div class="common-text">Теперь вам доступны все функции сайта</div>
+                    <div>
+                        <a href="#" class="link w-icon">
+                            <span class="icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M22.1806 13.2964C24.3437 12.9471 26 11.0837 26 8.84375C26 7.06223 24.5161 5.62109 22.7344 5.62109H22.0898V7.55469C22.0898 7.91002 21.8008 8.19922 21.4453 8.19922C21.09 8.19922 20.8008 7.91002 20.8008 7.55469C20.8008 5.0432 18.7769 3 16.2891 3L14.6202 3.00134L15.8577 4.1234C15.8602 4.12575 16.1137 4.35687 16.3737 4.72362C16.873 5.42773 16.8881 6.43314 16.4104 7.16898C15.6914 8.27643 15.6103 9.65579 16.1957 10.7773H9.49883L6.9207 14.6445H4V15.9336H5.33203V22.3789H6.62109V25H10.4883V22.3789H19.5117V25H23.3789V22.3789H24.668V15.9336H26V14.6445H23.0793L22.1806 13.2964ZM17.4917 7.87074C18.1149 6.91083 18.2163 5.70351 17.8032 4.67242C18.819 5.22263 19.5117 6.30826 19.5117 7.55469C19.5117 8.62085 20.3792 9.48828 21.4453 9.48828C22.5115 9.48828 23.3789 8.62085 23.3789 7.55469V7.0201C24.1453 7.28815 24.7109 8.01526 24.7109 8.84375C24.7109 10.6207 23.246 12.0664 21.4453 12.0664H20.4606C19.1562 12.0664 17.9635 11.351 17.3478 10.1996C16.9668 9.48677 17.0219 8.59433 17.4917 7.87074ZM10.1887 12.0664H17.1803C18.0575 12.8828 19.222 13.3555 20.4606 13.3555H20.6707L21.5301 14.6445H21.2932L18.7151 15.9336H11.285L8.70692 14.6445H8.46992L10.1887 12.0664ZM6.62109 21.0898V19.8008H8.55469C9.39493 19.8008 10.1113 20.3396 10.3775 21.0898H6.62109ZM9.19922 23.7109H7.91016V22.3789H9.19922V23.7109ZM22.0898 23.7109H20.8008V22.3789H22.0898V23.7109ZM19.6227 21.0898C19.8887 20.3396 20.6051 19.8008 21.4453 19.8008H23.3789V21.0898H19.6227ZM23.3789 18.5117H21.4453C19.889 18.5117 18.5869 19.6207 18.2874 21.0898H11.7126C11.4131 19.6207 10.111 18.5117 8.55469 18.5117H6.62109V15.9336H8.40262L10.9807 17.2227H19.0194L21.5975 15.9336H23.3789V18.5117Z"
+      fill="#4087BE"/>
+<path d="M13.0664 18.5117H16.9336V19.8008H13.0664V18.5117Z" fill="#4087BE"/>
+</svg>
+
+                            </span>
+                            Продать авто</a>
+                    </div>
+                    <div>
+                        <a href="#" class="link w-icon">
+                            <span class="icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path d="M20.4041 7.21802H15.3171L13.911 10.0302H12.9395V14.2482H14.3455V15.6542H15.7514V14.2482H19.9696V15.6542H21.3757V14.2482H22.7816V10.0302H21.81L20.4041 7.21802ZM16.1859 8.62408H19.5351L20.2381 10.0302H15.483L16.1859 8.62408ZM21.3757 12.8423H14.3455V11.4362H21.3757V12.8423Z"
+      fill="#4087BE"/>
+<path d="M17.8609 3C12.8214 3 8.72151 7.09991 8.72151 12.1392C8.72151 14.4064 9.55171 16.4832 10.9235 18.0822L10.0532 18.9525L9.05915 17.9583L3 24.0172L5.98261 27L12.0416 20.9409L11.0475 19.9468L11.9178 19.0763C13.5169 20.4483 15.5937 21.2783 17.8609 21.2783C22.9001 21.2783 27 17.1786 27 12.1392C27 7.09991 22.9001 3 17.8609 3ZM5.98261 25.0115L4.98835 24.0174L9.05915 19.9468L10.0532 20.9409L5.98261 25.0115ZM17.8609 19.8724C13.5967 19.8724 10.1276 16.4033 10.1276 12.1392C10.1276 7.87518 13.5967 4.40607 17.8609 4.40607C22.1249 4.40607 25.594 7.87518 25.594 12.1392C25.594 16.4033 22.1249 19.8724 17.8609 19.8724Z"
+      fill="#4087BE"/>
+</svg>
+
+                            </span>
+                            Купить авто</a>
+                    </div>
+                    <div>
+                        <a href="#" class="link w-icon">
+                            <span class="icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M21.6454 5.90848C21.1466 6.40787 20.7302 6.81368 20.72 6.81028C20.7097 6.80687 20.4218 6.52634 20.0801 6.1869C19.5309 5.64135 19.4544 5.57332 19.4211 5.6007C19.3031 5.69797 6.33337 18.6859 6.33337 18.7068C6.33337 18.7208 6.32364 18.764 6.31178 18.8028C6.29992 18.8416 6.27327 18.9613 6.25258 19.0688C6.23187 19.1763 6.2061 19.3004 6.19527 19.3447C6.18447 19.3889 6.15888 19.5079 6.13844 19.6091C6.11798 19.7102 6.09141 19.8304 6.07938 19.8761C6.06734 19.9218 6.0575 19.9899 6.0575 20.0274C6.0575 20.065 6.04975 20.1034 6.04026 20.1128C6.02474 20.1282 5.98368 20.3264 5.95173 20.5401C5.9451 20.5844 5.9311 20.6413 5.92058 20.6666C5.91005 20.6918 5.88359 20.816 5.86177 20.9424C5.83993 21.0689 5.81377 21.193 5.80361 21.2183C5.79347 21.2436 5.77931 21.3057 5.77213 21.3562C5.76499 21.4068 5.74321 21.5206 5.72377 21.6091C5.70432 21.6976 5.68271 21.8114 5.67579 21.862C5.66884 21.9126 5.65491 21.9746 5.64484 21.9999C5.62077 22.0604 5.57395 22.2937 5.55831 22.431C5.55149 22.491 5.53686 22.5402 5.52583 22.5402C5.51479 22.5402 5.50576 22.5623 5.50576 22.5894C5.50576 22.6214 5.58985 22.7213 5.74715 22.8762C5.87991 23.0068 5.98853 23.1203 5.98853 23.1283C5.98853 23.1363 5.76611 23.365 5.49427 23.6366C5.22242 23.9082 5 24.1488 5 24.1711C5 24.2034 5.76294 25 5.79386 25C5.79837 25 6.02964 24.7724 6.3078 24.4942C6.58595 24.2161 6.82402 23.9885 6.83685 23.9885C6.8497 23.9885 6.96377 24.0927 7.09035 24.2201L7.32047 24.4517L7.45337 24.4279C7.52648 24.4148 7.63283 24.3943 7.68972 24.3824C8.03399 24.3101 8.28792 24.2588 8.48963 24.2208C8.55657 24.2082 8.6311 24.1916 8.65527 24.1839C8.67943 24.1762 8.75396 24.1597 8.8209 24.1472C8.88785 24.1347 8.98401 24.1153 9.03459 24.1042C9.15266 24.0783 9.46441 24.014 9.59782 23.9881C9.65472 23.977 9.77886 23.9513 9.87369 23.931C9.96852 23.9107 10.0927 23.8848 10.1496 23.8734C10.2065 23.862 10.2996 23.8427 10.3565 23.8304C10.4134 23.8182 10.5427 23.7912 10.6438 23.7704C10.9284 23.712 11.0012 23.6968 11.147 23.6653L11.2824 23.636L16.8533 18.065C19.9174 15.0009 22.4289 12.4939 22.4346 12.4939C22.4483 12.4939 23.1614 13.2049 23.1614 13.2185C23.1614 13.2243 22.4321 13.9585 21.5407 14.8501C20.6492 15.7416 19.9199 16.4758 19.9199 16.4815C19.9199 16.4972 20.7236 17.2987 20.7393 17.2987C20.7581 17.2987 24.8166 13.2386 24.8166 13.2197C24.8166 13.2114 24.47 12.8582 24.0465 12.4349C23.6229 12.0117 23.2763 11.6602 23.2763 11.6539C23.2763 11.6477 23.5246 11.3942 23.8281 11.0907C24.1315 10.7871 24.3798 10.5269 24.3798 10.5124C24.3798 10.498 24.1052 10.212 23.7696 9.87704C23.434 9.54209 23.1625 9.25402 23.1662 9.23689C23.1699 9.21976 23.5852 8.79352 24.0892 8.28965L25.0055 7.37353L23.8184 6.18651C23.1579 5.52601 22.6138 4.99972 22.5918 5C22.57 5.00028 22.1441 5.40909 21.6454 5.90848ZM23.3217 7.38029C23.3223 7.40489 22.3532 8.38392 22.3159 8.39634C22.2897 8.40507 21.5751 7.69188 21.5751 7.65703C21.5751 7.64237 21.8027 7.4036 22.0809 7.12644L22.5868 6.62255L22.954 6.9892C23.1559 7.19088 23.3214 7.36686 23.3217 7.38029ZM21.0929 8.86079C21.9903 9.75803 22.7246 10.5016 22.7246 10.5132C22.7246 10.5481 20.631 12.6319 20.596 12.6319C20.5626 12.6319 17.3222 9.40388 17.3222 9.37062C17.3222 9.35275 19.4349 7.22944 19.4527 7.22944C19.4574 7.22944 20.1955 7.96355 21.0929 8.86079ZM18.1262 11.8503C19.0242 12.748 19.759 13.4872 19.759 13.4928C19.759 13.5042 18.9279 14.3331 18.9165 14.3331C18.8991 14.3331 15.6439 11.0653 15.6439 11.0478C15.6439 11.023 16.4502 10.218 16.475 10.218C16.4851 10.218 17.2281 10.9525 18.1262 11.8503ZM16.4477 13.5308C17.8274 14.9102 18.0781 15.1707 18.0541 15.1996C17.9756 15.2942 12.6241 20.6321 12.6078 20.6321C12.5757 20.6321 9.34494 17.3913 9.34494 17.359C9.34494 17.3278 14.7642 11.8962 14.7953 11.8962C14.8049 11.8962 15.5485 12.6318 16.4477 13.5308ZM10.1271 19.8272C11.0245 20.7247 11.7588 21.4679 11.7588 21.4786C11.7588 21.5055 10.7264 22.5402 10.6997 22.5402C10.6879 22.5402 10.6783 22.5484 10.6783 22.5586C10.6783 22.5747 10.4989 22.6109 10.2415 22.6467C10.1973 22.6529 10.1404 22.6666 10.1151 22.677C10.0751 22.6937 9.79504 22.7531 9.45988 22.8162C9.40299 22.8269 9.27884 22.8531 9.18401 22.8743C9.08918 22.8955 8.96504 22.9214 8.90815 22.9318C8.79789 22.9519 8.49699 23.0134 8.34491 23.0467C8.29434 23.0578 8.19981 23.0769 8.13484 23.0891C8.06989 23.1013 7.97679 23.1224 7.92794 23.136C7.72237 23.193 7.7346 23.2006 7.24174 22.7097C6.80853 22.2782 6.78942 22.2554 6.80333 22.1867C6.84476 21.9822 6.862 21.8987 6.88223 21.8045C6.91915 21.6328 6.97851 21.3401 7.00019 21.223C7.01141 21.1624 7.02686 21.093 7.03453 21.0689C7.04221 21.0447 7.05881 20.9702 7.07143 20.9032C7.1058 20.7209 7.13155 20.5932 7.17247 20.4022C7.19279 20.3074 7.21845 20.1832 7.22948 20.1263C7.3159 19.6813 7.35273 19.5116 7.37038 19.4772C7.38165 19.4552 7.39087 19.4067 7.39087 19.3693C7.39087 19.3314 7.41438 19.2739 7.44399 19.2395C7.54241 19.1251 8.45967 18.2008 8.47761 18.198C8.48738 18.1965 9.22962 18.9296 10.1271 19.8272Z"
+      fill="#4087BE"/>
+</svg>
+                            </span>
+                            Редактировать профиль</a>
+                    </div>
+                    <button class="simple-btn --primary ">Продолжить работу <img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade eu-modal " tabindex="-1" role="dialog" id="recover_password_modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="./assets/icons/modal-cross.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="modal-title" data-title="login">
+                            Восстановление пароля
+                        </div>
+                    </div>
+                </div>
+                <div class="success">
+                    <div class="common-text">Укажите e-mail или номер телефона, на который зарегистрирован ваш аккаунт, чтобы мы могли прислать вам код для восстановления</div>
+                    <div class="form-input">
+                        <label for="recover">E-mail / Номер телефона</label>
+                        <input type="email" id="recover">
+                    </div>
+                    <button class="simple-btn --primary ">Продолжить работу <img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
@@ -802,5 +1018,6 @@
 <script src="js/animate.min.js"></script>
 <script src="js/header.js"></script>
 <script src="js/landing.js"></script>
+<script src="js/inputs.js"></script>
 </body>
 </html>

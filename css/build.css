@@ -98,6 +98,108 @@ a:focus, button:focus, input:focus {
   line-height: 24px;
   color: #5F5F5F; }
 
+.link {
+  font-size: 15px;
+  line-height: 22px;
+  text-align: right;
+  color: #4087BE;
+  transition: all .2s; }
+  .link:hover {
+    text-decoration: none;
+    color: #FF6F00; }
+  .link.w-icon {
+    display: flex;
+    align-items: center; }
+    .link.w-icon .icon {
+      margin-right: 10px;
+      width: 30px;
+      height: 30px; }
+      .link.w-icon .icon svg {
+        width: 100%; }
+        .link.w-icon .icon svg path {
+          transition: all .2s; }
+    .link.w-icon:hover svg path {
+      fill: #FF6F00; }
+
+.form-input {
+  margin-bottom: 23px;
+  position: relative; }
+  .form-input label {
+    position: absolute;
+    color: #5F5F5F;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 50px;
+    left: 20px;
+    margin-bottom: 0;
+    transition: all .2s; }
+    .form-input label.up {
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(95, 95, 95, 0.7);
+      top: -13px;
+      left: 10px;
+      background: white;
+      letter-spacing: -0.1px; }
+  .form-input input {
+    width: 100%;
+    padding-left: 20px;
+    background: white;
+    height: 50px;
+    border: 1px solid rgba(95, 95, 95, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px; }
+  .form-input .icon {
+    width: 24px;
+    height: 24px;
+    display: none;
+    position: absolute;
+    right: 16px;
+    bottom: 16px; }
+    .form-input .icon img {
+      width: 100%; }
+  .form-input.--success .icon.done {
+    display: block; }
+  .form-input input[type='password'] + .reveal-input-icon {
+    display: block; }
+  .form-input.revealed .password-input-icon {
+    display: block; }
+
+.form-checkbox input {
+  display: none; }
+  .form-checkbox input:checked + label:after {
+    opacity: 1; }
+
+.form-checkbox label {
+  display: inline-flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 0;
+  color: #5F5F5F; }
+  .form-checkbox label:before {
+    display: inline-block;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background: #FFFFFF;
+    border: 1px solid rgba(95, 95, 95, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 12px; }
+  .form-checkbox label:after {
+    position: absolute;
+    content: '';
+    background: url("../assets/icons/tick.svg");
+    background-size: cover;
+    width: 13px;
+    height: 10px;
+    left: 20px;
+    top: 6px;
+    opacity: 0;
+    transition: all .2s; }
+
 .simple-btn {
   border-radius: 27px;
   height: 55px;
@@ -1562,7 +1664,9 @@ body {
     .socials-links.--dark .item:hover {
       background: #FF6F00; }
   .socials-links.--blue .item {
-    background: #B3CCD9; }
+    background: #B3CCD9;
+    width: 45px;
+    height: 45px; }
     .socials-links.--blue .item:hover {
       background: #FF6F00; }
   .socials-links .item {
@@ -1573,3 +1677,107 @@ body {
     justify-content: center;
     transition: all .2s;
     border-radius: 100%; }
+
+.eu-modal .modal-header {
+  border-bottom: 0;
+  padding-bottom: 22px;
+  padding-top: 14px; }
+  .eu-modal .modal-header .close {
+    transition: all .2s;
+    padding: 19px 19px 0; }
+
+.eu-modal .modal-content {
+  border: 0;
+  border-radius: 0; }
+
+.eu-modal .modal-dialog {
+  max-width: 480px; }
+
+.eu-modal .modal-body {
+  padding: 0 60px; }
+
+.eu-modal .modal-title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  position: relative;
+  margin-bottom: 36px;
+  margin-right: 5px;
+  letter-spacing: -0.2px; }
+  .eu-modal .modal-title:after {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 4px;
+    background: #FF6F00;
+    margin-top: 20px; }
+  .eu-modal .modal-title.not-active {
+    opacity: .3; }
+    .eu-modal .modal-title.not-active:hover {
+      opacity: .8; }
+    .eu-modal .modal-title.not-active:after {
+      opacity: 0; }
+
+.eu-modal .common-text {
+  color: #5F5F5F;
+  line-height: 22px; }
+
+.eu-modal .socials {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+  .eu-modal .socials .text {
+    color: #5F5F5F;
+    width: 155px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    margin-bottom: 0; }
+  .eu-modal .socials .socials-links {
+    width: 195px; }
+
+.eu-modal .agreement {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #5F5F5F;
+  letter-spacing: -0.2px; }
+  .eu-modal .agreement a {
+    color: #4087BE;
+    transition: all .2s; }
+    .eu-modal .agreement a:hover {
+      text-decoration: none;
+      color: #FF6F00; }
+
+.eu-modal .login .common-text {
+  margin-bottom: 33px; }
+
+.eu-modal .login .simple-btn {
+  margin-bottom: 58px;
+  margin-top: 13px; }
+
+.eu-modal .login .socials {
+  background: #F4F8FA;
+  padding: 34px 60px 36px;
+  margin: 0 -60px; }
+  .eu-modal .login .socials .text {
+    padding-right: 20px; }
+
+.eu-modal .register {
+  padding-bottom: 40px; }
+  .eu-modal .register .common-text {
+    margin-bottom: 33px; }
+  .eu-modal .register .simple-btn {
+    margin-top: 31px;
+    margin-bottom: 30px; }
+
+.eu-modal .success {
+  padding-bottom: 71px; }
+  .eu-modal .success .common-text {
+    margin-bottom: 20px; }
+  .eu-modal .success .link {
+    margin-bottom: 10px;
+    letter-spacing: .3px; }
+  .eu-modal .success .simple-btn {
+    margin-top: 26px; }
