@@ -346,11 +346,11 @@ body {
         padding-left: 29px;
         padding-top: 32px;
         transition: all .2s;
-        box-shadow: 0px 5px 15px rgba(95, 95, 95, 0.05); }
+        box-shadow: 0px 5px 15px rgba(95, 95, 95, 0.05);
+        z-index: 90; }
         .header .desktop .first-row .desktop__logo svg {
-          width: 121px; }
-          .header .desktop .first-row .desktop__logo svg path {
-            transition: all .2s; }
+          width: 121px;
+          transition: all .2s; }
       .header .desktop .first-row .address {
         display: inline-block;
         padding: 0 23px; }
@@ -366,7 +366,9 @@ body {
         .header .desktop .first-row .call-back:active {
           background: #FF5200; }
     .header .desktop .second-row {
-      padding-top: 24px; }
+      padding-top: 24px;
+      box-shadow: 0px 5px 15px rgba(95, 95, 95, 0);
+      transition: all .2s; }
       .header .desktop .second-row .popup-link {
         cursor: pointer;
         margin-right: 26px;
@@ -443,14 +445,24 @@ body {
               stroke: #FF6F00; }
     .header .desktop.--highlighten {
       background: white; }
+      .header .desktop.--highlighten .first-row {
+        height: 0; }
+        .header .desktop.--highlighten .first-row .ml-auto {
+          display: none; }
       .header .desktop.--highlighten .desktop__logo {
-        background: #FF6F00;
-        height: 140px; }
-        .header .desktop.--highlighten .desktop__logo svg path {
-          stroke: white;
-          fill: white; }
+        height: 85px;
+        padding-top: 14px;
+        padding-left: 39px;
+        border-radius: 0; }
+        .header .desktop.--highlighten .desktop__logo .text {
+          opacity: 0; }
+        .header .desktop.--highlighten .desktop__logo svg {
+          width: 100px; }
       .header .desktop.--highlighten .second-row {
-        padding-bottom: 20px; }
+        padding-top: 13px;
+        padding-bottom: 14px;
+        background: #F4F8FA;
+        box-shadow: 0px 5px 20px rgba(95, 95, 95, 0.15); }
 
 .menu-btn {
   width: 50px;
@@ -1258,7 +1270,7 @@ body {
     @media (min-width: 1200px) {
       .step-item:before {
         left: 54px;
-        top: 170px; } }
+        top: 171px; } }
   .step-item:after {
     content: '';
     height: 127%;
@@ -1267,7 +1279,8 @@ body {
     background: #FF6F00;
     left: 14px;
     top: 25px;
-    opacity: .5; }
+    opacity: .5;
+    transition: all 1s linear; }
     @media (min-width: 800px) {
       .step-item:after {
         opacity: 1;
@@ -1279,7 +1292,7 @@ body {
       .step-item:after {
         opacity: 1;
         height: 2px;
-        width: 109%;
+        width: 0;
         left: 60px;
         top: 175px; } }
   .step-item:last-of-type:after {

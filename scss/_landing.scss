@@ -582,7 +582,7 @@
     }
     @media(min-width: 1200px) {
       left: 54px;
-      top: 170px;
+      top: 171px;
     }
   }
 
@@ -595,6 +595,7 @@
     left: 14px;
     top: 25px;
     opacity: .5;
+    transition: all 1s linear;
     @media (min-width: 800px) {
       opacity: 1;
       height: 2px;
@@ -605,7 +606,7 @@
     @media (min-width: 1200px) {
       opacity: 1;
       height: 2px;
-      width: 109%;
+      width: 0;
       left: 60px;
       top: 175px;
     }
@@ -616,6 +617,7 @@
       display: none;
     }
   }
+
 }
 
 .l4 {

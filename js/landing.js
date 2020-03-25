@@ -65,8 +65,14 @@ newsSlider.owlCarousel({
     }
 })
 
-var animate = new Animate({
-    target: '[data-animate]',
+var animate_car_block = new Animate({
+    target: '.l-desktop',
     offset: [1, 0.25]
 });
-animate.init();
+animate_car_block.init();
+
+// var animate_timeline_block = new Animate({
+//     target: '.--first',
+//     offset: [1, 0.25]
+// });
+// animate_timeline_block.init();
