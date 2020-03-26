@@ -2,7 +2,7 @@ body {
   padding-top: 70px;
   background: $secondary;
   @media(min-width: 1200px) {
-    padding-top: 38px;
+    padding-top: 139px;
   }
 
   &.mobile-menu-opened {
@@ -202,7 +202,7 @@ body {
           color: $primary;
           font-size: 15px;
           line-height: 18px;
-
+          letter-spacing: -0.3px;
           &:hover {
             text-decoration: none;
             color: #FF5C00;

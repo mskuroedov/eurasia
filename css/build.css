@@ -327,7 +327,7 @@ body {
   background: #F4F8FA; }
   @media (min-width: 1200px) {
     body {
-      padding-top: 38px; } }
+      padding-top: 139px; } }
   body.mobile-menu-opened {
     overflow: hidden; }
 
@@ -469,7 +469,8 @@ body {
           display: block;
           color: #FF6F00;
           font-size: 15px;
-          line-height: 18px; }
+          line-height: 18px;
+          letter-spacing: -0.3px; }
           .header .desktop .second-row .phone-block .link:hover {
             text-decoration: none;
             color: #FF5C00; }
@@ -892,6 +893,7 @@ body {
     .l1 {
       padding-top: 197px;
       padding-bottom: 102px;
+      margin-top: -92px;
       background-position-y: 22px;
       background-position-x: 17px;
       background-repeat: no-repeat; } }
