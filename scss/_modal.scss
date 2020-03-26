@@ -9,16 +9,20 @@
       padding: 19px 19px 0;
     }
   }
-  .modal-content{
+
+  .modal-content {
     border: 0;
     border-radius: 0;
   }
+
   .modal-dialog {
     max-width: 480px;
   }
+
   .modal-body {
     padding: 0 60px;
   }
+
   .modal-title {
     font-size: 24px;
     line-height: 30px;
@@ -39,9 +43,11 @@
 
     &.not-active {
       opacity: .3;
-      &:hover{
+
+      &:hover {
         opacity: .8;
       }
+
       &:after {
         opacity: 0;
       }
@@ -52,10 +58,12 @@
     color: $gray;
     line-height: 22px;
   }
+
   .socials {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+
     .text {
       color: $gray;
       width: 155px;
@@ -70,59 +78,111 @@
       width: 195px;
     }
   }
-  .agreement{
+
+  .agreement {
     font-weight: normal;
     font-size: 15px;
     line-height: 22px;
     color: $gray;
     letter-spacing: -0.2px;
-    a{
+
+    a {
       color: #4087BE;
       transition: all .2s;
-      &:hover{
+
+      &:hover {
         text-decoration: none;
         color: $primary;
       }
     }
   }
-  .login{
-    .common-text{
+
+  .login {
+    .common-text {
       margin-bottom: 33px;
     }
-    .simple-btn{
+
+    .simple-btn {
       margin-bottom: 58px;
       margin-top: 13px;
     }
-    .socials{
+
+    .socials {
       background: $secondary;
       padding: 34px 60px 36px;
       margin: 0 -60px;
-      .text{
+
+      .text {
         padding-right: 20px;
       }
     }
   }
-  .register{
+
+  .register {
     padding-bottom: 40px;
-    .common-text{
+
+    .common-text {
       margin-bottom: 33px;
     }
-    .simple-btn{
+
+    .simple-btn {
       margin-top: 31px;
       margin-bottom: 30px;
     }
   }
-  .success{
-    padding-bottom: 71px;
+
+  .recover_password {
+    padding-bottom: 57px;
     .common-text{
+      margin-right: -4px;
+      margin-bottom: 33px;
+    }
+    .form-input{
+      margin-bottom: 24px;
+    }
+    .form-verify{
+      .form-input{
+        margin-bottom: 14px;
+      }
+    }
+
+    .simple-btn{
+      margin-top: 6px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .success {
+    padding-bottom: 71px;
+
+    .common-text {
       margin-bottom: 20px;
     }
-    .link{
+
+    .link {
       margin-bottom: 10px;
       letter-spacing: .3px;
     }
-    .simple-btn{
+
+    .simple-btn {
       margin-top: 26px;
+    }
+  }
+
+  .request {
+    padding-bottom: 53px;
+
+    .modal-title {
+      margin-bottom: 52px;
+    }
+
+    .form-input input {
+      height: 57px;
+    }
+
+    .simple-btn {
+      margin-top: 7px;
+      margin-bottom: 29px;
     }
   }
 }

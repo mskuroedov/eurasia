@@ -22,7 +22,9 @@
       background: #353535;
     }
   }
-
+  &:disabled{
+    opacity: .15;
+  }
   border-radius: 27px;
   height: 55px;
   border: 0;
