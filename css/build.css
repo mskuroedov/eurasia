@@ -757,6 +757,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
+    @media (max-width: 799px) {
+      .footer .mobile-block {
+        max-width: 270px;
+        margin: 0 auto; } }
   .footer__title {
     width: 100%;
     font-weight: bold;

@@ -10,14 +10,17 @@
       .desktop-block__item {
         width: 190px;
         margin-right: 40px;
-        &:nth-of-type(3){
+
+        &:nth-of-type(3) {
           margin-right: 40px;
           width: 195px;
         }
-        &:last-of-type{
+
+        &:last-of-type {
           margin-right: 6px;
           width: 140px;
         }
+
         a {
           display: block;
           font-weight: normal;
@@ -42,6 +45,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media(max-width: 799px) {
+      max-width: 270px;
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -212,29 +219,32 @@
         }
       }
     }
-    @media(min-width: 1200px){
+    @media(min-width: 1200px) {
       padding-top: 16px;
       padding-bottom: 2px;
-      .logos{
-        margin-left:-15px ;
+      .logos {
+        margin-left: -15px;
+
         img:first-of-type {
-          margin-left:0;
+          margin-left: 0;
           margin-right: 26px;
         }
       }
-      .copyright{
-        p{
+      .copyright {
+        p {
           padding-top: 12px;
           padding-left: 17px;
           letter-spacing: 0.3px;
         }
-        a{
+
+        a {
           margin-left: 15px;
         }
       }
-      .created{
+      .created {
         padding-top: 10px;
-        a{
+
+        a {
           display: inline-block;
           margin-left: 13px;
         }
