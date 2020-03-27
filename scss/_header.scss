@@ -124,6 +124,7 @@ body {
         padding: 0 24px;
         background: $primary;
         transition: all .2s;
+        cursor: pointer;
 
         &:hover {
           text-decoration: none;
@@ -190,6 +191,8 @@ body {
           margin-bottom: 4px;
           margin-top: 2px;
           color: $black;
+          cursor: pointer;
+
 
           &:hover {
             text-decoration: none;
@@ -203,6 +206,7 @@ body {
           font-size: 15px;
           line-height: 18px;
           letter-spacing: -0.3px;
+          cursor: pointer;
           &:hover {
             text-decoration: none;
             color: #FF5C00;

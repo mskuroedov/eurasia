@@ -478,7 +478,8 @@ body {
         display: inline-block;
         padding: 0 24px;
         background: #FF6F00;
-        transition: all .2s; }
+        transition: all .2s;
+        cursor: pointer; }
         .header .desktop .first-row .call-back:hover {
           text-decoration: none;
           background: #FF5C00; }
@@ -525,7 +526,8 @@ body {
           transition: all .2s;
           margin-bottom: 4px;
           margin-top: 2px;
-          color: #000; }
+          color: #000;
+          cursor: pointer; }
           .header .desktop .second-row .phone-block .tel:hover {
             text-decoration: none;
             color: #FF6F00; }
@@ -534,7 +536,8 @@ body {
           color: #FF6F00;
           font-size: 15px;
           line-height: 18px;
-          letter-spacing: -0.3px; }
+          letter-spacing: -0.3px;
+          cursor: pointer; }
           .header .desktop .second-row .phone-block .link:hover {
             text-decoration: none;
             color: #FF5C00; }

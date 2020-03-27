@@ -75,7 +75,7 @@
                     <div class="col-auto ml-auto">
                         <div class="phone-block">
                             <a class="tel" href="tel:+7 (3812) 99-18-31">+7 (3812) 99-18-31</a>
-                            <a class="link" href="#">Заказать звонок</a>
+                            <a class="link" data-toggle="modal" data-target="#callback_modal">Заказать звонок</a>
                         </div>
                         <div class="user-block">
                             <a data-target="#auth_modal" data-toggle="modal">
@@ -551,7 +551,7 @@
                     </div>
                     <div class="main">
                         <div class="text">ул. 31-рабочая, 1 А, г. Омск</div>
-                        <div class="schedule">Работаем каждый день <br> с 08:30 до 20:00 без перерывов</div>
+                        <div class="schedule">Работаем каждый день<br>с 08:30 до 20:00 без перерывов</div>
                     </div>
                 </div>
                 <a href="tel:+7 (3812) 99-18-31" class="footer__phone">
@@ -561,10 +561,10 @@
                     +7 (3812) 99-18-31
                 </a>
                 <div class="footer__actions">
-                    <button class="simple-btn --primary">Заказать звонок <img src="./assets/icons/btn-arrow.svg" alt="">
+                    <button class="simple-btn --primary" data-toggle="modal" data-target="#callback_modal">Заказать звонок <img src="./assets/icons/btn-arrow.svg" alt="">
                     </button>
 
-                    <a href="#" class="arrow-btn">
+                    <a href="#" class="arrow-btn" data-toggle="modal" data-target="#request_modal">
                     <span class="circle">
                         <img src="./assets/icons/btn-arrow.svg" alt="">
                     </span>
@@ -601,7 +601,7 @@
                     <p>© 2013 – 2018 ООО «Евразия Эксперт» <a href="#">Политика конфиденциальности</a></p>
                 </div>
                 <div class="col-12 col-md-3 col-xl-auto ml-xl-auto created">
-                    Создание и продвижение <a href="#"><img src="./assets/da-logo.svg" alt=""></a>
+                    Создание и продвижение <a href="https://digitalaround.ru/"><img src="./assets/da-logo.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -892,7 +892,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="modal-title">
-                                Записаться <br>на осмотр авто!
+                                Записаться<br>на осмотр авто!
                             </div>
                         </div>
                     </div>
@@ -914,6 +914,41 @@
         </div>
     </div>
 </div>
+<div class="modal fade eu-modal " tabindex="-1" role="dialog" id="callback_modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="./assets/icons/modal-cross.svg" alt="">
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="request">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="modal-title">
+                                Заказать<br>обратный звонок!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-input">
+                        <label for="reg-mail">Имя</label>
+                        <input type="text" id="callback_name">
+                    </div>
+                    <div class="form-input">
+                        <label for="reg-password">Номер телефона</label>
+                        <input type="text" id="callback_phone">
+                    </div>
+                    <button class="simple-btn --primary" id="callback_success">Заказать <img
+                            src="./assets/icons/btn-arrow.svg" alt="">
+                    </button>
+                    <p class="agreement">Отправляя данные формы, вы принимаете условия
+                        <a href="#">Пользовательского соглашения</a> «Евразия Эксперт»</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="modal fade eu-modal " tabindex="-1" role="dialog" id="request_success_modal">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content ">
@@ -926,7 +961,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="modal-title">
-                            Благодарим! <br>Ваша заявка принята
+                            Благодарим!<br>Ваша заявка принята
                         </div>
                     </div>
                 </div>
