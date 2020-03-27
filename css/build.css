@@ -253,6 +253,70 @@ a:focus, button:focus, input:focus {
   .form-verify .time-counter {
     margin-bottom: 10px; }
 
+.form-select {
+  display: block;
+  margin-bottom: 15px; }
+  .form-select.groupped {
+    display: flex; }
+    .form-select.groupped .select {
+      width: 50%; }
+    .form-select.groupped .select:first-of-type {
+      border-radius: 4px 0 0 4px; }
+      .form-select.groupped .select:first-of-type.open {
+        border-radius: 4px 0 0 0; }
+    .form-select.groupped .select:last-of-type {
+      border-radius: 0 4px 4px 0; }
+      .form-select.groupped .select:last-of-type.open {
+        border-radius: 0 4px 0 0; }
+  .form-select .select {
+    width: 100%;
+    border: 1px solid rgba(95, 95, 95, 0.2);
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 4px; }
+    .form-select .select:after {
+      content: '';
+      background: url("../assets/icons/chevron_down.svg");
+      background-size: cover;
+      border: 0;
+      width: 24px;
+      height: 24px;
+      transform: rotate(0);
+      right: 9px;
+      margin-top: -12px;
+      transition: all 0s; }
+    .form-select .select.open {
+      border: 1px solid rgba(95, 95, 95, 0.6);
+      border-radius: 4px 4px 0 0; }
+      .form-select .select.open .current {
+        color: rgba(95, 95, 95, 0.91);
+        opacity: .8; }
+      .form-select .select.open:after {
+        transform-origin: center;
+        transform: rotate(180deg); }
+    .form-select .select .list {
+      width: calc(100% + 2px);
+      left: -1px;
+      border-radius: 0 0 4px 4px;
+      margin-top: 1px;
+      max-height: 240px;
+      overflow-y: scroll;
+      box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1); }
+      .form-select .select .list .option {
+        padding-left: 20px; }
+        .form-select .select .list .option.selected {
+          font-weight: normal;
+          background: #F4F8FA; }
+        .form-select .select .list .option:hover {
+          background: #F4F8FA; }
+      .form-select .select .list::-webkit-scrollbar {
+        width: 3px; }
+      .form-select .select .list::-webkit-scrollbar-thumb {
+        background-color: rgba(95, 95, 95, 0.6);
+        width: 3px; }
+
 .simple-btn {
   border-radius: 27px;
   height: 55px;
@@ -397,9 +461,9 @@ body {
         left: 15px;
         top: 0;
         width: 170px;
-        height: 125px;
+        height: 141px;
         padding-left: 29px;
-        padding-top: 32px;
+        padding-top: 35px;
         transition: all .2s;
         box-shadow: 0px 5px 15px rgba(95, 95, 95, 0.05);
         z-index: 90; }
@@ -1913,3 +1977,120 @@ body {
   .eu-modal .request .simple-btn {
     margin-top: 7px;
     margin-bottom: 29px; }
+
+.breadcrumbs {
+  margin-bottom: 10px; }
+  .breadcrumbs__item {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #4087BE;
+    margin-right: 5px; }
+    .breadcrumbs__item:hover {
+      text-decoration: none;
+      color: #FF6F00; }
+    .breadcrumbs__item:after {
+      content: '/';
+      margin-left: 5px;
+      color: #5F5F5F; }
+    .breadcrumbs__item:last-of-type {
+      color: #5F5F5F;
+      pointer-events: none;
+      letter-spacing: .4px; }
+      .breadcrumbs__item:last-of-type:after {
+        content: ''; }
+    @media (min-width: 800px) {
+      .breadcrumbs__item {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.9px;
+        margin-right: 6px; }
+        .breadcrumbs__item:after {
+          margin-left: 10px; }
+        .breadcrumbs__item:last-of-type {
+          letter-spacing: 0; } }
+
+.catalog {
+  padding-top: 12px;
+  background: white; }
+  .catalog .heading-1 {
+    margin-bottom: 29px; }
+
+.catalog__filters {
+  background: #F4F8FA;
+  margin: 0 -20px;
+  padding: 32px 20px 15px; }
+  .catalog__filters__row {
+    display: flex;
+    flex-wrap: wrap; }
+  .catalog__filters__actions {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4px; }
+    .catalog__filters__actions .link {
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center; }
+      .catalog__filters__actions .link[aria-expanded='true'] .show-text {
+        display: none; }
+      .catalog__filters__actions .link[aria-expanded='true'] .hide-text {
+        display: inline; }
+      .catalog__filters__actions .link[aria-expanded='true'] svg {
+        transform: scale(1, -1);
+        margin-top: 4px; }
+      .catalog__filters__actions .link[aria-expanded='false'] .show-text {
+        display: inline; }
+      .catalog__filters__actions .link[aria-expanded='false'] .hide-text {
+        display: none; }
+      .catalog__filters__actions .link svg {
+        margin-left: 4px; }
+      .catalog__filters__actions .link:hover svg path {
+        fill: #FF6F00; }
+    .catalog__filters__actions .simple-btn {
+      height: 50px;
+      width: 100%;
+      line-height: 46px;
+      margin-bottom: 23px; }
+      .catalog__filters__actions .simple-btn img {
+        margin-top: -3px; }
+  .catalog__filters .link.w-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: -5px; }
+    .catalog__filters .link.w-icon .icon {
+      width: 15.9px;
+      height: 16px;
+      margin-right: 13px; }
+  .catalog__filters .form-select {
+    width: 100%;
+    height: 50px; }
+  .catalog__filters__tabs {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 -20px;
+    padding: 0 20px;
+    overflow-y: scroll;
+    max-width: calc(100% + 40px);
+    -ms-overflow-style: none; }
+    .catalog__filters__tabs::-webkit-scrollbar {
+      display: none; }
+    .catalog__filters__tabs .item {
+      display: inline-flex;
+      margin-right: 10px;
+      font-size: 13px;
+      line-height: 46px;
+      font-weight: bold;
+      color: rgba(95, 95, 95, 0.91);
+      white-space: nowrap;
+      border: 2px solid #F4F8FA;
+      box-sizing: border-box;
+      border-radius: 4px 4px 0px 0px;
+      padding: 3px 33px 0;
+      word-spacing: 2.1px;
+      letter-spacing: 0.2px; }
+      .catalog__filters__tabs .item img {
+        margin-right: 10px; }
+      .catalog__filters__tabs .item.--active {
+        background: #F4F8FA; }
+      .catalog__filters__tabs .item:last-of-type {
+        margin-right: 0; }

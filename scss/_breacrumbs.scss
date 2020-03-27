@@ -1,0 +1,43 @@
+.breadcrumbs{
+  margin-bottom: 10px;
+  &__item{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #4087BE;
+    margin-right: 5px;
+    &:hover{
+      text-decoration: none;
+      color: $primary;
+    }
+    &:after{
+      content: '/';
+      margin-left: 5px;
+      color: #5F5F5F;
+
+    }
+    &:last-of-type{
+      color: #5F5F5F;
+      pointer-events: none;
+      letter-spacing: .4px;
+      &:after{
+        content: '';
+      }
+
+    }
+
+    @media (min-width: 800px) {
+
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.9px;
+      margin-right: 6px;
+      &:after{
+        margin-left: 10px;
+      }
+      &:last-of-type{
+        letter-spacing: 0;
+      }
+    }
+  }
+}

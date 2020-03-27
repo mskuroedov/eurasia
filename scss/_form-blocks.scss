@@ -33,8 +33,9 @@
     box-sizing: border-box;
     border-radius: 4px;
     transition: all .2s;
-    &:focus{
-      border-color:rgba(95, 95, 95, 0.6);
+
+    &:focus {
+      border-color: rgba(95, 95, 95, 0.6);
     }
   }
 
@@ -122,9 +123,11 @@
     margin-right: 15px;
     margin-bottom: 0;
   }
-  .form-input{
+
+  .form-input {
     margin-bottom: 13px;
   }
+
   .button {
     &:disabled {
       opacity: .15;
@@ -146,15 +149,114 @@
     line-height: 50px;
     letter-spacing: 0.03em;
 
-    &:hover{
+    &:hover {
       background: #414141;
     }
+
     &:active {
       outline: none;
-        background: #353535;
+      background: #353535;
     }
   }
-  .time-counter{
+
+  .time-counter {
     margin-bottom: 10px;
+  }
+}
+
+.form-select {
+  display: block;
+  margin-bottom: 15px;
+
+  &.groupped {
+    display: flex;
+
+    .select {
+      width: 50%;
+    }
+
+    .select:first-of-type {
+
+      border-radius: 4px 0 0 4px;
+
+      &.open {
+        border-radius: 4px 0 0 0;
+      }
+    }
+
+    .select:last-of-type {
+
+      border-radius: 0 4px 4px 0;
+
+      &.open {
+        border-radius: 0 4px 0 0;
+      }
+    }
+  }
+
+  .select {
+    width: 100%;
+    border: 1px solid rgba(95, 95, 95, 0.2);
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 50px;
+    height: 50px;
+    border-radius: 4px;
+
+    &:after {
+      content: '';
+      background: url("../assets/icons/chevron_down.svg");
+      background-size: cover;
+      border: 0;
+      width: 24px;
+      height: 24px;
+      transform: rotate(0);
+      right: 9px;
+      margin-top: -12px;
+      transition: all 0s;
+    }
+
+    &.open {
+      border: 1px solid rgba(95, 95, 95, 0.6);
+      border-radius: 4px 4px 0 0;
+      .current{
+        color: $gray;
+        opacity: .8;
+      }
+      &:after{
+        transform-origin: center;
+        transform: rotate(180deg);
+      }
+    }
+
+    .list {
+      width: calc(100% + 2px);
+      left: -1px;
+      border-radius:0 0 4px 4px ;
+      margin-top: 1px;
+      max-height: 240px;
+      overflow-y: scroll;
+      box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.1);
+
+      .option {
+        padding-left: 20px;
+
+        &.selected {
+          font-weight: normal;
+          background: $secondary;
+        }
+
+        &:hover {
+          background: $secondary;
+        }
+      }
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(95, 95, 95, 0.6);
+        width: 3px;
+      }
+    }
   }
 }

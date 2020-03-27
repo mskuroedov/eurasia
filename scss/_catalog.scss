@@ -1,0 +1,136 @@
+.catalog {
+  padding-top: 12px;
+  background: white;
+
+  .heading-1 {
+    margin-bottom: 29px;
+  }
+}
+
+.catalog__filters {
+  background: $secondary;
+  margin: 0 -20px;
+  padding: 32px 20px 15px;
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4px;
+
+    .link {
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+
+      &[aria-expanded='true'] {
+        .show-text {
+          display: none;
+        }
+
+        .hide-text {
+          display: inline;
+        }
+
+        svg {
+          transform: scale(1, -1);
+          margin-top: 4px;
+        }
+      }
+
+      &[aria-expanded='false'] {
+        .show-text {
+          display: inline;
+        }
+
+        .hide-text {
+          display: none;
+        }
+      }
+
+      svg {
+        margin-left: 4px;
+      }
+      &:hover{
+        svg path{
+          fill:$primary;
+        }
+      }
+    }
+
+    .simple-btn {
+      height: 50px;
+      width: 100%;
+      line-height: 46px;
+      margin-bottom: 23px;
+      img{
+        margin-top: -3px;
+      }
+    }
+  }
+
+  .link.w-icon {
+    display: inline-flex;
+    align-items: center;
+    margin-left: -5px;
+
+    .icon {
+      width: 15.9px;
+      height: 16px;
+      margin-right: 13px;
+    }
+  }
+
+  .form-select {
+    width: 100%;
+    height: 50px;
+  }
+
+  &__tabs {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 -20px;
+    padding: 0 20px;
+    overflow-y: scroll;
+    max-width: calc(100% + 40px);
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .item {
+      display: inline-flex;
+      margin-right: 10px;
+      font-size: 13px;
+      line-height: 46px;
+      font-weight: bold;
+      color: rgba(95, 95, 95, 0.91);
+      white-space: nowrap;
+      border: 2px solid #F4F8FA;
+      box-sizing: border-box;
+      border-radius: 4px 4px 0px 0px;
+      padding: 3px 33px 0;
+      word-spacing: 2.1px;
+      letter-spacing: 0.2px;
+
+      img {
+        margin-right: 10px;
+
+      }
+
+      &.--active {
+        background: $secondary;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+}

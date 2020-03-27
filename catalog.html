@@ -75,7 +75,7 @@
                     <div class="col-auto ml-auto">
                         <div class="phone-block">
                             <a class="tel" href="tel:+7 (3812) 99-18-31">+7 (3812) 99-18-31</a>
-                            <a class="link"data-toggle="modal" data-target="#request_modal">Заказать звонок</a>
+                            <a class="link" href="#">Заказать звонок</a>
                         </div>
                         <div class="user-block">
                             <a data-target="#auth_modal" data-toggle="modal">
@@ -133,7 +133,7 @@
                     </div>
                     <div class="main">
                         <div class="text">ул. 31-рабочая, 1 А, г. Омск</div>
-                        <div class="schedule">Работаем каждый день<br>с 08:30 до 20:00 без перерывов</div>
+                        <div class="schedule">Работаем каждый день <br> с 08:30 до 20:00 без перерывов</div>
                     </div>
                 </div>
                 <a href="tel:+7 (3812) 99-18-31" class="footer__phone">
@@ -212,43 +212,201 @@
         </div>
     </div>
 </div>
-<div class="l1">
+<div class="catalog">
     <div class="container">
-        <div class="l1__text">
-            <h1 class="heading-1">Сэкономьте время <br>и финансы, купив авто <br>у эксперта</h1>
-            <button class="simple-btn --primary">Выбрать свое авто <img
-                    src="./assets/icons/btn-arrow.svg" alt="">
-            </button>
-        </div>
-        <div class="l1__people">
-            <img src="./assets/landing-promo-img.png" alt="">
-        </div>
-        <div class="l1__search">
-            <div class="l1__search__block">
-                <div class="text">Продажа автомобилей в Омске</div>
-                <div class="tab">
-                    <span class="num">469</span><span class="text">предложений</span>
-                </div>
-                <div class="search">
-                    <input type="text" placeholder="Найти будущее авто">
-                    <img src="./assets/icons/search.svg" alt="">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumbs">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <a href="" class="breadcrumbs__item">Каталог автомобилей</a>
                 </div>
             </div>
+            <div class="col-12">
+                <h1 class="heading-1">Каталог автомобилей</h1>
+            </div>
+            <div class="col-12">
+                <div class="catalog__filters__tabs">
+                    <div class="item --active"><img src="./assets/icons/add.svg" alt=""> ФИЛЬТР</div>
+                    <div class="item">HONDA, CIVIK</div>
+                    <a href="#" class="link w-icon ml-auto d-none d-md-block d-xl-none">
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M6.29483 0.0540771C2.75204 0.490593 0 3.51894 0 7.17783C0 11.1356 3.22001 14.3556 7.17777 14.3556C8.66357 14.3556 10.0795 13.9075 11.29 13.0567L13.7755 15.7129C13.9537 15.898 14.1934 16.0001 14.4502 16.0001C14.6933 16.0001 14.924 15.9074 15.099 15.7388C15.471 15.3809 15.4829 14.7873 15.1249 14.415L12.6716 11.7922C13.7595 10.499 14.3555 8.87178 14.3555 7.17783C14.3555 6.96893 14.3466 6.7621 14.329 6.55768C14.2864 6.60009 14.2438 6.64187 14.2014 6.68299C13.7011 7.16793 13.1859 7.59421 12.7467 7.91529C12.3549 10.5472 9.86262 12.8001 7.17777 12.8001C4.25236 12.8001 1.6 10.1032 1.6 7.17783C1.6 4.8086 3.3397 2.61846 5.55519 1.87132C5.66096 1.21601 5.91587 0.587316 6.29483 0.0540771Z"
+      fill="#4087BE"/>
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M11 2.50121C10.4996 2.50121 10.0321 2.25165 9.75365 1.83584C9.58059 1.57742 9.37672 1.5 9.22995 1.5C9.10015 1.5 8.93863 1.55675 8.78333 1.73471C8.62542 1.91566 8.5 2.20131 8.5 2.55545C8.5 2.60325 8.54031 2.83594 8.82266 3.26919C9.08426 3.67059 9.46275 4.10557 9.8887 4.52004C10.2797 4.90052 10.679 5.23304 11.0031 5.47363C11.3262 5.23542 11.724 4.90622 12.1134 4.52878C12.5384 4.11687 12.9157 3.68386 13.1764 3.28279C13.4564 2.852 13.5 2.61411 13.5 2.55545V2.55542C13.5 2.2013 13.3746 1.91567 13.2167 1.73471C13.0614 1.55675 12.8998 1.5 12.7701 1.5C12.6233 1.5 12.4194 1.57739 12.2463 1.83588C11.9679 2.25167 11.5004 2.50122 11 2.50121ZM15 2.55545C15 1.1441 14.0016 0 12.7701 0C12.57 0 12.376 0.0302089 12.1916 0.0868618C11.711 0.234425 11.2945 0.561394 11 1.00121C10.7055 0.561392 10.289 0.234424 9.80845 0.086861C9.62397 0.030209 9.43004 0 9.22995 0C7.99839 0 7 1.1441 7 2.55545C7 4.4684 10.5803 7.2 11 7.2C11.4197 7.2 15 4.49713 15 2.55545Z"
+      fill="#4087BE"/>
+</svg>
+</span>Сохранить поиск</a>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="catalog__filters">
+                    <div class="catalog__filters__row">
+
+                        <div class="form-select">
+                            <select name="mark" class="select">
+                                <option>Марка</option>
+                                <option value="Toyota">Toyota</option>
+                                <option value="Audi">Audi</option>
+                                <option value="BMW">BMW</option>
+                            </select>
+                        </div>
+                        <div class="form-select">
+                            <select name="model" class="select">
+                                <option>Модель</option>
+                                <option value="1">Audi</option>
+                                <option value="2">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                                <option value="">BMW</option>
+                            </select>
+                        </div>
+                        <a href="#" class="link w-icon d-none d-lg-block d-xl-none">
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M6.29483 0.0540771C2.75204 0.490593 0 3.51894 0 7.17783C0 11.1356 3.22001 14.3556 7.17777 14.3556C8.66357 14.3556 10.0795 13.9075 11.29 13.0567L13.7755 15.7129C13.9537 15.898 14.1934 16.0001 14.4502 16.0001C14.6933 16.0001 14.924 15.9074 15.099 15.7388C15.471 15.3809 15.4829 14.7873 15.1249 14.415L12.6716 11.7922C13.7595 10.499 14.3555 8.87178 14.3555 7.17783C14.3555 6.96893 14.3466 6.7621 14.329 6.55768C14.2864 6.60009 14.2438 6.64187 14.2014 6.68299C13.7011 7.16793 13.1859 7.59421 12.7467 7.91529C12.3549 10.5472 9.86262 12.8001 7.17777 12.8001C4.25236 12.8001 1.6 10.1032 1.6 7.17783C1.6 4.8086 3.3397 2.61846 5.55519 1.87132C5.66096 1.21601 5.91587 0.587316 6.29483 0.0540771Z"
+      fill="#4087BE"/>
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M11 2.50121C10.4996 2.50121 10.0321 2.25165 9.75365 1.83584C9.58059 1.57742 9.37672 1.5 9.22995 1.5C9.10015 1.5 8.93863 1.55675 8.78333 1.73471C8.62542 1.91566 8.5 2.20131 8.5 2.55545C8.5 2.60325 8.54031 2.83594 8.82266 3.26919C9.08426 3.67059 9.46275 4.10557 9.8887 4.52004C10.2797 4.90052 10.679 5.23304 11.0031 5.47363C11.3262 5.23542 11.724 4.90622 12.1134 4.52878C12.5384 4.11687 12.9157 3.68386 13.1764 3.28279C13.4564 2.852 13.5 2.61411 13.5 2.55545V2.55542C13.5 2.2013 13.3746 1.91567 13.2167 1.73471C13.0614 1.55675 12.8998 1.5 12.7701 1.5C12.6233 1.5 12.4194 1.57739 12.2463 1.83588C11.9679 2.25167 11.5004 2.50122 11 2.50121ZM15 2.55545C15 1.1441 14.0016 0 12.7701 0C12.57 0 12.376 0.0302089 12.1916 0.0868618C11.711 0.234425 11.2945 0.561394 11 1.00121C10.7055 0.561392 10.289 0.234424 9.80845 0.086861C9.62397 0.030209 9.43004 0 9.22995 0C7.99839 0 7 1.1441 7 2.55545C7 4.4684 10.5803 7.2 11 7.2C11.4197 7.2 15 4.49713 15 2.55545Z"
+      fill="#4087BE"/>
+</svg>
+</span>Сохранить поиск</a>
+                        <div class="form-select groupped">
+                            <select name="model" class="select">
+                                <option value="">от 2014</option>
+                            </select>
+                            <select name="model" class="select">
+                                <option value="">до 2018</option>
+                            </select>
+                        </div>
+                        <div class="form-select groupped">
+                            <select name="model" class="select">
+                                <option value="Toyota">от 30 000</option>
+                            </select>
+                            <select name="model" class="select">
+                                <option value="Toyota">до 1 330 000</option>
+                                <option value="Audi">Audi</option>
+                                <option value="BMW">BMW</option>
+                            </select>
+                        </div>
+                        <div id="more-filters" class="collapse w-100">
+                            <div class="form-select groupped">
+                                <select name="model" class="select">
+                                    <option value="Toyota">от 30 000</option>
+                                </select>
+                                <select name="model" class="select">
+                                    <option value="Toyota">до 1 330 000</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="BMW">BMW</option>
+                                </select>
+                            </div>
+                            <div class="form-select w-100">
+                                <select name="mark" class="select">
+                                    <option>Бензин</option>
+                                    <option value="Toyota">Toyota</option>
+                                    <option value="Audi">Audi</option>
+                                    <option value="BMW">BMW</option>
+                                </select>
+                            </div>
+                            <div class="form-select w-100">
+                                <select name="model" class="select">
+                                    <option>Коробка</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                </select>
+                            </div>
+                            <div class="form-select w-100">
+                                <select name="model" class="select">
+                                    <option>Привод</option>
+                                    <option value="1">Audi</option>
+                                    <option value="2">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                    <option value="">BMW</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog__filters__actions">
+                        <a href="#more-filters" class="link mr-auto" aria-expanded="false" data-toggle="collapse">
+                            <span class="hide-text">Свернуть</span>
+                            <span class="show-text">Расширенный поиск</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M12.45 8L9 11.45L5.55 8L4.5 9.05L9 13.55L13.5 9.05L12.45 8Z" fill="#4087BE"/>
+                            </svg>
+
+                        </a>
+                        <a href="" class="link">
+                            Сбросить <span class="d-none d-md-inline">фильтр</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd"
+                                      d="M13 7.8L12.2 7L9 10.2L5.8 7L5 7.8L8.2 11L5 14.2L5.8 15L9 11.8L12.2 15L13 14.2L9.8 11L13 7.8Z"
+                                      fill="#4087BE"/>
+                            </svg>
+                        </a>
+                        <button class="simple-btn --black">
+                            Показать предложения <img
+                                src="./assets/icons/btn-arrow.svg" alt="">
+                        </button>
+                        <a href="#" class="link w-icon d-md-none">
+                        <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M6.29483 0.0540771C2.75204 0.490593 0 3.51894 0 7.17783C0 11.1356 3.22001 14.3556 7.17777 14.3556C8.66357 14.3556 10.0795 13.9075 11.29 13.0567L13.7755 15.7129C13.9537 15.898 14.1934 16.0001 14.4502 16.0001C14.6933 16.0001 14.924 15.9074 15.099 15.7388C15.471 15.3809 15.4829 14.7873 15.1249 14.415L12.6716 11.7922C13.7595 10.499 14.3555 8.87178 14.3555 7.17783C14.3555 6.96893 14.3466 6.7621 14.329 6.55768C14.2864 6.60009 14.2438 6.64187 14.2014 6.68299C13.7011 7.16793 13.1859 7.59421 12.7467 7.91529C12.3549 10.5472 9.86262 12.8001 7.17777 12.8001C4.25236 12.8001 1.6 10.1032 1.6 7.17783C1.6 4.8086 3.3397 2.61846 5.55519 1.87132C5.66096 1.21601 5.91587 0.587316 6.29483 0.0540771Z"
+      fill="#4087BE"/>
+<path fill-rule="evenodd" clip-rule="evenodd"
+      d="M11 2.50121C10.4996 2.50121 10.0321 2.25165 9.75365 1.83584C9.58059 1.57742 9.37672 1.5 9.22995 1.5C9.10015 1.5 8.93863 1.55675 8.78333 1.73471C8.62542 1.91566 8.5 2.20131 8.5 2.55545C8.5 2.60325 8.54031 2.83594 8.82266 3.26919C9.08426 3.67059 9.46275 4.10557 9.8887 4.52004C10.2797 4.90052 10.679 5.23304 11.0031 5.47363C11.3262 5.23542 11.724 4.90622 12.1134 4.52878C12.5384 4.11687 12.9157 3.68386 13.1764 3.28279C13.4564 2.852 13.5 2.61411 13.5 2.55545V2.55542C13.5 2.2013 13.3746 1.91567 13.2167 1.73471C13.0614 1.55675 12.8998 1.5 12.7701 1.5C12.6233 1.5 12.4194 1.57739 12.2463 1.83588C11.9679 2.25167 11.5004 2.50122 11 2.50121ZM15 2.55545C15 1.1441 14.0016 0 12.7701 0C12.57 0 12.376 0.0302089 12.1916 0.0868618C11.711 0.234425 11.2945 0.561394 11 1.00121C10.7055 0.561392 10.289 0.234424 9.80845 0.086861C9.62397 0.030209 9.43004 0 9.22995 0C7.99839 0 7 1.1441 7 2.55545C7 4.4684 10.5803 7.2 11 7.2C11.4197 7.2 15 4.49713 15 2.55545Z"
+      fill="#4087BE"/>
+</svg>
+</span>Сохранить поиск</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="l1__stats">
-            <div class="item">
-                <div class="heading-1">17 469</div>
-                <div class="text">Авто <br>продано</div>
-            </div>
-            <div class="item">
-                <div class="heading-1">8 469</div>
-                <div class="text">Авто реализовано <br>в Trade-in</div>
-            </div>
-            <div class="item">
-                <div class="heading-1">21 569</div>
-                <div class="text">Довольных <br>клиентов</div>
-            </div>
-        </div>
+
     </div>
 </div>
 <div class="l2">
@@ -328,356 +486,8 @@
         </div>
     </div>
 </div>
-<div class="l-desktop" data-animate data-animation-classes="activated">
-    <div class="container">
-        <div class="row">
-            <div class="col-4">
-                <div class="items text-right">
-                    <div class="item">
-                        <div class="title">Технический осмотр уже сделан</div>
-                        <div class="text">Все авто проверены и на ходу</div>
-                    </div>
-                    <div class="item pr">
-                        <div class="title">Автомобили в полностью прозрачной историей</div>
-                        <div class="text">Никаких юридических ограничений на всех авто</div>
-                    </div>
-                    <div class="item">
-                        <div class="title">Комфортный осмотр авто в салоне</div>
-                        <div class="text">Самый большой выбор авто в Омске</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="animated__car">
-                    <img class="car-outlined" src="./assets/car_animated/car_outlined.png" alt="">
-                    <img class="car" src="./assets/car_animated/car.png" alt="">
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="items">
-                    <div class="item">
-                        <div class="title">Технический осмотр уже сделан</div>
-                        <div class="text">Все авто проверены и на ходу</div>
-                    </div>
-                    <div class="item pl">
-                        <div class="title">Автомобили в полностью прозрачной историей</div>
-                        <div class="text">Никаких юридических ограничений на всех авто</div>
-                    </div>
-                    <div class="item">
-                        <div class="title">Комфортный осмотр авто в салоне</div>
-                        <div class="text">Самый большой выбор авто в Омске</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="l3" animate-timeline data-animation-classes="activated">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-8 col-xl-6">
-                <h2 class="heading-1 --after-line">Продать авто очень просто и всего <span class="color-primary">за 55 минут</span>
-                </h2>
-            </div>
-        </div>
-        <div class="row steps-row mx-md-0">
-            <div class="step-item timeline-1">
-                <div class="image">
-                    <img src="./assets/l3-1.png" alt="">
-                </div>
-                <div class="time"><img src="./assets/icons/timer.svg" alt="">10 минут</div>
-                <div class="title">Онлайн-оценка</div>
-                <div class="text">Оцените свое авто за 5 минут прямо на сайте или запишитесь на осмотр авто в салоне
-                </div>
-            </div>
-            <div class="step-item timeline-2">
-                <div class="image">
-                    <img src="./assets/l3-2.png" alt="">
-                </div>
-                <div class="time"><img src="./assets/icons/timer.svg" alt="">25 минут</div>
-                <div class="title">Осмотр в салоне</div>
-                <div class="text">Сотрудники Евразия эксперт сделают полный осмотр вашего авто и сделают конечную оценку
-                    стоимости
-                </div>
 
-            </div>
-            <div class="step-item timeline-3">
-                <div class="image">
-                    <img src="./assets/l3-3.png" alt="">
-                </div>
-                <div class="time"><img src="./assets/icons/timer.svg" alt="">20 минут</div>
-                <div class="title">Подготовка документов</div>
-                <div class="text">Специалисты Евразии Эксперт подготовят все необходимые документы, пока вы пьете кофе
-                </div>
 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <button class="simple-btn --primary"><span class="d-none d-xl-inline">перейти </span> К быстрой оценке
-                    <img src="./assets/icons/btn-arrow.svg" alt="">
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="l4">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-7 pr-md-5 col-xl-6">
-                <h2 class="heading-1 --after-line">Обменять авто <br>
-                    в Trade-in
-                </h2>
-                <p class="common-text">Обмен авто — быстрый и самый удобный способ взаимозачета, при котором вы сдаете
-                    нам свой поддержанный автомобиль и уезжаете на любом понравившемся вам автомобиле со склада «Евразия
-                    Эксперт»</p>
-                <div class="img">
-                    <img src="./assets/l4-img.png" alt="" class="img-fluid">
-                </div>
-                <button class="simple-btn --primary d-md-none">оставить заявку на Trade-In <img
-                        src="./assets/icons/btn-arrow.svg"
-                        alt="">
-                </button>
-            </div>
-            <div class="col-md-5 d-none d-md-block col-xl-6">
-                <div class="l4__about">
-                    <div class="about-item">
-                        <div class="icon">
-                            <img src="./assets/icons/l4-1.svg" alt="">
-                        </div>
-                        <div class="text">Без ограничений</div>
-                        <div class="description d-none d-xl-block">Для нас не имеет значение марка автомобиля, модель,
-                            руль или пробег вашего авто. Компания «Евразия Эксперт» принимает любые авто по программе
-                            Trade-in.
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="icon">
-                            <img src="./assets/icons/l4-2.svg" alt="">
-                        </div>
-                        <div class="text">Удобно и быстро</div>
-                        <div class="description d-none d-xl-block">Весь процесс от оценки автомобиля до получения нового
-                            сопровождает ваш персональный менежер, что экономит ваше время и делает процесс обмена
-                            простым.
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="icon">
-                            <img src="./assets/icons/l4-3.svg" alt="">
-                        </div>
-                        <div class="text">Любые варианты обмена</div>
-                        <div class="description d-none d-xl-block">Обмен вашего автомобиля возможен на любой автомобиль
-                            с пробегом из наличия «Евразия Эксперт» или на новый автомобиль от официальных дилеров,
-                            входящих в холдинг «Евразия Моторс».
-                        </div>
-                        <div class="description d-none d-xl-block"><br>Renault, Peugeot, Nissan, Datsun, Mitsubishi,
-                            Hyndai, Volkswagen, Ford, Citroen
-                        </div>
-                    </div>
-                    <button class="simple-btn --primary">об услуге Traid-in <img src="./assets/icons/btn-arrow.svg"
-                                                                                 alt="">
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="l5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4">
-                <h2 class="heading-1 --after-line">Отзывы клиентов
-                </h2>
-                <p class="common-text">Мы рады, что вы обратили внимание на нашу компанию. Мы хотим улучшаться и быть
-                    лучшими. Ваше мнение для нас бесценно, вне зависимости от того, положительное оно или
-                    отрицательное.</p>
-                <button class="simple-btn --primary d-none d-md-block">оставить отзыв <img
-                        src="./assets/icons/btn-arrow.svg"
-                        alt="">
-                </button>
-            </div>
-            <div class="col-12 l5__slider ">
-                <div class="feedback-slider owl-theme-default owl-carousel">
-                    <div>
-                        <div class="feedback-item">
-                            <div class="album">
-                                <img src="./assets/fb-album-1.png" alt="">
-                            </div>
-                            <div class="avatar">
-                                <img src="./assets/feedback/avatar-1.png" alt="">
-                            </div>
-                            <div class="main">
-                                <div class="common-text">Хочу поблагодарить руководство «Евразия Эксперт» за подбор
-                                    квалифицированнх менеджеров, а именно Михалькова Дмитрия Викторовича, в народе
-                                    говорят, человек занимает свое место. Учтив, имеющий донести информацию. Умничка!
-                                </div>
-                                <div class="name">Анатолий Иосифович</div>
-                                <div class="date">19 июня 2017</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="feedback-item">
-                            <div class="album">
-                                <img src="./assets/fb-album-1.png" alt="">
-                            </div>
-                            <div class="avatar">
-                                <img src="./assets/feedback/avatar-2.png" alt="">
-                            </div>
-                            <div class="main">
-                                <div class="common-text">2
-                                </div>
-                                <div class="name">Анатолий Иосифович</div>
-                                <div class="date">19 июня 2017</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="feedback-item">
-                            <div class="album">
-                                <img src="./assets/fb-album-1.png" alt="">
-                            </div>
-                            <div class="avatar">
-                                <img src="./assets/feedback/avatar-1.png" alt="">
-                            </div>
-                            <div class="main">
-                                <div class="common-text">3Хочу поблагодарить руководство «Евразия Эксперт» за подбор
-                                    квалифицированнх менеджеров, а именно Михалькова Дмитрия Викторовича, в народе
-                                    говорят, человек занимает свое место. Учтив, имеющий донести информацию. Умничка!
-                                </div>
-                                <div class="name">Анатолий Иосифович</div>
-                                <div class="date">19 июня 2017</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="feedback-item">
-                            <div class="album">
-                                <img src="./assets/fb-album-1.png" alt="">
-                            </div>
-                            <div class="avatar">
-                                <img src="./assets/feedback/avatar-1.png" alt="">
-                            </div>
-                            <div class="main">
-                                <div class="common-text">Хочу поблагодарить руководство «Евразия Эксперт» за подбор
-                                    квалифицированнх менеджеров, а именно Михалькова Дмитрия Викторовича, в народе
-                                    говорят, человек занимает свое место. Учтив, имеющий донести информацию. Умничка!
-                                </div>
-                                <div class="name">Анатолий Иосифович</div>
-                                <div class="date">19 июня 2017</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="feedback-item">
-                            <div class="album">
-                                <img src="./assets/fb-album-1.png" alt="">
-                            </div>
-                            <div class="avatar">
-                                <img src="./assets/feedback/avatar-1.png" alt="">
-                            </div>
-                            <div class="main">
-                                <div class="common-text">Хочу поблагодарить руководство «Евразия Эксперт» за подбор
-                                    квалифицированнх менеджеров, а именно Михалькова Дмитрия Викторовича, в народе
-                                    говорят, человек занимает свое место. Учтив, имеющий донести информацию. Умничка!
-                                </div>
-                                <div class="name">Анатолий Иосифович</div>
-                                <div class="date">19 июня 2017</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="feedback-item">
-                            <div class="album">
-                                <img src="./assets/fb-album-1.png" alt="">
-                            </div>
-                            <div class="avatar">
-                                <img src="./assets/feedback/avatar-1.png" alt="">
-                            </div>
-                            <div class="main">
-                                <div class="common-text">Хочу поблагодарить руководство «Евразия Эксперт» за подбор
-                                    квалифицированнх менеджеров, а именно Михалькова Дмитрия Викторовича, в народе
-                                    говорят, человек занимает свое место. Учтив, имеющий донести информацию. Умничка!
-                                </div>
-                                <div class="name">Анатолий Иосифович</div>
-                                <div class="date">19 июня 2017</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 d-md-none">
-                <button class="simple-btn --primary">Оставить отзыв <img src="./assets/icons/btn-arrow.svg" alt="">
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="l6">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <h3 class="heading-1 --after-line">Новости<br>«Евразии Эксперт» </h3>
-            </div>
-            <div class="col-md-auto d-none d-xl-block ml-auto">
-                <a href="#" class="arrow-btn">
-                    <span class="circle">
-                        <img src="./assets/icons/btn-arrow.svg" alt="">
-                    </span>
-                    <span class="text">Смотреть все события</span>
-                </a>
-            </div>
-            <div class="col-12">
-                <div class="news-slider owl-carousel owl-default">
-                    <a href="#" class="news-item">
-                        <span class="album"><img src="./assets/news/1.png" alt=""></span>
-                        <span class="date">22 мая 2020</span>
-                        <span class="text">Без ограничений</span>
-                        <span class="description common-text">Суббота создана для того, чтобы встретиться с друзьями. Сегодня в «Евразии Эксперт» состоялась встреча с клиентами...</span>
-                    </a>
-                    <a href="#" class="news-item">
-                        <span class="album"><img src="./assets/news/1.png" alt=""></span>
-                        <span class="date">22 мая 2020</span>
-                        <span class="text">Изменения в регистрации</span>
-                        <span class="description common-text">Регион на госномерах снова привяжут к прописке владельца</span>
-                    </a>
-                    <a href="#" class="news-item">
-                        <span class="album"><img src="./assets/news/1.png" alt=""></span>
-                        <span class="date">22 мая 2020</span>
-                        <span class="text">Открыта вакансия в две длинные строки</span>
-                        <span class="description common-text">Открыта вакансия! Наша команда растет и нам требуются новые сотрудники!</span>
-                    </a>
-                    <a href="#" class="news-item">
-                        <span class="album"><img src="./assets/news/1.png" alt=""></span>
-                        <span class="date">22 мая 2020</span>
-                        <span class="text">Без ограничений</span>
-                        <span class="description common-text">Открыта вакансия! Наша команда растет и нам требуются новые сотрудники!</span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 d-md-none">
-                <a href="#" class="arrow-btn">
-                    <span class="circle">
-                        <img src="./assets/icons/btn-arrow.svg" alt="">
-                    </span>
-                    <span class="text">Смотреть все события</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="l7">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="widget-block"></div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="widget-block"></div>
-            </div>
-        </div>
-    </div>
-</div>
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -741,7 +551,7 @@
                     </div>
                     <div class="main">
                         <div class="text">ул. 31-рабочая, 1 А, г. Омск</div>
-                        <div class="schedule">Работаем каждый день<br>с 08:30 до 20:00 без перерывов</div>
+                        <div class="schedule">Работаем каждый день <br> с 08:30 до 20:00 без перерывов</div>
                     </div>
                 </div>
                 <a href="tel:+7 (3812) 99-18-31" class="footer__phone">
@@ -1082,7 +892,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="modal-title">
-                                Записаться<br>на осмотр авто!
+                                Записаться <br>на осмотр авто!
                             </div>
                         </div>
                     </div>
@@ -1116,7 +926,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="modal-title">
-                            Благодарим!<br>Ваша заявка принята
+                            Благодарим! <br>Ваша заявка принята
                         </div>
                     </div>
                 </div>
@@ -1161,9 +971,9 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/animate.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
 <script src="js/header.js"></script>
-<script src="js/landing.js"></script>
+<script src="js/catalog.js"></script>
 <script src="js/modals.js"></script>
 <script src="js/inputs.js"></script>
 </body>
