@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/lightslider.min.css">
-    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/select2.min.css"/>
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.min.css"/>-->
     <link rel="stylesheet" href="css/build.css">
 </head>
 <body>
@@ -246,16 +247,16 @@
                     <div class="catalog__filters__row">
 
                         <div class="form-select">
-                            <select name="mark" class="select">
-                                <option>Марка</option>
+                            <select name="mark" class="select" data-placeholder="Марка">
+                                <option></option>
                                 <option value="Toyota">Toyota</option>
                                 <option value="Audi">Audi</option>
                                 <option value="BMW">BMW</option>
                             </select>
                         </div>
                         <div class="form-select">
-                            <select name="model" class="select">
-                                <option>Модель</option>
+                            <select name="model" class="select" data-placeholder="Модель">
+                                <option></option>
                                 <option value="1">Audi</option>
                                 <option value="2">BMW</option>
                                 <option value="">BMW</option>
@@ -274,7 +275,8 @@
                                 <option value="">BMW</option>
                             </select>
                         </div>
-                        <a href="#" class="link w-icon d-none d-lg-block d-xl-none">
+                        <div class="form-select d-none d-xl-inline-flex">
+                            <a href="#" class="link w-icon ">
                         <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -285,39 +287,53 @@
       fill="#4087BE"/>
 </svg>
 </span>Сохранить поиск</a>
+                        </div>
                         <div class="form-select groupped">
-                            <select name="model" class="select">
-                                <option value="">от 2014</option>
+                            <select name="model" class="select" data-placeholder="Год от">
+                                <option></option>
+                                <option value="1">от 2014</option>
                             </select>
-                            <select name="model" class="select">
-                                <option value="">до 2018</option>
+                            <select name="model" class="select" data-placeholder="до ">
+                                <option></option>
+                                <option value="2">до 2018</option>
                             </select>
                         </div>
                         <div class="form-select groupped">
-                            <select name="model" class="select">
-                                <option value="Toyota">от 30 000</option>
+                            <select name="model" class="select" data-placeholder="Цена от, ₽">
+                                <option></option>
+                                <option value="1">от 30 000</option>
                             </select>
-                            <select name="model" class="select">
-                                <option value="Toyota">до 1 330 000</option>
-                                <option value="Audi">Audi</option>
-                                <option value="BMW">BMW</option>
+                            <select name="model" class="select" data-placeholder="до">
+                                <option></option>
+                                <option value="1">до 1 330 000</option>
+                            </select>
+                        </div>
+                        <div class="form-select groupped d-none d-xl-flex">
+                            <select name="model" class="select" data-placeholder="Объем от, л">
+                                <option></option>
+                                <option value="Toyota">от 1.4</option>
+                            </select>
+                            <select name="model" class="select" data-placeholder="до">
+                                <option></option>
+                                <option value="Toyota">1.6</option>
                             </select>
                         </div>
                         <div id="more-filters" class="collapse w-100">
                             <div>
                                 <div class="catalog__filters__row p-0">
-                                    <div class="form-select groupped">
-                                        <select name="model" class="select">
-                                            <option value="Toyota">от 30 000</option>
+                                    <div class="form-select groupped d-xl-none">
+                                        <select name="model" class="select" data-placeholder="Объем от, л">
+                                            <option></option>
+                                            <option value="Toyota">от 1.4</option>
                                         </select>
-                                        <select name="model" class="select">
-                                            <option value="Toyota">до 1 330 000</option>
-                                            <option value="Audi">Audi</option>
-                                            <option value="BMW">BMW</option>
+                                        <select name="model" class="select" data-placeholder="до">
+                                            <option></option>
+                                            <option value="Toyota">1.6</option>
                                         </select>
                                     </div>
                                     <div class="form-select ">
-                                        <select name="mark" class="select">
+                                        <select name="mark" class="select" data-placeholder="Тип двигателя">
+                                            <option></option>
                                             <option>Бензин</option>
                                             <option value="Toyota">Toyota</option>
                                             <option value="Audi">Audi</option>
@@ -325,45 +341,45 @@
                                         </select>
                                     </div>
                                     <div class="form-select ">
-                                        <select name="model" class="select">
-                                            <option>Коробка</option>
+                                        <select name="model" class="select" data-placeholder="Коробка">
+                                            <option></option>
                                             <option value="1">Audi</option>
                                             <option value="2">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
+                                            <option value="13">BMW</option>
+                                            <option value="12">BMW</option>
+                                            <option value="14">BMW</option>
+                                            <option value="15">BMW</option>
+                                            <option value="16">BMW</option>
+                                            <option value="17">BMW</option>
+                                            <option value="18">BMW</option>
+                                            <option value="19">BMW</option>
+                                            <option value="11">BMW</option>
+                                            <option value="123">BMW</option>
+                                            <option value="1123">BMW</option>
+                                            <option value="1asd">BMW</option>
+                                            <option value="1123">BMW</option>
+                                            <option value="1123">BMW</option>
                                         </select>
                                     </div>
                                     <div class="form-select ">
-                                        <select name="model" class="select">
-                                            <option>Привод</option>
+                                        <select name="model" class="select" data-placeholder="Привод">
+                                            <option></option>
                                             <option value="1">Audi</option>
                                             <option value="2">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
-                                            <option value="">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
+                                            <option value="1">BMW</option>
                                         </select>
                                     </div>
                                 </div>
@@ -410,19 +426,152 @@
 
             </div>
         </div>
-
     </div>
     <div class="catalog__search d-none d-md-block">
         <div class="container">
-            <div class="row">
-
+            <div class="catalog__search__row">
+                <div class="text">
+                    Всего <span class="skew"><span class="num">469</span></span> авто в Омске
+                </div>
+                <div class="form">
+                    <div class="icon">
+                        <img src="./assets/icons/catalog-search.svg" alt="">
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="Найти будущее авто">
+                        <div class="clear">
+                            <img src="./assets/icons/modal-cross.svg" alt="">
+                        </div>
+                        <div class="search-results">
+                            Ничего не найдено
+                        </div>
+                    </div>
+                    <button class="form-btn">Найти</button>
+                </div>
             </div>
         </div>
     </div>
-    <div class="catalog__links d-none d-md-block">
+    <div class="catalog__links  d-md-block">
         <div class="container">
-            <div class="row">
-
+            <div class="links__row">
+                <a href="#" class="link">
+                    <span class="name">Audi</span>
+                    <span class="dots"></span>
+                    <span class="num">235</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">BMW</span>
+                    <span class="dots"></span>
+                    <span class="num">95</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Chevrolet</span>
+                    <span class="dots"></span>
+                    <span class="num">649</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Geely</span>
+                    <span class="dots"></span>
+                    <span class="num">65</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Ford</span>
+                    <span class="dots"></span>
+                    <span class="num">49</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Honda</span>
+                    <span class="dots"></span>
+                    <span class="num">53</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Hyundai</span>
+                    <span class="dots"></span>
+                    <span class="num">21</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Kia</span>
+                    <span class="dots"></span>
+                    <span class="num">8</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Lexus</span>
+                    <span class="dots"></span>
+                    <span class="num">21</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Mazda</span>
+                    <span class="dots"></span>
+                    <span class="num">3</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Mercedes-Benz</span>
+                    <span class="dots"></span>
+                    <span class="num">56</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Mitsubishi</span>
+                    <span class="dots"></span>
+                    <span class="num">45</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Nissan</span>
+                    <span class="dots"></span>
+                    <span class="num">3</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Renault</span>
+                    <span class="dots"></span>
+                    <span class="num">5</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Skoda</span>
+                    <span class="dots"></span>
+                    <span class="num">18</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Subaru</span>
+                    <span class="dots"></span>
+                    <span class="num">243</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Toyota</span>
+                    <span class="dots"></span>
+                    <span class="num">36</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Volkswagen</span>
+                    <span class="dots"></span>
+                    <span class="num">28</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">Лада</span>
+                    <span class="dots"></span>
+                    <span class="num">99</span>
+                </a>
+                <a href="#" class="link">
+                    <span class="name">УАЗ</span>
+                    <span class="dots"></span>
+                    <span class="num">73</span>
+                </a>
+            </div>
+            <div class="tags__row">
+                <div class="tag">
+                    <input type="checkbox" id="tag-1">
+                    <label for="tag-1">до 300 000 ₽</label>
+                </div>
+                <div class="tag">
+                    <input type="checkbox" id="tag-2">
+                    <label for="tag-2">от 300 000 до 500 000 ₽</label>
+                </div>
+                <div class="tag">
+                    <input type="checkbox" id="tag-3">
+                    <label for="tag-3">от 500 000 до 800 000 ₽</label>
+                </div>
+                <div class="tag">
+                    <input type="checkbox" id="tag-4">
+                    <label for="tag-4">от 800 000 ₽</label>
+                </div>
             </div>
         </div>
     </div>
@@ -734,6 +883,7 @@
             <div class="pagination">
                 <a href="#" class="item prev-item">
                     <img src="./assets/icons/pagination_arrow-left.svg" alt="" class="icon">
+                    <span class="d-none d-xl-inline">Ctrl,</span>
                     Предыдущая
                 </a>
                 <div class="pagination__row">
@@ -748,17 +898,15 @@
                     <a href="#" class="item">13</a>
                 </div>
                 <a href="#" class="item next-item">
-                    Следующая
+                    Следующая,
+                    <span class="d-none d-xl-inline">Ctrl</span>
                     <img src="./assets/icons/pagination_arrow-right.svg" alt="" class="icon">
                 </a>
 
             </div>
         </div>
     </div>
-
 </div>
-
-
 <footer class="footer">
     <div class="container">
         <div class="row">
@@ -1279,7 +1427,14 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/select2.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js"></script>-->
+
+<script>
+    $(document).ready(function () {
+        $('.select').select2({ width: '100%' })
+    })
+</script>
 <script src="js/header.js"></script>
 <script src="js/catalog.js"></script>
 <script src="js/modals.js"></script>

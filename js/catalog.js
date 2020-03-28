@@ -22,5 +22,34 @@ specsSlider.owlCarousel({
 })
 
 $(document).ready(function () {
-    $('select').niceSelect();
+    // $('select').niceSelect();
 });
+
+
+//search input
+let search = $('.catalog__search .input input'),
+    search_results = $('.catalog__search .input .search-results'),
+    search_clear = $('.catalog__search .input .clear');
+search.on('focusin', function () {
+    search_results.addClass('shown')
+});
+search.on('focusout', function (e) {
+    if (e.target.value === '') {
+        search_results.removeClass('shown');
+    }
+});
+search.on('input', function (e) {
+    if (e.target.value !== '') {
+        search_clear.addClass('active');
+        //here any async call .then((res)=>
+        search_results.addClass('shown')
+        console.log(search_results)
+    } else {
+        search_clear.removeClass('active');
+    }
+});
+search_clear.on('click', function () {
+    search_clear.removeClass('active');
+    search_results.removeClass('shown');
+    search.val('')
+})

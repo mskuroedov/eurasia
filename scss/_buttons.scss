@@ -22,9 +22,11 @@
       background: #353535;
     }
   }
-  &:disabled{
+
+  &:disabled {
     opacity: .15;
   }
+
   border-radius: 27px;
   height: 55px;
   border: 0;
@@ -75,6 +77,7 @@
 
   &:hover {
     text-decoration: none;
+
     .circle {
       background: #FF5C00;
     }
@@ -88,13 +91,46 @@
 
 }
 
-.black-link{
+.black-link {
   font-size: 16px;
   line-height: 22px;
   color: #000000;
   transition: all .2s;
-  &:hover{
+
+  &:hover {
     text-decoration: none;
     color: $primary;
+  }
+}
+
+.tag {
+  input {
+    display: none;
+
+    &:checked + label {
+      background: #4087BE;
+      color: white;
+    }
+  }
+
+  label {
+    cursor: pointer;
+    padding: 0 20px;
+    margin-bottom: 0;
+    border: 1px solid rgba(64, 135, 190, 0.3);
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: all .2s;
+    background: white;
+    color: #4087BE;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 35px;
+    white-space: nowrap;
+    letter-spacing: .4px;
+  }
+
+  &:hover label {
+    border-color: #4087BE;
   }
 }
