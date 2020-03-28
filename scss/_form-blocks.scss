@@ -266,11 +266,11 @@
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background: $secondary;
+  background: lighten($secondary,2);
   color: rgba(0, 0, 0, 0.8);
 }
 .select2-container--default .select2-results__option[aria-selected=true]{
-  background: darken($secondary,7);
+  background: $secondary;
 }
 
 .select2-search--dropdown {

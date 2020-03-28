@@ -327,11 +327,11 @@ a:focus, button:focus, input:focus {
   transition: all .2s; }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background: #F4F8FA;
+  background: #fbfcfd;
   color: rgba(0, 0, 0, 0.8); }
 
 .select2-container--default .select2-results__option[aria-selected=true] {
-  background: #dbe8ef; }
+  background: #F4F8FA; }
 
 .select2-search--dropdown {
   display: none; }
