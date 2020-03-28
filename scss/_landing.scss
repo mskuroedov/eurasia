@@ -176,7 +176,10 @@
     }
 
     .item {
-      min-width: 115px;
+      width: 115px;
+      &:nth-of-type(2){
+        width: 126px;
+      }
 
       .heading-1 {
         white-space: nowrap;

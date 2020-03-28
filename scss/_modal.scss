@@ -20,7 +20,10 @@
   }
 
   .modal-body {
-    padding: 0 60px;
+    padding: 0 22px;
+    @media (min-width: 800px) {
+      padding: 0 60px;
+    }
   }
 
   .modal-title {

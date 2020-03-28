@@ -1,26 +1,178 @@
 .catalog {
   padding-top: 12px;
   background: white;
+  overflow: hidden;
 
   .heading-1 {
     margin-bottom: 29px;
+  }
+
+  .l2.--after-block {
+    position: relative;
+    padding-bottom: 40px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      background: $secondary;
+      height: 260px;
+      top: 170px;
+    }
+
+    .specs-slider {
+      margin-bottom: 25px;
+    }
+
+    .arrow-btn {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__row {
+    overflow-x: hidden;
+
+    .sort {
+      display: flex;
+      align-items: center;
+      padding: 50px 20px 25px;
+      margin: 0 -20px;
+      width: auto;
+      overflow-y: scroll;
+      -ms-overflow-style: none;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      color: $gray;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .label {
+        white-space: nowrap;
+        margin-right: 15px;
+        letter-spacing: -0.2px;
+      }
+
+      .item {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        color: $link;
+        transition: all .2s;
+        margin-right: 15px;
+
+        &:last-of-type {
+          margin-right: 20px;
+        }
+
+        .icon {
+          margin-left: 5px;
+
+          svg path {
+            transition: all .2s;
+          }
+        }
+
+        &:hover {
+          text-decoration: none;
+          color: $primary;
+
+          svg path {
+            fill: $primary
+          }
+        }
+      }
+    }
+
+    .load-more {
+      cursor: pointer;
+      margin-top: 25px;
+      margin-bottom: 40px;
+      width: 100%;
+      //height: 55px;
+      padding: 0;
+      border: 1px solid rgba(95, 95, 95, 0.2);
+      background: white;
+      box-sizing: border-box;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      line-height: 53px;
+      color: #5F5F5F;
+      transition: all .2s;
+
+      &:hover {
+        background: $secondary;
+      }
+
+      .icon {
+        margin-right: 12px;
+        margin-left: -12px;
+      }
+    }
+  }
+
+  @media(min-width: 800px) {
+    padding-top: 18px;
+    .heading-1 {
+      margin-bottom: 38px;
+    }
+    > .container {
+      position: relative;
+      > .row{
+        z-index: 2;
+        position: relative;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 407px;
+        height: 201px;
+        background: url('../assets/landing-promo-decor-2.svg');
+        background-position-x: 13px;
+        right: -226px;
+        top: 38px;
+        z-index: 0;
+      }
+    }
   }
 }
 
 .catalog__filters {
   background: $secondary;
   margin: 0 -20px;
-  padding: 32px 20px 15px;
+  padding: 32px 20px 16px;
+  @media (min-width: 800px) {
+    margin: 0;
+    padding: 32px 24px 23px;
+
+  }
 
   &__row {
     display: flex;
     flex-wrap: wrap;
+    @media (min-width: 800px) {
+      justify-content: space-between;
+    }
+
+    .collapse {
+      .catalog__filters__row {
+        width: 100%;
+      }
+    }
+
   }
 
   &__actions {
     display: flex;
     flex-wrap: wrap;
     padding-top: 4px;
+    justify-content: space-between;
 
     .link {
       margin-bottom: 24px;
@@ -55,9 +207,10 @@
       svg {
         margin-left: 4px;
       }
-      &:hover{
-        svg path{
-          fill:$primary;
+
+      &:hover {
+        svg path {
+          fill: $primary;
         }
       }
     }
@@ -67,8 +220,30 @@
       width: 100%;
       line-height: 46px;
       margin-bottom: 23px;
-      img{
+
+      img {
         margin-top: -3px;
+      }
+    }
+
+    @media (min-width: 800px) {
+      justify-content: flex-start;
+      padding-top: 0;
+      .link {
+        margin-top: -9px;
+
+        &:first-of-type {
+          margin-right: 20px;
+        }
+        .d-md-inline{
+          margin-left: 5px;
+        }
+      }
+
+      .simple-btn {
+        margin-left: auto;
+        width: 280px;
+        margin-right: 43px;
       }
     }
   }
@@ -88,6 +263,10 @@
   .form-select {
     width: 100%;
     height: 50px;
+    @media(min-width: 800px) {
+      width: calc(50% - 15px);
+      margin-bottom: 19px;
+    }
   }
 
   &__tabs {
@@ -131,6 +310,134 @@
         margin-right: 0;
       }
     }
+
+    @media (min-width: 800px) {
+      .link.w-icon {
+        .icon {
+          padding-top: 6px;
+          margin-right: 1px;
+        }
+
+        padding-top: 7px;
+        margin-right: 23px;
+      }
+    }
   }
 
 }
+
+.catalog__item {
+  position: relative;
+  border-bottom: 1px solid rgba(95, 95, 95, 0.2);
+  padding-top: 20px;
+  padding-bottom: 33px;
+  margin-bottom: 5px;
+  min-height: 235px;
+
+  &:first-of-type {
+    border-top: 1px solid rgba(95, 95, 95, 0.2);
+  }
+
+  .preview {
+    background: #E9ECEE;
+    width: 170.67px;
+    height: 128px;
+    position: absolute;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+
+    a {
+      font-size: 18px;
+      line-height: 24px;
+      transition: all .2s;
+      color: $black;
+    }
+
+    &:hover {
+      a {
+        text-decoration: none;
+        color: $primary;
+      }
+    }
+
+    .icon {
+      display: inline-flex;
+      cursor: pointer;
+
+      svg path {
+        transition: all .2s;
+      }
+
+      &:hover, &.--active {
+        svg path {
+          fill: $primary;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .run {
+    color: $gray;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 191px;
+  }
+
+  .description {
+
+    padding-top: 5px;
+    padding-left: 191px;
+
+    .item {
+      color: $gray;
+      letter-spacing: 0.2px;
+      font-size: 14px;
+      line-height: 18px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .main {
+      font-size: 16px;
+      line-height: 20px;
+      color: $primary;
+      word-spacing: 1px;
+    }
+
+    .old {
+      font-size: 16px;
+      line-height: 20px;
+      color: $gray;
+      text-decoration: line-through;
+      margin-left: 12px;
+    }
+
+    .credit {
+      letter-spacing: 0.2px;
+      margin-left: 14px;
+      text-align: right;
+      font-size: 16px;
+      line-height: 20px;
+      color: $gray;
+    }
+  }
+}
+
+
