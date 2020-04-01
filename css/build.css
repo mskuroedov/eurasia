@@ -244,15 +244,10 @@ a:focus, button:focus, input:focus {
     left: 20px;
     margin-bottom: 0;
     transition: all .2s; }
-    .form-input label.up {
-      padding: 0 10px;
-      font-size: 14px;
-      line-height: 24px;
-      color: rgba(95, 95, 95, 0.7);
-      top: -13px;
-      left: 10px;
-      background: white;
-      letter-spacing: -0.1px; }
+    .form-input label .label-text {
+      display: block; }
+    .form-input label .error-text {
+      display: none; }
   .form-input input {
     width: 100%;
     padding-left: 20px;
@@ -262,6 +257,8 @@ a:focus, button:focus, input:focus {
     box-sizing: border-box;
     border-radius: 4px;
     transition: all .2s; }
+    .form-input input::placeholder {
+      opacity: 0; }
     .form-input input:focus {
       border-color: rgba(95, 95, 95, 0.6); }
   .form-input .icon {
@@ -270,15 +267,58 @@ a:focus, button:focus, input:focus {
     display: none;
     position: absolute;
     right: 16px;
-    bottom: 16px; }
+    bottom: 13px; }
     .form-input .icon img {
       width: 100%; }
-  .form-input.--success .icon.done {
-    display: block; }
+  .form-input.focus label {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(95, 95, 95, 0.7);
+    top: -13px;
+    left: 10px;
+    background: white;
+    letter-spacing: -0.1px; }
+  .form-input:after {
+    content: url("../assets/icons/tick--success.svg");
+    position: absolute;
+    bottom: 8px;
+    right: 13px;
+    opacity: 0;
+    transition: all .2s; }
+  .form-input:not(.password).--success:after {
+    opacity: 1; }
   .form-input input[type='password'] + .reveal-input-icon {
     display: block; }
   .form-input.revealed .password-input-icon {
     display: block; }
+  .form-input.phone.focus:before, .form-input.phone.error:before {
+    content: '+7 |';
+    position: absolute;
+    top: 0;
+    left: 21px;
+    font-size: 15px;
+    line-height: 48px;
+    color: #5f5f5f; }
+  .form-input.phone input {
+    padding-left: 50px; }
+  .form-input.error input {
+    border-color: #FF6F00; }
+  .form-input.error label {
+    color: #FF6F00;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    top: -13px;
+    left: 10px;
+    background: white;
+    letter-spacing: -0.1px; }
+    .form-input.error label .label-text {
+      display: none; }
+    .form-input.error label .error-text {
+      display: block; }
+  .form-input.error .icon svg path {
+    fill: #FF6F00; }
 
 .form-checkbox input {
   display: none; }
@@ -324,6 +364,8 @@ a:focus, button:focus, input:focus {
     margin-bottom: 0; }
   .form-verify .form-input {
     margin-bottom: 13px; }
+    .form-verify .form-input:after {
+      right: 25px; }
   .form-verify .button {
     height: 50px;
     width: 162px;

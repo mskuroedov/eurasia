@@ -12,15 +12,12 @@
     margin-bottom: 0;
     transition: all .2s;
 
-    &.up {
-      padding: 0 10px;
-      font-size: 14px;
-      line-height: 24px;
-      color: rgba(95, 95, 95, 0.7);
-      top: -13px;
-      left: 10px;
-      background: white;
-      letter-spacing: -0.1px;
+    .label-text {
+      display: block;
+    }
+
+    .error-text {
+      display: none;
     }
   }
 
@@ -34,6 +31,10 @@
     border-radius: 4px;
     transition: all .2s;
 
+    &::placeholder {
+      opacity: 0;
+    }
+
     &:focus {
       border-color: rgba(95, 95, 95, 0.6);
     }
@@ -45,17 +46,38 @@
     display: none;
     position: absolute;
     right: 16px;
-    bottom: 16px;
+    bottom: 13px;
 
     img {
       width: 100%;
     }
   }
 
-  &.--success {
-    .icon.done {
-      display: block;
+  &.focus {
+    label {
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(95, 95, 95, 0.7);
+      top: -13px;
+      left: 10px;
+      background: white;
+      letter-spacing: -0.1px;
+
     }
+  }
+
+  &:after {
+    content: url("../assets/icons/tick--success.svg");
+    position: absolute;
+    bottom: 8px;
+    right: 13px;
+    opacity: 0;
+    transition: all .2s;
+  }
+
+  &:not(.password).--success:after {
+    opacity: 1;
   }
 
   input[type='password'] + .reveal-input-icon {
@@ -64,6 +86,53 @@
 
   &.revealed .password-input-icon {
     display: block;
+  }
+
+  &.phone {
+    &.focus:before, &.error:before {
+      content: '+7 |';
+      position: absolute;
+      top: 0;
+      left: 21px;
+      font-size: 15px;
+      line-height: 48px;
+      color: $gray;
+    }
+
+    input {
+      padding-left: 50px;
+    }
+  }
+
+  &.error {
+    input {
+      border-color: $primary;
+    }
+
+    label {
+      color: $primary;
+      padding: 0 10px;
+      font-size: 14px;
+      line-height: 24px;
+      top: -13px;
+      left: 10px;
+      background: white;
+      letter-spacing: -0.1px;
+
+      .label-text {
+        display: none;
+      }
+
+      .error-text {
+        display: block;
+      }
+    }
+
+    .icon {
+      svg path {
+        fill: $primary;
+      }
+    }
   }
 }
 
@@ -126,6 +195,9 @@
 
   .form-input {
     margin-bottom: 13px;
+    &:after{
+      right: 25px;
+    }
   }
 
   .button {

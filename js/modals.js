@@ -34,8 +34,13 @@ $('#cancel_recover_password').on('click', function (e) {
 });
 
 $('#register').on('click', function () {
-    $('#auth_modal').modal('hide')
-    $('#reg_success_modal').modal('show')
+    if($('#reg-verify-block').is(':visible')){
+        $('#auth_modal').modal('hide')
+        $('#reg_success_modal').modal('show')
+    }else{
+        $('#reg-verify-block').show();
+    }
+
 });
 
 $('#request_success').on('click', function () {
