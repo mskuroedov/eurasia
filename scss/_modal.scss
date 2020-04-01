@@ -34,7 +34,9 @@
     margin-bottom: 36px;
     margin-right: 5px;
     letter-spacing: -0.2px;
-
+    &[data-title]{
+      cursor: pointer;
+    }
     &:after {
       display: block;
       content: '';

@@ -45,42 +45,60 @@
   color: #4087BE;
   transition: all .2s;
 
+  svg {
+    path {
+      transition: all .2s;
+    }
+  }
+
   &:hover {
     text-decoration: none;
     color: $primary;
+
+    svg path {
+      fill: $primary
+    }
+
   }
-  &.w-icon{
+
+  &.w-icon {
     display: flex;
     align-items: center;
-    .icon{
+
+    .icon {
       margin-right: 10px;
       width: 30px;
       height: 30px;
-      svg{
+
+      svg {
         width: 100%;
-        path{
+
+        path {
           transition: all .2s;
         }
       }
     }
-    &:hover{
-      svg path{
-        fill:$primary
+
+    &:hover {
+      svg path {
+        fill: $primary
       }
     }
   }
 }
 
-.time-counter{
+.time-counter {
   font-weight: normal;
   font-size: 13px;
   line-height: 20px;
   color: $gray;
-  a{
+
+  a {
     color: #4087BE;
     border-bottom: 1px dashed #4087BE;
     transition: all .2s;
-    &:hover{
+
+    &:hover {
       text-decoration: none;
       color: $primary;
       border-color: $primary;

@@ -22,7 +22,7 @@ specsSlider.owlCarousel({
 })
 
 $(document).ready(function () {
-    // $('select').niceSelect();
+    $('.select').select2({ width: '100%' })
 });
 
 

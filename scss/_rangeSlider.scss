@@ -1,0 +1,30 @@
+
+.rangeslider{
+  box-shadow: none;
+  &--horizontal{
+    height: 3px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #E5E9EB;
+    .rangeslider__handle{
+      top: -9px;
+    }
+  }
+  &__handle{
+    width: 19px;
+    height: 19px;
+    border: 0;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+    &:after{
+      width: 9px;
+      height: 9px;
+      background: $primary;
+    }
+  }
+  &__fill{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: $primary;
+    box-shadow: none;
+  }
+}

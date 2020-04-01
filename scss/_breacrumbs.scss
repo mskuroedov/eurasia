@@ -6,6 +6,8 @@
     line-height: 20px;
     color: #4087BE;
     margin-right: 5px;
+    white-space: nowrap;
+    transition: all .2s;
     &:hover{
       text-decoration: none;
       color: $primary;
