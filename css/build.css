@@ -1081,7 +1081,7 @@ body {
       padding-bottom: 102px;
       margin-top: -92px;
       background-position-y: 22px;
-      background-position-x: 17px;
+      background-position-x: center;
       background-repeat: no-repeat; } }
   .l1 .heading-1 {
     font-size: 26px;
@@ -4064,22 +4064,147 @@ body {
 
 .partners {
   padding-top: 12px;
-  background: white; }
+  padding-bottom: 33px;
+  background: white;
+  overflow: hidden; }
   @media (min-width: 800px) {
     .partners {
-      padding-top: 16px; } }
+      padding-top: 16px;
+      padding-bottom: 56px; }
+      .partners .common-text {
+        letter-spacing: -0.1px; } }
   @media (min-width: 1200px) {
     .partners {
       padding-top: 26px;
-      padding-bottom: 96px; } }
+      padding-bottom: 146px; }
+      .partners .common-text {
+        padding-top: 21px;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: -0.1px; } }
   .partners .heading-1 {
     margin-bottom: 30px; }
+    .partners .heading-1:after {
+      margin-top: 21px; }
     @media (min-width: 800px) {
       .partners .heading-1 {
-        margin-bottom: 30px; } }
+        margin-bottom: 32px; }
+        .partners .heading-1:after {
+          margin-top: 19px; } }
     @media (min-width: 1200px) {
       .partners .heading-1 {
         margin-bottom: 30px; } }
+  .partners__eu-logo {
+    margin-left: -15px;
+    padding: 15px;
+    background: #F4F8FA;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15); }
+    .partners__eu-logo img {
+      width: 160px; }
+    @media (min-width: 800px) {
+      .partners__eu-logo {
+        margin: -25px -25px 24px 0;
+        padding: 20px;
+        position: relative;
+        z-index: 2; }
+        .partners__eu-logo img {
+          width: 130px; } }
+    @media (min-width: 1200px) {
+      .partners__eu-logo {
+        margin: -20px 0px 19px 113px;
+        padding: 20px;
+        position: relative;
+        z-index: 2; }
+        .partners__eu-logo img {
+          width: 178px; } }
+  .partners__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px; }
+    @media (min-width: 1200px) {
+      .partners__title {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 52px; } }
+  @media (min-width: 800px) {
+    .partners__row {
+      position: relative;
+      margin: 0 -2px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start; }
+      .partners__row:after {
+        content: '';
+        position: absolute;
+        width: 427px;
+        height: 208px;
+        background: url("../assets/landing-promo-decor-2.svg");
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        top: -106px;
+        z-index: 1;
+        right: -317px; } }
+  @media (min-width: 1200px) {
+    .partners__row {
+      position: relative;
+      margin: 0 -2px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start; }
+      .partners__row:after {
+        top: -228px;
+        right: -246px; } }
+  .partners__item {
+    position: relative;
+    z-index: 2;
+    background: #F4F8FA;
+    padding: 0 5px 32px;
+    margin-bottom: 4px; }
+    .partners__item .icon {
+      width: 80px;
+      height: 75px; }
+      .partners__item .icon img {
+        width: 100%;
+        max-width: 100%; }
+    .partners__item .description {
+      padding: 0 15px; }
+    .partners__item .title {
+      color: #000;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      letter-spacing: -.3px; }
+    .partners__item .text {
+      color: #5f5f5f;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 5px; }
+    @media (min-width: 800px) {
+      .partners__item {
+        width: calc(50% - 4px);
+        margin: 0 2px 4px;
+        padding: 0 10px 27px; } }
+    @media (min-width: 1200px) {
+      .partners__item {
+        padding: 0 33px 0 0;
+        display: flex;
+        align-items: center; }
+        .partners__item .icon {
+          width: 160px;
+          height: 150px; }
+        .partners__item .description {
+          padding-left: 10px; } }
 
 .pagination {
   display: flex;
