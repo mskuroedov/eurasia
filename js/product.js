@@ -154,7 +154,7 @@ sm_link.on('click', function (e) {
 //calculator
 let money_input = $('#range-money'),
     time_input = $('#range-time');
-let price = +$('.product__price-block .main').text().replace(/\s/g, '').replace(/₽/g, '');
+let price = +$('.product .product__price-block .main').text().replace(/\s/g, '').replace(/₽/g, '');
 $("#range-money-control").rangeslider({
     polyfill: false,
     onSlide: function (position, value) {
