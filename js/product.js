@@ -144,14 +144,12 @@ sm_link.on('click', function (e) {
 //calculator
 let money_input = $('#range-money'),
     time_input = $('#range-time');
+let price = +$('.product__price-block .main').text().replace(/\s/g, '').replace(/₽/g, '');
 $("#range-money-control").rangeslider({
     polyfill: false,
-    onInit: function (e) {
-        console.log(e)
-    },
     onSlide: function (position, value) {
         console.log('Position', position, 'Value', value);
-        money_input.val(`${value} ₽`)
+        money_input.val(`${parseInt(price * value / 100)} ₽`)
 
     }
 });
@@ -162,6 +160,9 @@ $("#range-time-control").rangeslider({
         time_input.val(`${value} месяцев`)
     }
 });
+$('#range-money-control').val(50).change();
+$('#range-time-control').val(12).change();
+
 
 //bottom sliders
 let sameSlider = $('.product__look-a-like-slider .owl-carousel');
