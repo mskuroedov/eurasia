@@ -148,20 +148,51 @@ let price = +$('.product__price-block .main').text().replace(/\s/g, '').replace(
 $("#range-money-control").rangeslider({
     polyfill: false,
     onSlide: function (position, value) {
-        console.log('Position', position, 'Value', value);
-        money_input.val(`${parseInt(price * value / 100)} ₽`)
-
+        // console.log('Position', position, 'Value', value);
+        let formatted_val = (price * value / 100).toFixed(2)
+            .replace(/\d(?=(\d{3})+\.)/g, '$& ')
+            .replace('.00', '')
+        money_input.val(`${formatted_val} ₽`)
     }
 });
 $("#range-time-control").rangeslider({
     polyfill: false,
     onSlide: function (position, value) {
-        console.log('Position', position, 'Value', value);
+        // console.log('Position', position, 'Value', value);
         time_input.val(`${value} месяцев`)
     }
 });
 $('#range-money-control').val(50).change();
 $('#range-time-control').val(12).change();
+money_input.on('focusin', function () {
+    $(this).val('');
+})
+money_input.on('focusout', function (e) {
+    if ($(this).val() === '') {
+        $('#range-money-control').change();
+    }else{
+        // let val = parseInt(e.target.value),
+        //     range_val = parseInt(price / val),
+        //     formatted_val = (range_val/100 * price).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ').replace('.00', '');
+        // $('#range-money-control').val(range_val).change();
+        // money_input.val(`${formatted_val} ₽`)
+    }
+})
+time_input.on('focusin', function () {
+    $(this).val('');
+})
+time_input.on('focusout', function (e) {
+    if ($(this).val() === '') {
+        $('#range-time-control').change();
+    } else {
+        let val = e.target.value,
+            range_val = e.target.value;
+        $('#range-time-control').val(range_val).change();
+        time_input.val(`${val} месяцев`)
+        $('#range-time-control').change();
+
+    }
+})
 
 
 //bottom sliders
