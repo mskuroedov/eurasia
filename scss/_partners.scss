@@ -1,0 +1,22 @@
+.partners {
+  padding-top: 12px;
+  background: white;
+  @media(min-width: 800px) {
+    padding-top: 16px;
+  }
+  @media(min-width: 1200px) {
+    padding-top: 26px;
+    padding-bottom: 96px;
+  }
+
+  .heading-1 {
+    margin-bottom: 30px;
+
+    @media(min-width: 800px) {
+      margin-bottom: 30px;
+    }
+    @media(min-width: 1200px) {
+      margin-bottom: 30px;
+    }
+  }
+}

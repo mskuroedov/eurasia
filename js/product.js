@@ -104,7 +104,17 @@ $('.product__slider .show-more').on('click', function (e) {
     }
 });
 //product slider end
+//floating bottom mobile/table block
+$(document).on('scroll',function () {
+    let elem = document.querySelector('.product__description__row .product__price-block'),
+        bounding = elem.getBoundingClientRect();
 
+    if(bounding.top < 0 && !$('.product__fixed-actions').hasClass('displayed')){
+        $('.product__fixed-actions').addClass('displayed')
+    }else if(bounding.top > 0){
+        $('.product__fixed-actions').removeClass('displayed')
+    }
+});
 //mark popover on desktop
 $('.product__variants-to-buy .product__mark img').popover({
     html: true,
