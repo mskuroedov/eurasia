@@ -4095,7 +4095,6 @@ body {
       .partners .heading-1 {
         margin-bottom: 30px; } }
   .partners__eu-logo {
-    margin-left: -15px;
     padding: 15px;
     background: #F4F8FA;
     display: inline-flex;
@@ -4205,6 +4204,599 @@ body {
           height: 150px; }
         .partners__item .description {
           padding-left: 10px; } }
+
+.about-company {
+  padding-top: 12px;
+  padding-bottom: 38px;
+  background: white;
+  overflow: hidden; }
+  @media (min-width: 800px) {
+    .about-company {
+      padding-top: 16px;
+      padding-bottom: 10px;
+      position: relative; }
+      .about-company .container {
+        position: relative;
+        z-index: 2; }
+      .about-company:before {
+        content: '';
+        position: absolute;
+        top: 110px;
+        right: 0;
+        z-index: 1;
+        width: 33%;
+        height: 210px;
+        background: #F4F8FA;
+        border-top-left-radius: 25px; } }
+  @media (min-width: 1200px) {
+    .about-company {
+      padding-top: 26px;
+      padding-bottom: 23px; }
+      .about-company:before {
+        top: 50px;
+        width: calc(50% - 210px); } }
+  .about-company .heading-1 {
+    margin-bottom: 30px; }
+    .about-company .heading-1:after {
+      margin-top: 21px; }
+    @media (min-width: 800px) {
+      .about-company .heading-1 {
+        margin-bottom: 31px; }
+        .about-company .heading-1:after {
+          margin-top: 19px; } }
+    @media (min-width: 1200px) {
+      .about-company .heading-1 {
+        margin-bottom: 51px; } }
+  .about-company .common-text {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -.2px;
+    padding-right: 10px; }
+    @media (min-width: 1200px) {
+      .about-company .common-text {
+        font-size: 18px;
+        line-height: 26px; } }
+  .about-company .promo-img {
+    height: 289px;
+    margin-left: 13px;
+    margin-top: -11px; }
+    @media (min-width: 1200px) {
+      .about-company .promo-img {
+        height: 428px;
+        margin-left: 35px;
+        margin-top: -111px; } }
+
+.about-company__buy-sell {
+  background: white;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
+  padding-top: 51px; }
+  @media (min-width: 800px) {
+    .about-company__buy-sell {
+      padding-top: 80px; } }
+  @media (min-width: 1200px) {
+    .about-company__buy-sell {
+      padding-top: 131px; } }
+  .about-company__buy-sell:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background: #F4F8FA;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 779px;
+    border-top-right-radius: 27px; }
+    @media (min-width: 800px) {
+      .about-company__buy-sell:before {
+        width: 71.8%;
+        height: 562px;
+        top: 30px; } }
+    @media (min-width: 1200px) {
+      .about-company__buy-sell:before {
+        width: calc(72% - 30px);
+        height: 620px;
+        top: 62px; } }
+  .about-company__buy-sell .title {
+    color: #000;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: -0.8px;
+    margin-bottom: 20px; }
+    @media (min-width: 800px) {
+      .about-company__buy-sell .title {
+        margin-bottom: 30px; } }
+    @media (min-width: 1200px) {
+      .about-company__buy-sell .title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+        width: 320px; } }
+  .about-company__buy-sell .common-text {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 35px; }
+    @media (min-width: 800px) {
+      .about-company__buy-sell .common-text {
+        padding-right: 20px;
+        margin-bottom: 40px; } }
+    @media (min-width: 1200px) {
+      .about-company__buy-sell .common-text {
+        padding-right: 100px;
+        letter-spacing: 0.6px;
+        line-height: 24px;
+        margin-bottom: 58px; } }
+  .about-company__buy-sell .blue-block {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 18px; }
+    .about-company__buy-sell .blue-block > div {
+      position: relative;
+      z-index: 2; }
+    @media (min-width: 1200px) {
+      .about-company__buy-sell .blue-block {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding-bottom: 42px; }
+        .about-company__buy-sell .blue-block .common-text {
+          width: 100%; } }
+    .about-company__buy-sell .blue-block .about-company__buy-sell__item {
+      margin-bottom: 30px; }
+      .about-company__buy-sell .blue-block .about-company__buy-sell__item .icon {
+        width: 110px;
+        height: 60px;
+        margin-top: -8px;
+        margin-left: -18px;
+        margin-bottom: 23px; }
+        .about-company__buy-sell .blue-block .about-company__buy-sell__item .icon img {
+          width: 100%; }
+      .about-company__buy-sell .blue-block .about-company__buy-sell__item .item-title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        letter-spacing: -0.7px; }
+      .about-company__buy-sell .blue-block .about-company__buy-sell__item .common-text {
+        letter-spacing: -0.1px;
+        margin-bottom: 0;
+        padding-right: 0; }
+      @media (min-width: 800px) {
+        .about-company__buy-sell .blue-block .about-company__buy-sell__item {
+          display: inline-block;
+          width: 40%;
+          margin-right: 52px; }
+          .about-company__buy-sell .blue-block .about-company__buy-sell__item .icon {
+            margin-bottom: 28px; } }
+      @media (min-width: 1200px) {
+        .about-company__buy-sell .blue-block .about-company__buy-sell__item {
+          display: inline-block;
+          width: 42%;
+          margin-right: 63px; }
+          .about-company__buy-sell .blue-block .about-company__buy-sell__item .icon {
+            width: 130px;
+            height: 90px;
+            margin-left: -22px;
+            margin-bottom: 25px; }
+          .about-company__buy-sell .blue-block .about-company__buy-sell__item .item-title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: -0.9px; }
+          .about-company__buy-sell .blue-block .about-company__buy-sell__item .common-text {
+            letter-spacing: .3px; }
+          .about-company__buy-sell .blue-block .about-company__buy-sell__item:last-of-type {
+            margin-right: 0; } }
+  .about-company__buy-sell .stats-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 41px;
+    padding-bottom: 20px; }
+    @media (min-width: 800px) {
+      .about-company__buy-sell .stats-block {
+        padding-top: 70px;
+        padding-left: 18px;
+        position: relative; }
+        .about-company__buy-sell .stats-block:after {
+          content: '';
+          position: absolute;
+          width: 427px;
+          height: 118px;
+          background: url("../assets/landing-promo-decor-2.svg");
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          top: -81px;
+          z-index: 1;
+          right: -172px; } }
+    @media (min-width: 1200px) {
+      .about-company__buy-sell .stats-block {
+        padding-top: 121px;
+        padding-left: 48px;
+        position: relative; }
+        .about-company__buy-sell .stats-block:after {
+          width: 459px;
+          height: 208px;
+          top: -129px;
+          right: -93px; } }
+    .about-company__buy-sell .stats-block__item {
+      margin-bottom: 0; }
+      .about-company__buy-sell .stats-block__item .val {
+        font-family: Magistral, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        color: #000;
+        margin-bottom: 5px; }
+      .about-company__buy-sell .stats-block__item .name {
+        color: #5f5f5f;
+        font-size: 15px;
+        line-height: 20px; }
+      .about-company__buy-sell .stats-block__item:first-of-type {
+        width: 97px; }
+      .about-company__buy-sell .stats-block__item:nth-of-type(2) {
+        width: 83px; }
+      .about-company__buy-sell .stats-block__item:nth-of-type(3) {
+        width: 61px; }
+      @media (min-width: 800px) {
+        .about-company__buy-sell .stats-block__item {
+          margin-bottom: 40px; }
+          .about-company__buy-sell .stats-block__item br {
+            display: none; }
+          .about-company__buy-sell .stats-block__item:nth-of-type(n) {
+            width: 100%; } }
+      @media (min-width: 1200px) {
+        .about-company__buy-sell .stats-block__item {
+          margin-bottom: 40px; }
+          .about-company__buy-sell .stats-block__item .val {
+            font-size: 40px;
+            line-height: 42px; } }
+  .about-company__buy-sell .benefits {
+    padding-top: 10px; }
+    .about-company__buy-sell .benefits__item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px; }
+      .about-company__buy-sell .benefits__item .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px; }
+      .about-company__buy-sell .benefits__item .text {
+        color: #5f5f5f;
+        font-size: 15px;
+        line-height: 23px; }
+    @media (min-width: 800px) {
+      .about-company__buy-sell .benefits {
+        padding-top: 42px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .about-company__buy-sell .benefits__item {
+          width: 337px; }
+          .about-company__buy-sell .benefits__item:nth-of-type(2n + 1) {
+            margin-right: auto; }
+          .about-company__buy-sell .benefits__item:nth-of-type(2n) {
+            margin-right: 10px; } }
+    @media (min-width: 1200px) {
+      .about-company__buy-sell .benefits {
+        padding-top: 50px;
+        align-items: baseline;
+        justify-content: flex-start; }
+        .about-company__buy-sell .benefits__item {
+          width: 244px;
+          flex-wrap: wrap;
+          margin-right: 50px; }
+          .about-company__buy-sell .benefits__item .icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px; }
+            .about-company__buy-sell .benefits__item .icon img {
+              width: 100%; }
+          .about-company__buy-sell .benefits__item .text {
+            width: 100%;
+            font-size: 16px;
+            line-height: 23px; }
+          .about-company__buy-sell .benefits__item:nth-of-type(n) {
+            margin-right: 50px; }
+          .about-company__buy-sell .benefits__item:last-of-type {
+            margin-right: 20px; } }
+
+.about-company__partners {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: white;
+  overflow: hidden; }
+  .about-company__partners .title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: -.4px;
+    margin-bottom: 20px; }
+    .about-company__partners .title:after {
+      margin-top: 20px; }
+  .about-company__partners .common-text {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0;
+    margin-bottom: 30px;
+    padding-right: 10px; }
+  .about-company__partners .owl-stage-outer {
+    overflow: visible; }
+  .about-company__partners .owl-item {
+    display: flex;
+    min-width: 118px;
+    height: 95px;
+    justify-content: center;
+    align-items: center;
+    background: #F4F8FA; }
+    .about-company__partners .owl-item div {
+      width: 100%;
+      height: 100%; }
+    .about-company__partners .owl-item img {
+      max-height: 100%;
+      height: 100%;
+      margin: 0 auto;
+      width: auto; }
+  @media (min-width: 800px) {
+    .about-company__partners {
+      position: relative;
+      padding-top: 60px;
+      padding-bottom: 10px; }
+      .about-company__partners .container {
+        position: relative;
+        z-index: 2; }
+        .about-company__partners .container:before {
+          content: '';
+          position: absolute;
+          width: 427px;
+          height: 118px;
+          background: url("../assets/landing-promo-decor-2.svg");
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          top: -51px;
+          z-index: 1;
+          right: -174px; }
+      .about-company__partners .title {
+        margin-bottom: 30px; }
+      .about-company__partners .common-text {
+        padding-right: 25px; }
+      .about-company__partners .partners-slider {
+        overflow: hidden;
+        position: relative;
+        left: 34.8%;
+        margin-top: -135px; }
+      .about-company__partners .owl-item {
+        min-width: 147px;
+        height: 120px; } }
+  @media (min-width: 1200px) {
+    .about-company__partners {
+      padding-top: 101px;
+      padding-bottom: 38px; }
+      .about-company__partners .container:before {
+        top: -66px;
+        right: -233px; }
+      .about-company__partners .title {
+        margin-bottom: 45px;
+        font-size: 30px;
+        line-height: 40px; }
+      .about-company__partners .common-text {
+        padding-right: 30px;
+        font-size: 18px;
+        line-height: 26px; }
+      .about-company__partners .partners-slider {
+        padding-top: 85px;
+        margin-right: 9px;
+        overflow: visible;
+        position: relative;
+        left: 0;
+        margin-top: 0; }
+        .about-company__partners .partners-slider .owl-stage-outer {
+          overflow: hidden; }
+        .about-company__partners .partners-slider.owl-theme-default .owl-next, .about-company__partners .partners-slider.owl-theme-default .owl-prev {
+          width: 50px;
+          height: 50px;
+          margin-top: -102px;
+          z-index: 20;
+          position: absolute;
+          top: 50%;
+          border-radius: 100%;
+          background: #FF6F00;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all .2s; }
+          .about-company__partners .partners-slider.owl-theme-default .owl-next svg path, .about-company__partners .partners-slider.owl-theme-default .owl-prev svg path {
+            transition: all .2s; }
+          .about-company__partners .partners-slider.owl-theme-default .owl-next:hover, .about-company__partners .partners-slider.owl-theme-default .owl-prev:hover {
+            background: #FF5C00; }
+          .about-company__partners .partners-slider.owl-theme-default .owl-next:active, .about-company__partners .partners-slider.owl-theme-default .owl-prev:active {
+            background: #FF5200; }
+          .about-company__partners .partners-slider.owl-theme-default .owl-next.disabled, .about-company__partners .partners-slider.owl-theme-default .owl-prev.disabled {
+            opacity: .9; }
+            .about-company__partners .partners-slider.owl-theme-default .owl-next.disabled:hover svg path, .about-company__partners .partners-slider.owl-theme-default .owl-prev.disabled:hover svg path {
+              fill: #5f5f5f; }
+        .about-company__partners .partners-slider.owl-theme-default .owl-prev {
+          right: 68px; }
+        .about-company__partners .partners-slider.owl-theme-default .owl-next {
+          right: 8px; } }
+
+.about-company__team {
+  padding-top: 50px;
+  padding-bottom: 60px;
+  background: white;
+  overflow: hidden;
+  position: relative; }
+  .about-company__team .row {
+    position: relative;
+    z-index: 3; }
+  .about-company__team:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    background: #F4F8FA;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 27px; }
+  .about-company__team .title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: -0.7px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2; }
+    .about-company__team .title:after {
+      margin-top: 20px; }
+  .about-company__team .common-text {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 30px; }
+  .about-company__team .team-slider .owl-stage-outer {
+    overflow: visible; }
+  .about-company__team .team__item {
+    width: 159px;
+    margin-bottom: 20px; }
+    .about-company__team .team__item .avatar {
+      width: 100px;
+      height: 100px;
+      margin-left: -5px;
+      margin-bottom: 20px; }
+      .about-company__team .team__item .avatar img {
+        max-width: 100%; }
+    .about-company__team .team__item .name {
+      color: #000;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 5px;
+      letter-spacing: -.5px; }
+    .about-company__team .team__item .value {
+      color: #5f5f5f;
+      font-size: 15px;
+      line-height: 20px; }
+  .about-company__team .simple-btn {
+    margin-top: 0;
+    margin-left: -5px;
+    letter-spacing: .5px; }
+  @media (min-width: 800px) {
+    .about-company__team {
+      padding-top: 53px;
+      padding-bottom: 84px; }
+      .about-company__team:before {
+        top: 53px;
+        right: 0;
+        left: auto;
+        width: 64%;
+        height: 353px; }
+      .about-company__team .container:before {
+        content: '';
+        position: absolute;
+        width: 427px;
+        height: 118px;
+        background: url("../assets/landing-promo-decor-2.svg");
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        top: -51px;
+        z-index: 1;
+        left: -174px; }
+      .about-company__team .container:after {
+        content: '';
+        position: absolute;
+        width: 427px;
+        height: 118px;
+        background: url("../assets/landing-promo-decor-2.svg");
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        bottom: -32px;
+        z-index: 1;
+        right: -281px; }
+      .about-company__team .title {
+        padding-top: 50px; }
+      .about-company__team .common-text {
+        padding-right: 20px;
+        margin-bottom: 45px; }
+      .about-company__team .team-slider {
+        position: relative;
+        left: 43.4%;
+        margin-top: -277px; }
+      .about-company__team .team__item {
+        width: 164px; }
+        .about-company__team .team__item .value {
+          padding-right: 5px; } }
+  @media (min-width: 1200px) {
+    .about-company__team {
+      padding-top: 101px;
+      padding-bottom: 224px; }
+      .about-company__team:before {
+        top: 71px;
+        width: calc(50% + 181px);
+        height: 480px; }
+      .about-company__team .container:after {
+        width: 427px;
+        height: 223px;
+        bottom: 3px;
+        z-index: 1;
+        right: -122px; }
+      .about-company__team .title {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 45px; }
+      .about-company__team .common-text {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 60px; }
+      .about-company__team .team-slider {
+        position: initial;
+        margin: 0;
+        padding-top: 41px; }
+        .about-company__team .team-slider .owl-stage-outer {
+          overflow: hidden;
+          margin-left: -4px; }
+        .about-company__team .team-slider.owl-theme-default .owl-nav {
+          display: flex;
+          align-items: center;
+          margin-left: -5px;
+          margin-top: 14px; }
+        .about-company__team .team-slider.owl-theme-default .owl-next, .about-company__team .team-slider.owl-theme-default .owl-prev {
+          width: 50px;
+          height: 50px;
+          z-index: 20;
+          border-radius: 100%;
+          background: #FF6F00;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all .2s; }
+          .about-company__team .team-slider.owl-theme-default .owl-next svg path, .about-company__team .team-slider.owl-theme-default .owl-prev svg path {
+            transition: all .2s; }
+          .about-company__team .team-slider.owl-theme-default .owl-next:hover, .about-company__team .team-slider.owl-theme-default .owl-prev:hover {
+            background: #FF5C00; }
+          .about-company__team .team-slider.owl-theme-default .owl-next:active, .about-company__team .team-slider.owl-theme-default .owl-prev:active {
+            background: #FF5200; }
+          .about-company__team .team-slider.owl-theme-default .owl-next.disabled, .about-company__team .team-slider.owl-theme-default .owl-prev.disabled {
+            opacity: .9; }
+            .about-company__team .team-slider.owl-theme-default .owl-next.disabled:hover svg path, .about-company__team .team-slider.owl-theme-default .owl-prev.disabled:hover svg path {
+              fill: #5f5f5f; }
+        .about-company__team .team-slider.owl-theme-default .owl-prev {
+          margin-right: 10px; }
+      .about-company__team .team__item {
+        width: 196px; }
+        .about-company__team .team__item .avatar {
+          width: 140px;
+          height: 140px;
+          margin-bottom: 25px;
+          margin-left: 0; }
+        .about-company__team .team__item .name {
+          font-size: 20px;
+          line-height: 28px;
+          padding-left: 5px; }
+        .about-company__team .team__item .value {
+          padding-left: 5px; } }
 
 .pagination {
   display: flex;
