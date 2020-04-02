@@ -48,7 +48,16 @@ $(window).on('scroll', function (e) {
         $('.header .desktop').removeClass('--highlighten')
     }
 });
-
+$(document).ready(function () {
+    if (window.innerWidth < 1200) {
+        return;
+    }
+    if (window.pageYOffset > 50) {
+        $('.header .desktop').addClass('--highlighten')
+    } else {
+        $('.header .desktop').removeClass('--highlighten')
+    }
+})
 //header desktop menu managing
 let menu_content = {
     buy: '<a href="#">Каталог автомобилей</a>\n' +
