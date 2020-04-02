@@ -1,0 +1,365 @@
+.contacts {
+  padding-top: 14px;
+  padding-bottom: 16px;
+  background: white;
+  overflow: hidden;
+  @media(min-width: 800px) {
+    padding-top: 16px;
+    padding-bottom: 26px;
+  }
+  @media(min-width: 1200px) {
+    padding-top: 26px;
+    padding-bottom: 120px;
+  }
+
+  .heading-1 {
+    margin-bottom: 30px;
+
+    &:after {
+      margin-top: 21px;
+    }
+
+    @media(min-width: 800px) {
+      margin-bottom: 31px;
+      &:after {
+        margin-top: 19px;
+      }
+    }
+    @media(min-width: 1200px) {
+      margin-bottom: 61px;
+    }
+  }
+
+  &__main {
+    @media(min-width: 800px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 2px;
+      .contacts__geo {
+        order: 1;
+        width: 50%;
+      }
+      .contacts__email {
+        order: 2;
+        margin-left: auto;
+        margin-right: 128px;
+      }
+      .contacts__phone {
+        order: 3;
+        width: 50%;
+      }
+      .socials-links {
+        order: 4;
+        margin-left: auto;
+        margin-right: 118px;
+        margin-top: -6px;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 427px;
+        height: 208px;
+        background: url('../assets/landing-promo-decor-2.svg');
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        top: -82px;
+        z-index: 1;
+        right: -308px;
+      }
+    }
+    @media(min-width: 1200px) {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      .contacts__geo,
+      .contacts__email,
+      .contacts__phone, {
+        order: 0;
+
+        .icon {
+          margin-top: 8px;
+        }
+
+        .label {
+          margin-bottom: 10px;
+        }
+      }
+      .contacts__geo {
+        width: 240px;
+        margin-right: 74px;
+
+        .main .text {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 10px;
+          letter-spacing: .2px;
+        }
+
+        .schedule {
+          width: 189px;
+        }
+      }
+      .contacts__email {
+        margin-right: 120px;
+        width: 191px;
+        margin-left: 0;
+
+        .icon {
+          top: 20px;
+        }
+
+        a {
+          letter-spacing: .4px;
+        }
+      }
+      .contacts__phone {
+        width: 175px;
+        margin-right: 79px;
+
+        a {
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: .2px;
+        }
+      }
+      .socials-links {
+        margin: 0;
+      }
+      &:after {
+        top: -91px;
+        right: -235px;
+      }
+    }
+  }
+
+  &__geo {
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 20px;
+
+    .label {
+      color: $gray;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      top: 21px;
+    }
+
+    .main .text {
+      color: $black;
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 5px;
+    }
+
+    .schedule {
+      color: $gray;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 20px;
+
+    .label {
+      width: 100%;
+      color: $gray;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 5px;
+      letter-spacing: -0.9px;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      top: 21px;
+    }
+
+    a {
+      color: $black;
+      font-size: 15px;
+      line-height: 22px;
+
+      &:hover {
+        text-decoration: none;
+        color: $primary;
+      }
+    }
+  }
+
+  &__email {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 20px;
+
+    .label {
+      width: 100%;
+      color: $gray;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 5px;
+      letter-spacing: 0;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      left: 0;
+      top: 23px;
+    }
+
+    a {
+      color: $link;
+      font-size: 15px;
+      line-height: 22px;
+
+      &:hover {
+        text-decoration: none;
+        color: $primary;
+      }
+    }
+  }
+
+  .socials-links {
+    width: 230px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 3;
+
+    .item {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 30px;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+
+    @media(min-width: 800px) {
+      height: 350px;
+    }
+    @media(min-width: 1200px) {
+      height: 480px;
+      padding-right: 40px;
+    }
+  }
+
+  &__mails {
+
+    &__row {
+      padding-left: 30px;
+      margin-bottom: 20px;
+    }
+
+    .label {
+      width: 100%;
+      color: $gray;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 5px;
+      letter-spacing: 0;
+    }
+
+    &__item {
+      font-size: 15px;
+      line-height: 22px;
+      color: $link;
+      transition: all .2s;
+      display: block;
+      margin-bottom: 5px;
+
+      &:hover {
+        text-decoration: none;
+        color: $primary;
+      }
+
+      &:first-of-type {
+        position: relative;
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          background: url("../assets/icons/email-primary.svg");
+          background-size: cover;
+          left: -30px;
+          top: 0;
+        }
+      }
+    }
+
+    @media(min-width: 800px) and (max-width:1199px) {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      .contacts__mails__row {
+        width: 50%;
+        margin-bottom: 25px;
+
+        &:nth-of-type(1) {
+          order: 1
+        }
+
+        &:nth-of-type(2) {
+          order: 3
+        }
+
+        &:nth-of-type(3) {
+          order: 2;
+          padding-left: 45px;
+        }
+
+        &:nth-of-type(4) {
+          order: 4;
+          padding-left: 45px;
+        }
+      }
+    }
+
+    @media(min-width: 1200px){
+      padding-top: 20px;
+      &__row{
+        width: 100%;
+        margin-bottom: 30px;
+        &:nth-of-type(n){
+          order:0
+        }
+      }
+      .label{
+        margin-bottom: 10px;
+      }
+      &__item{
+        letter-spacing: .4px;
+      }
+    }
+  }
+}
