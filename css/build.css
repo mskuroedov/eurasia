@@ -4295,7 +4295,7 @@ body {
         top: 30px; } }
     @media (min-width: 1200px) {
       .about-company__buy-sell:before {
-        width: calc(72% - 30px);
+        width: calc(50% + 280px);
         height: 620px;
         top: 62px; } }
   .about-company__buy-sell .title {
