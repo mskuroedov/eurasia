@@ -105,13 +105,13 @@ $('.product__slider .show-more').on('click', function (e) {
 });
 //product slider end
 //floating bottom mobile/table block
-$(document).on('scroll',function () {
+$(document).on('scroll', function () {
     let elem = document.querySelector('.product__description__row .product__price-block'),
         bounding = elem.getBoundingClientRect();
 
-    if(bounding.top < 0 && !$('.product__fixed-actions').hasClass('displayed')){
+    if (bounding.top < 0 && !$('.product__fixed-actions').hasClass('displayed')) {
         $('.product__fixed-actions').addClass('displayed')
-    }else if(bounding.top > 0){
+    } else if (bounding.top > 0) {
         $('.product__fixed-actions').removeClass('displayed')
     }
 });
@@ -153,54 +153,74 @@ sm_link.on('click', function (e) {
 
 //calculator
 let money_input = $('#range-money'),
-    time_input = $('#range-time');
-let price = +$('.product .product__price-block .main').text().replace(/\s/g, '').replace(/₽/g, '');
-$("#range-money-control").rangeslider({
-    polyfill: false,
-    onSlide: function (position, value) {
-        // console.log('Position', position, 'Value', value);
-        let formatted_val = (price * value / 100).toFixed(2)
-            .replace(/\d(?=(\d{3})+\.)/g, '$& ')
-            .replace('.00', '')
-        money_input.val(`${formatted_val} ₽`)
+    time_input = $('#range-time'),
+    price = +$('.product .product__price-block .main').text().replace(/\s/g, '').replace(/₽/g, ''),
+    range_money_control = document.getElementById('range-money-control'),
+    range_time_control = document.getElementById('range-time-control');
+
+noUiSlider.create(range_money_control, {
+    start: parseInt(price / 2),
+    connect: [true, false],
+    step: 10000,
+    range: {
+        'min': price * 0.1,
+        'max': price * 0.9
     }
 });
-$("#range-time-control").rangeslider({
-    polyfill: false,
-    onSlide: function (position, value) {
-        // console.log('Position', position, 'Value', value);
-        time_input.val(`${value} месяцев`)
+range_money_control.noUiSlider.on('update', function (values, handle) {
+    money_input.val(
+        parseInt(values[handle]).toFixed(2)
+            .replace(/\d(?=(\d{3})+\.)/g, '$& ').replace('.00', '')
+        + ' ₽');
+});
+
+noUiSlider.create(range_time_control, {
+    start: 8,
+    // snap: true,
+    connect: [true, false],
+    range: {
+        'min': [6],
+        '15%': [7],
+        '26%': [8],
+        '33%': [9],
+        '38%': [10],
+        '43%': [11],
+        '50%': [12],
+        '75%': [24],
+        'max': [36]
     }
 });
-$('#range-money-control').val(50).change();
-$('#range-time-control').val(12).change();
+range_time_control.noUiSlider.on('update', function (values, handle) {
+    time_input.val(parseInt(values[handle]) + ' месяцев');
+});
 money_input.on('focusin', function () {
     $(this).val('');
 })
 money_input.on('focusout', function (e) {
-    if ($(this).val() === '') {
-        $('#range-money-control').change();
-    }else{
-        // let val = parseInt(e.target.value),
-        //     range_val = parseInt(price / val),
-        //     formatted_val = (range_val/100 * price).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$& ').replace('.00', '');
-        // $('#range-money-control').val(range_val).change();
-        // money_input.val(`${formatted_val} ₽`)
+    if ($(this).val() === '' || isNaN($(this).val())) {
+        range_money_control.noUiSlider.set(range_money_control.noUiSlider.value);
+    } else if ($(this).val() < parseInt(price * .1)) {
+        range_money_control.noUiSlider.set(0);
+    } else if ($(this).val() > parseInt(price * .9)) {
+        range_money_control.noUiSlider.set(99999999999);
+    } else {
+        let val = parseInt(+e.target.value);
+        range_money_control.noUiSlider.set(val);
     }
 })
 time_input.on('focusin', function () {
     $(this).val('');
 })
 time_input.on('focusout', function (e) {
-    if ($(this).val() === '') {
-        $('#range-time-control').change();
+    if ($(this).val() === '' || isNaN($(this).val())) {
+        range_time_control.noUiSlider.set(range_time_control.noUiSlider.value);
+    } else if ($(this).val() < 6) {
+        range_time_control.noUiSlider.set(0);
+    } else if ($(this).val() > 36) {
+        range_time_control.noUiSlider.set(36);
     } else {
-        let val = e.target.value,
-            range_val = e.target.value;
-        $('#range-time-control').val(range_val).change();
-        time_input.val(`${val} месяцев`)
-        $('#range-time-control').change();
-
+        let val = e.target.value;
+        range_time_control.noUiSlider.set(val);
     }
 })
 

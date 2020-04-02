@@ -1507,7 +1507,7 @@
       max-width: 100%;
       height: 60px;
       padding-left: 20px;
-      padding-right: 20px;
+      padding-right: 18px;
       background: $secondary;
       border: 1px solid rgba(95, 95, 95, 0.1);
       box-sizing: border-box;
@@ -1524,14 +1524,15 @@
       //margin-right: 8px;
     }
 
-    .rangeslider {
+    .noUi-horizontal {
       margin-top: -3px;
+      padding-right: 15px;
     }
 
     &__input {
       width: 120px;
       height: 60px;
-      font-size: 16px;
+      font-size: 17px;
       line-height: 60px;
       color: $black;
       background: transparent;
