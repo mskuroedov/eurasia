@@ -4473,6 +4473,395 @@ body {
       .contacts__mails__item {
         letter-spacing: .4px; } }
 
+.online-sale {
+  padding-top: 13px;
+  padding-bottom: 39px;
+  background: white;
+  overflow: hidden; }
+  .online-sale .breadcrumbs {
+    margin-bottom: 15px; }
+  @media (min-width: 800px) {
+    .online-sale {
+      padding-top: 15px;
+      padding-bottom: 61px;
+      position: relative; }
+      .online-sale:before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 110px;
+        border-top-left-radius: 25px;
+        background: #F4F8FA;
+        height: 210px;
+        width: calc(50% - 140px); }
+      .online-sale .common-text {
+        letter-spacing: -0.1px; }
+      .online-sale .breadcrumbs {
+        margin-bottom: 13px; } }
+  @media (min-width: 1200px) {
+    .online-sale {
+      padding-top: 26px;
+      padding-bottom: 150px; }
+      .online-sale .breadcrumbs {
+        margin-bottom: 34px; }
+      .online-sale:before {
+        top: 121px;
+        z-index: 1;
+        width: calc(50% - 310px); } }
+  .online-sale .promo-row {
+    padding-bottom: 35px; }
+    .online-sale .promo-row .heading-1 {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 20px; }
+      @media (min-width: 800px) {
+        .online-sale .promo-row .heading-1 {
+          margin-bottom: 31px; }
+          .online-sale .promo-row .heading-1:after {
+            margin-top: 17px; } }
+      @media (min-width: 1200px) {
+        .online-sale .promo-row .heading-1 {
+          margin-bottom: 50px;
+          font-size: 38px;
+          line-height: 48px; } }
+    .online-sale .promo-row .common-text {
+      letter-spacing: -0.5px;
+      line-height: 22px;
+      margin-bottom: 20px; }
+      @media (min-width: 800px) {
+        .online-sale .promo-row .common-text {
+          font-size: 15px;
+          line-height: 147%;
+          padding-right: 6px;
+          letter-spacing: .1px;
+          margin-bottom: 30px; } }
+      @media (min-width: 1200px) {
+        .online-sale .promo-row .common-text {
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0px; } }
+    .online-sale .promo-row .simple-btn {
+      margin-left: -5px;
+      margin-bottom: 40px; }
+    .online-sale .promo-row .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px; }
+      .online-sale .promo-row .benefit-item .icon {
+        margin-right: 10px; }
+        .online-sale .promo-row .benefit-item .icon img {
+          width: 40px;
+          height: 40px; }
+      .online-sale .promo-row .benefit-item .common-text {
+        margin-bottom: 0;
+        letter-spacing: -0.6px; }
+    @media (min-width: 800px) {
+      .online-sale .promo-row {
+        position: relative;
+        padding-bottom: 50px; }
+        .online-sale .promo-row:after {
+          content: '';
+          position: absolute;
+          width: 427px;
+          height: 208px;
+          background: url("../assets/landing-promo-decor-2.svg");
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          top: 2px;
+          z-index: 1;
+          right: -92px; }
+        .online-sale .promo-row .promo-img {
+          position: relative;
+          z-index: 5;
+          height: 227px;
+          margin-top: 27px;
+          margin-left: 47px; }
+        .online-sale .promo-row .simple-btn {
+          margin-left: -3px; }
+        .online-sale .promo-row .benefit-item {
+          margin-bottom: 30px; }
+          .online-sale .promo-row .benefit-item .common-text {
+            letter-spacing: -.2px; } }
+    @media (min-width: 1200px) {
+      .online-sale .promo-row:after {
+        top: 17px;
+        right: 31px;
+        z-index: 2; }
+      .online-sale .promo-row .promo-img {
+        height: 376.67px;
+        margin-top: -13.7px;
+        margin-left: 29.7px; }
+      .online-sale .promo-row .simple-btn {
+        margin-left: -5px;
+        letter-spacing: .45px;
+        margin-bottom: 80px; }
+      .online-sale .promo-row .benefit-item {
+        display: block; }
+        .online-sale .promo-row .benefit-item .icon img {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 15px;
+          margin-right: 0; }
+        .online-sale .promo-row .benefit-item .common-text {
+          font-size: 16px;
+          line-height: 22px;
+          padding-right: 20px; } }
+  .online-sale .how-to {
+    padding: 50px 20px 14px;
+    background: #F4F8FA;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px; }
+    .online-sale .how-to .title {
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 34px;
+      letter-spacing: -1px;
+      margin-bottom: 19px; }
+      .online-sale .how-to .title:after {
+        margin-top: 21px; }
+    .online-sale .how-to .common-text {
+      margin-bottom: 30px; }
+    .online-sale .how-to__item {
+      margin-bottom: 45px; }
+      .online-sale .how-to__item .icon {
+        height: 60px;
+        margin-left: -5px;
+        margin-bottom: 15px; }
+        .online-sale .how-to__item .icon img {
+          max-height: 100%; }
+      .online-sale .how-to__item .common-text {
+        line-height: 21px;
+        letter-spacing: -.3px;
+        margin-bottom: 11px; }
+      .online-sale .how-to__item .link {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -.2px; }
+        .online-sale .how-to__item .link svg {
+          margin-left: 5px; }
+    @media (min-width: 800px) {
+      .online-sale .how-to {
+        padding: 50px 30px 6px; }
+        .online-sale .how-to .title {
+          letter-spacing: -.8px;
+          margin-bottom: 25px; }
+          .online-sale .how-to .title:after {
+            margin-top: 20px; }
+        .online-sale .how-to .common-text {
+          letter-spacing: -.4px;
+          margin-bottom: 38px; }
+        .online-sale .how-to__row {
+          display: flex;
+          align-items: flex-start; }
+        .online-sale .how-to__item {
+          width: 298px; }
+          .online-sale .how-to__item .icon {
+            margin-bottom: 20px; }
+          .online-sale .how-to__item .common-text {
+            letter-spacing: -.2px;
+            margin-bottom: 12px; }
+          .online-sale .how-to__item:first-of-type {
+            position: relative;
+            margin-right: 50px; }
+            .online-sale .how-to__item:first-of-type:after {
+              content: '';
+              position: absolute;
+              top: 20px;
+              right: 0;
+              height: 20px;
+              width: 27.3px;
+              background: url("../assets/icons/arrow-right-primary.svg"); } }
+    @media (min-width: 1200px) {
+      .online-sale .how-to {
+        margin: 40px -46px 0;
+        padding: 70px 46px 20px;
+        position: relative;
+        z-index: 2; }
+        .online-sale .how-to .title {
+          width: 420px;
+          font-size: 30px;
+          line-height: 40px;
+          letter-spacing: -1px; }
+        .online-sale .how-to .common-text {
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: .1px; }
+        .online-sale .how-to__item {
+          margin-top: -10px;
+          width: 264px; }
+          .online-sale .how-to__item:first-of-type {
+            margin-right: 69px; }
+            .online-sale .how-to__item:first-of-type:after {
+              top: 40px; }
+          .online-sale .how-to__item .icon {
+            height: 100px;
+            margin-left: -9px;
+            margin-bottom: 35px; }
+          .online-sale .how-to__item .common-text {
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -.2px;
+            margin-bottom: 10px; }
+        .online-sale .how-to__container {
+          position: relative; }
+          .online-sale .how-to__container:after {
+            content: '';
+            position: absolute;
+            width: 427px;
+            height: 208px;
+            background: url("../assets/landing-promo-decor-2.svg");
+            background-repeat: repeat-x;
+            background-position-x: 13px;
+            bottom: -143px;
+            z-index: 1;
+            right: -135px; } }
+  .online-sale .pricing {
+    padding-top: 50px; }
+    .online-sale .pricing .title {
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 34px;
+      letter-spacing: -.6px;
+      margin-bottom: 30px; }
+      .online-sale .pricing .title:after {
+        margin-top: 21px; }
+    .online-sale .pricing__list {
+      display: block; }
+      .online-sale .pricing__list__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        letter-spacing: -0.6px; }
+      .online-sale .pricing__list__item {
+        display: flex;
+        align-items: flex-end;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 15px;
+        position: relative;
+        color: #5f5f5f; }
+        .online-sale .pricing__list__item .name {
+          position: relative;
+          z-index: 3;
+          max-width: 244px;
+          padding-right: 4px;
+          display: contents; }
+        .online-sale .pricing__list__item .val {
+          text-align: right;
+          margin-left: auto;
+          padding-left: 4px;
+          white-space: nowrap; }
+        .online-sale .pricing__list__item .name, .online-sale .pricing__list__item .val {
+          position: relative;
+          z-index: 3;
+          background: white; }
+        .online-sale .pricing__list__item .dots {
+          position: absolute;
+          width: calc(100% - 10px);
+          bottom: 5px;
+          left: 5px;
+          flex-grow: 1;
+          border-bottom: 1px dashed rgba(95, 95, 95, 0.2); }
+    .online-sale .pricing__requirements {
+      background: #F4F8FA;
+      padding: 40px 20px 26px;
+      margin-top: 25px; }
+      .online-sale .pricing__requirements .title {
+        color: #5f5f5f;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px; }
+        .online-sale .pricing__requirements .title:after {
+          margin-top: 21px; }
+      .online-sale .pricing__requirements__item {
+        font-size: 15px;
+        line-height: 22px;
+        color: #5F5F5F;
+        position: relative;
+        padding-left: 32px;
+        margin-bottom: 15px;
+        padding-right: 16px; }
+        .online-sale .pricing__requirements__item:before {
+          content: '';
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          left: 0;
+          top: 0;
+          background: url("../assets/icons/plus-primary.svg"); }
+    @media (min-width: 800px) {
+      .online-sale .pricing {
+        padding-top: 80px; }
+        .online-sale .pricing .title {
+          margin-bottom: 35px; }
+        .online-sale .pricing__list__title {
+          margin-bottom: 30px; }
+        .online-sale .pricing__list__item .name, .online-sale .pricing__list__item .val {
+          letter-spacing: -.1px; }
+        .online-sale .pricing__list__item .name {
+          width: auto;
+          max-width: unset;
+          display: inline-block; }
+        .online-sale .pricing__list__item .val {
+          padding-right: 2px; }
+        .online-sale .pricing__list__item .dots {
+          position: relative;
+          width: auto;
+          margin-top: -4px; }
+        .online-sale .pricing__requirements {
+          padding: 40px 30px 35px; }
+          .online-sale .pricing__requirements .title {
+            margin-bottom: 20px;
+            letter-spacing: -0.5px; }
+          .online-sale .pricing__requirements__item {
+            padding-right: 0;
+            letter-spacing: 0.4px; } }
+    @media (min-width: 1200px) {
+      .online-sale .pricing {
+        padding-top: 120px; }
+        .online-sale .pricing .title {
+          font-size: 30px;
+          line-height: 40px;
+          letter-spacing: -0.7px;
+          margin-bottom: 45px; }
+          .online-sale .pricing .title:after {
+            margin-top: 20px; }
+        .online-sale .pricing__list {
+          padding-right: 30px; }
+          .online-sale .pricing__list__title {
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: -.7px; }
+          .online-sale .pricing__list__item {
+            margin-bottom: 20px; }
+            .online-sale .pricing__list__item .name {
+              letter-spacing: .4px;
+              display: contents;
+              max-width: 459px; }
+            .online-sale .pricing__list__item .dots {
+              position: absolute;
+              width: calc(100% - 10px);
+              bottom: 5px;
+              left: 5px;
+              flex-grow: 1;
+              border-bottom: 1px dashed rgba(95, 95, 95, 0.2); }
+        .online-sale .pricing__requirements {
+          margin-top: -37px;
+          padding-bottom: 25px; }
+          .online-sale .pricing__requirements .title {
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -.5px;
+            margin-bottom: 30px; }
+          .online-sale .pricing__requirements__item {
+            padding-right: 20px; } }
+
 .about-company {
   padding-top: 12px;
   padding-bottom: 38px;
