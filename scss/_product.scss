@@ -869,10 +869,10 @@
   }
 
   &__trade-in__map {
-    background: #E9F1F5;
 
     .contacts {
       padding: 40px 20px 41px;
+      background: #E9F1F5;
 
       .subheader {
         margin-bottom: 22px;
@@ -938,15 +938,15 @@
       }
     }
 
-    @media(min-width: 800px) {
+    @media(min-width: 800px){
       display: flex;
       .map {
         order: 1;
-        flex-grow: 2.1;
+        width: 47.6%;
         height: 338px;
       }
       .contacts {
-        padding: 41px 40px 20px;
+        padding: 40px 42px 20px;
         order: 2;
         flex-grow: 1;
 
@@ -1006,29 +1006,31 @@
   height: 0;
   overflow: hidden;
   transition: all .2s;
-  &.displayed{
+
+  &.displayed {
     padding: 15px 20px;
     height: 80px;
   }
-  @media(max-width: 799px){
-    .container{
+
+  @media(max-width: 799px) {
+    .container {
       padding: 0;
     }
-    .price{
+    .price {
       display: none;
     }
-    .action-btns{
+    .action-btns {
       width: 100%;
     }
-    .simple-btn.--black{
+    .simple-btn.--black {
       display: none;
     }
-    .simple-btn.--primary{
+    .simple-btn.--primary {
       width: 100%;
     }
   }
   @media(min-width: 800px) {
-    &.displayed{
+    &.displayed {
       height: 88px;
       padding: 19px 20px;
     }
@@ -1342,7 +1344,7 @@
           }
 
           &.disabled {
-            opacity: 1;
+            opacity: 0;
             background: lighten($gray, 40);
 
             &:hover {
@@ -1823,7 +1825,7 @@
           }
 
           &.disabled {
-            opacity: 1;
+            opacity: 0;
             background: lighten($gray, 40);
 
             &:hover {
