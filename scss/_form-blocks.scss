@@ -197,6 +197,7 @@
     padding-left: 34px;
     color: $gray;
     position: relative;
+    cursor: pointer;
     &:before {
       position: absolute;
       left: 0;
@@ -327,6 +328,7 @@
       transition: all .2s;
       letter-spacing: -0.5px;
       white-space: nowrap;
+      cursor: pointer;
     }
 
     input {
