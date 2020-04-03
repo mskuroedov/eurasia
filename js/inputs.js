@@ -1,3 +1,8 @@
+//selects
+$(document).ready(function () {
+    $('.select').select2({width: '100%'})
+});
+
 //animating label
 let form_input = $('.form-input input'),
     form_label = $('.form-input label');
