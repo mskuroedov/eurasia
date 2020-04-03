@@ -4932,6 +4932,395 @@ body {
           .online-sale .pricing__requirements__item {
             padding-right: 20px; } }
 
+.fast-estimate {
+  padding-top: 14px;
+  padding-bottom: 50px;
+  background: white;
+  overflow: hidden; }
+  @media (min-width: 800px) {
+    .fast-estimate {
+      position: relative;
+      padding-bottom: 26px; }
+      .fast-estimate:before {
+        content: '';
+        background: #F4F8FA;
+        width: calc(50% - 141px);
+        border-top-left-radius: 25px;
+        height: 210px;
+        position: absolute;
+        right: 0;
+        top: 110px;
+        z-index: 2; }
+      .fast-estimate .advert__form-row {
+        padding-top: 2px;
+        position: relative;
+        z-index: 3; } }
+  @media (min-width: 1200px) {
+    .fast-estimate {
+      padding-top: 25px;
+      padding-bottom: 110px; }
+      .fast-estimate:before {
+        width: calc(50% - 310px);
+        top: 121px;
+        height: 370px; } }
+  .fast-estimate .breadcrumbs {
+    margin-bottom: 15px; }
+    @media (min-width: 1200px) {
+      .fast-estimate .breadcrumbs {
+        margin-bottom: 35px; } }
+  .fast-estimate .heading-1 {
+    margin-bottom: 30px; }
+    .fast-estimate .heading-1:after {
+      margin-top: 16px; }
+    @media (min-width: 1200px) {
+      .fast-estimate .heading-1 {
+        margin-bottom: 50px; } }
+  .fast-estimate .common-text {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 28px; }
+    @media (min-width: 800px) {
+      .fast-estimate .common-text {
+        padding-right: 8px; } }
+    @media (min-width: 1200px) {
+      .fast-estimate .common-text {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 38px; } }
+  .fast-estimate .advert__actions {
+    padding-top: 13px;
+    padding-bottom: 40px; }
+    @media (min-width: 1200px) {
+      .fast-estimate .advert__actions {
+        padding-top: 25px; } }
+  .fast-estimate__promo {
+    position: relative; }
+    .fast-estimate__promo:before {
+      content: '';
+      position: absolute;
+      width: 427px;
+      height: 208px;
+      background: url(../assets/landing-promo-decor-2.svg);
+      background-repeat: repeat-x;
+      background-position-x: 13px;
+      top: -13px;
+      z-index: 1;
+      right: -129px; }
+    .fast-estimate__promo img {
+      position: relative;
+      z-index: 3;
+      margin-top: -143px;
+      margin-left: -56px;
+      height: 220px; }
+    @media (min-width: 1200px) {
+      .fast-estimate__promo:before {
+        width: 459px;
+        top: 123px;
+        right: -19px; }
+      .fast-estimate__promo img {
+        margin-top: -148px;
+        margin-left: -98px;
+        height: 400px; } }
+  .fast-estimate__result {
+    border: 4px solid #FF6F00;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 36px 16px 33px;
+    margin-bottom: 40px; }
+    .fast-estimate__result .title {
+      color: #000;
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 34px;
+      margin-bottom: 5px;
+      letter-spacing: -.9px; }
+    .fast-estimate__result .text {
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 20px;
+      color: #5f5f5f; }
+    .fast-estimate__result__item {
+      display: flex;
+      flex-wrap: wrap; }
+      .fast-estimate__result__item .preview {
+        height: auto;
+        width: 100%;
+        margin-bottom: 20px; }
+        .fast-estimate__result__item .preview img {
+          max-width: 100%; }
+      .fast-estimate__result__item .info {
+        width: 100%; }
+        .fast-estimate__result__item .info .info-title {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 13px; }
+        .fast-estimate__result__item .info .name {
+          width: 100%;
+          margin-bottom: 15px; }
+          .fast-estimate__result__item .info .name .stats-row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: flex-start;
+            max-height: 75px; }
+          .fast-estimate__result__item .info .name .stat-item {
+            font-size: 15px;
+            line-height: 20px;
+            color: #5f5f5f;
+            min-width: 140px;
+            margin-bottom: 5px; }
+        .fast-estimate__result__item .info .calculated-price {
+          color: #FF6F00;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 26px;
+          margin-bottom: 2px; }
+        .fast-estimate__result__item .info .price-market {
+          margin-bottom: 18px; }
+          .fast-estimate__result__item .info .price-market .info-title {
+            margin-bottom: 12px; }
+        .fast-estimate__result__item .info .price-trade-in .info-title {
+          margin-bottom: 12px; }
+        .fast-estimate__result__item .info .price-trade-in .link {
+          margin-top: 8px;
+          display: flex;
+          align-items: flex-start;
+          text-align: left;
+          letter-spacing: .2px; }
+          .fast-estimate__result__item .info .price-trade-in .link svg {
+            min-width: 18px;
+            height: 20px;
+            margin-right: 6px; }
+    @media (min-width: 800px) {
+      .fast-estimate__result {
+        margin-top: 10px;
+        padding: 36px 26px 36px;
+        position: relative;
+        margin-bottom: 60px; }
+        .fast-estimate__result:before {
+          content: '';
+          position: absolute;
+          width: 427px;
+          height: 208px;
+          background: url(../assets/landing-promo-decor-2.svg);
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          top: -103px;
+          z-index: 1;
+          right: -259px; }
+        .fast-estimate__result__item {
+          flex-wrap: nowrap;
+          align-items: flex-start;
+          position: relative;
+          z-index: 2; }
+          .fast-estimate__result__item .preview {
+            width: 175px;
+            margin-left: 0px;
+            margin-right: 26px; }
+          .fast-estimate__result__item .info {
+            width: auto;
+            flex-grow: 1; }
+            .fast-estimate__result__item .info .name {
+              width: 100%; }
+              .fast-estimate__result__item .info .name .stats-row {
+                height: 62px; }
+            .fast-estimate__result__item .info .price-market, .fast-estimate__result__item .info .price-trade-in {
+              width: 212px;
+              display: inline-block;
+              vertical-align: top; }
+              .fast-estimate__result__item .info .price-market .info-title, .fast-estimate__result__item .info .price-trade-in .info-title {
+                letter-spacing: -0.7px; }
+            .fast-estimate__result__item .info .price-market {
+              margin-right: 28px; }
+            .fast-estimate__result__item .info .price-trade-in .link {
+              padding-right: 30px;
+              line-height: 20px; } }
+    @media (min-width: 1200px) {
+      .fast-estimate__result {
+        margin-top: 40px;
+        margin-bottom: 100px;
+        padding: 36px 46px 30px; }
+        .fast-estimate__result:before {
+          top: -83px;
+          right: -156px; }
+        .fast-estimate__result .title {
+          font-size: 30px;
+          line-height: 40px;
+          margin-bottom: 10px; }
+        .fast-estimate__result .text {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 40px; }
+        .fast-estimate__result__item .preview {
+          width: 230px;
+          height: 180px;
+          margin-right: 37px; }
+        .fast-estimate__result__item .info {
+          display: flex;
+          align-items: flex-start; }
+          .fast-estimate__result__item .info .info-title {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 11px; }
+          .fast-estimate__result__item .info .name {
+            width: 241px;
+            margin-right: 30px; }
+            .fast-estimate__result__item .info .name .stat-item {
+              font-size: 16px;
+              line-height: 20px;
+              margin-bottom: 9px; }
+            .fast-estimate__result__item .info .name .stats-row {
+              display: block; }
+          .fast-estimate__result__item .info .calculated-price {
+            font-size: 24px;
+            line-height: 20px;
+            margin-bottom: 10px; }
+          .fast-estimate__result__item .info .price-trade-in .info-title, .fast-estimate__result__item .info .price-market .info-title {
+            margin-bottom: 31px; }
+          .fast-estimate__result__item .info .price-trade-in .stat-item, .fast-estimate__result__item .info .price-market .stat-item {
+            color: #5f5f5f;
+            font-size: 16px;
+            line-height: 20px; }
+          .fast-estimate__result__item .info .price-market {
+            margin-right: auto; }
+          .fast-estimate__result__item .info .price-trade-in .link {
+            margin-top: 25px;
+            letter-spacing: .6px;
+            padding-right: 17px; } }
+  .fast-estimate__go-advert {
+    background: #F4F8FA;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 50px 20px 3px;
+    margin-bottom: 40px; }
+    .fast-estimate__go-advert .title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 17px; }
+    .fast-estimate__go-advert .text {
+      color: rgba(95, 95, 95, 0.9);
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 30px; }
+    .fast-estimate__go-advert .simple-btn {
+      margin-left: -5px;
+      letter-spacing: .4px;
+      margin-bottom: 20px; }
+    .fast-estimate__go-advert .promo {
+      margin: 0 -20px;
+      overflow: hidden;
+      position: relative;
+      height: 150px; }
+      .fast-estimate__go-advert .promo .car {
+        position: absolute;
+        width: 100%;
+        top: 0; }
+      .fast-estimate__go-advert .promo .hand {
+        position: absolute;
+        right: 0;
+        top: 35px;
+        height: 72.39px; }
+    @media (min-width: 800px) {
+      .fast-estimate__go-advert {
+        padding: 50px 30px 3px;
+        margin-right: 4px; }
+        .fast-estimate__go-advert .simple-btn {
+          letter-spacing: .3px; }
+        .fast-estimate__go-advert .promo {
+          margin: 0 -30px;
+          height: 184.24px; }
+          .fast-estimate__go-advert .promo .car {
+            width: 411px; }
+          .fast-estimate__go-advert .promo .hand {
+            top: 45px;
+            height: 92.98px; } }
+    @media (min-width: 1200px) {
+      .fast-estimate__go-advert {
+        margin-right: 0;
+        position: relative;
+        padding: 50px 290px 29px 50px; }
+        .fast-estimate__go-advert .title {
+          font-size: 20px;
+          line-height: 26px;
+          margin-bottom: 15px; }
+        .fast-estimate__go-advert .text {
+          font-size: 16px;
+          line-height: 24px; }
+        .fast-estimate__go-advert .promo {
+          margin: 0;
+          position: absolute;
+          right: 0;
+          width: 50%;
+          top: 0;
+          height: 100%; }
+          .fast-estimate__go-advert .promo .car {
+            width: 564px;
+            left: 44px;
+            top: 42px; }
+          .fast-estimate__go-advert .promo .hand {
+            height: 97px;
+            top: 120px; } }
+  .fast-estimate__go-trade-in {
+    margin-bottom: 10px; }
+    .fast-estimate__go-trade-in .title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 17px; }
+    .fast-estimate__go-trade-in .text {
+      color: rgba(95, 95, 95, 0.9);
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 20px; }
+    .fast-estimate__go-trade-in .partners-imgs {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 -2px;
+      width: calc(100% + 2px);
+      margin-bottom: 30px; }
+      .fast-estimate__go-trade-in .partners-imgs div {
+        background: #F4F8FA;
+        height: 38px;
+        flex-grow: 1;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 1.4px; }
+        .fast-estimate__go-trade-in .partners-imgs div img {
+          margin: 0 auto;
+          max-height: 100%; }
+    .fast-estimate__go-trade-in .simple-btn {
+      letter-spacing: .4px;
+      margin-left: -5px; }
+    @media (min-width: 800px) {
+      .fast-estimate__go-trade-in {
+        padding-top: 50px;
+        padding-left: 12px; }
+        .fast-estimate__go-trade-in .text {
+          margin-bottom: 24px; }
+        .fast-estimate__go-trade-in .partners-imgs {
+          margin-bottom: 35px; }
+          .fast-estimate__go-trade-in .partners-imgs div {
+            height: 33.5px; } }
+    @media (min-width: 1200px) {
+      .fast-estimate__go-trade-in {
+        padding-left: 40px; }
+        .fast-estimate__go-trade-in .title {
+          font-size: 20px;
+          line-height: 26px;
+          margin-bottom: 15px; }
+        .fast-estimate__go-trade-in .text {
+          font-size: 16px;
+          line-height: 24px;
+          margin-bottom: 20px; }
+        .fast-estimate__go-trade-in .partners-imgs {
+          margin-bottom: 32px; }
+          .fast-estimate__go-trade-in .partners-imgs div {
+            height: 50px; } }
+
 .advert {
   padding-top: 14px;
   padding-bottom: 50px;
