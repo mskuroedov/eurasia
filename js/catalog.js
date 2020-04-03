@@ -21,11 +21,6 @@ specsSlider.owlCarousel({
     }
 })
 
-$(document).ready(function () {
-    $('.select').select2({ width: '100%' })
-});
-
-
 //search input
 let search = $('.catalog__search .input input'),
     search_results = $('.catalog__search .input .search-results'),
