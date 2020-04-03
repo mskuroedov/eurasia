@@ -234,6 +234,14 @@
 
         svg {
           margin-left: 5px;
+          path{
+            transition: all .2s;
+          }
+        }
+        &:hover{
+          svg path{
+            stroke: $primary;
+          }
         }
       }
     }

@@ -4642,6 +4642,10 @@ body {
         letter-spacing: -.2px; }
         .online-sale .how-to__item .link svg {
           margin-left: 5px; }
+          .online-sale .how-to__item .link svg path {
+            transition: all .2s; }
+        .online-sale .how-to__item .link:hover svg path {
+          stroke: #FF6F00; }
     @media (min-width: 800px) {
       .online-sale .how-to {
         padding: 50px 30px 6px; }
