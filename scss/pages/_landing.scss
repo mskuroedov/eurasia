@@ -177,7 +177,8 @@
 
     .item {
       width: 115px;
-      &:nth-of-type(2){
+
+      &:nth-of-type(2) {
         width: 126px;
       }
 
@@ -487,12 +488,14 @@
     width: 31.6%;
     margin-bottom: 41px;
   }
+
   .image,
   .time,
   .title,
-  .text{
+  .text {
     opacity: 0;
   }
+
   .image {
     width: 90px;
     height: 60px;
@@ -648,6 +651,11 @@
     .text {
       animation: slideFromLeft .8s forwards;
       animation-delay: .15s;
+    }
+
+    .simple-btn {
+      animation: slideFromLeft 1s forwards;
+      animation-delay: .1s;
     }
 
     &:after {

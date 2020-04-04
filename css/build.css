@@ -1939,6 +1939,9 @@ body {
   .step-item.js-animated .text {
     animation: slideFromLeft .8s forwards;
     animation-delay: .15s; }
+  .step-item.js-animated .simple-btn {
+    animation: slideFromLeft 1s forwards;
+    animation-delay: .1s; }
   .step-item.js-animated:after {
     height: 127%;
     width: 2px; }
@@ -7042,7 +7045,7 @@ body {
         .comission-sale__timeline .buyout__title {
           margin-bottom: 80px; }
         .comission-sale__timeline .steps-row:before {
-          top: 397px; }
+          top: 396px; }
         .comission-sale__timeline .step-item .image {
           margin-bottom: 77px; }
         .comission-sale__timeline .step-item .title {
