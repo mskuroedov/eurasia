@@ -7038,7 +7038,7 @@ body {
           background-position-x: 13px;
           top: 1px;
           z-index: 1;
-          right: 1px; }
+          right: calc(50% - 700px); }
         .comission-sale__timeline .buyout__title {
           margin-bottom: 80px; }
         .comission-sale__timeline .steps-row:before {
