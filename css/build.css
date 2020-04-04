@@ -1131,6 +1131,195 @@ body {
         order: 4;
         width: 230px; } }
 
+.socials-links {
+  display: flex;
+  justify-content: space-between; }
+  .socials-links.--dark .item {
+    background: #5F5F5F; }
+    .socials-links.--dark .item:hover {
+      background: #FF6F00; }
+  .socials-links.--blue .item {
+    background: #B3CCD9;
+    width: 45px;
+    height: 45px; }
+    .socials-links.--blue .item:hover {
+      background: #FF6F00; }
+  .socials-links .item {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+    border-radius: 100%; }
+
+.eu-modal .modal-header {
+  border-bottom: 0;
+  padding-bottom: 22px;
+  padding-top: 14px; }
+  .eu-modal .modal-header .close {
+    transition: all .2s;
+    padding: 19px 19px 0; }
+
+.eu-modal .modal-content {
+  border: 0;
+  border-radius: 0; }
+
+.eu-modal .modal-dialog {
+  max-width: 480px; }
+
+.eu-modal .modal-body {
+  padding: 0 22px; }
+  @media (min-width: 800px) {
+    .eu-modal .modal-body {
+      padding: 0 60px; } }
+
+.eu-modal .modal-title {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  position: relative;
+  margin-bottom: 36px;
+  margin-right: 5px;
+  letter-spacing: -0.2px; }
+  .eu-modal .modal-title[data-title] {
+    cursor: pointer; }
+  .eu-modal .modal-title:after {
+    display: block;
+    content: '';
+    width: 30px;
+    height: 4px;
+    background: #FF6F00;
+    margin-top: 20px; }
+  .eu-modal .modal-title.not-active {
+    opacity: .3; }
+    .eu-modal .modal-title.not-active:hover {
+      opacity: .8; }
+    .eu-modal .modal-title.not-active:after {
+      opacity: 0; }
+
+.eu-modal .common-text {
+  color: #5f5f5f;
+  line-height: 22px; }
+
+.eu-modal .socials {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; }
+  .eu-modal .socials .text {
+    color: #5f5f5f;
+    width: 155px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+    margin-bottom: 0; }
+  .eu-modal .socials .socials-links {
+    width: 195px; }
+
+.eu-modal .agreement {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 22px;
+  color: #5f5f5f;
+  letter-spacing: -0.2px; }
+  .eu-modal .agreement a {
+    color: #4087BE;
+    transition: all .2s; }
+    .eu-modal .agreement a:hover {
+      text-decoration: none;
+      color: #FF6F00; }
+
+.eu-modal .login .common-text {
+  margin-bottom: 33px; }
+
+.eu-modal .login .simple-btn {
+  margin-bottom: 58px;
+  margin-top: 13px; }
+
+.eu-modal .login .socials {
+  background: #F4F8FA;
+  padding: 34px 60px 36px;
+  margin: 0 -60px; }
+  .eu-modal .login .socials .text {
+    padding-right: 20px; }
+
+.eu-modal .register {
+  padding-bottom: 40px; }
+  .eu-modal .register .common-text {
+    margin-bottom: 33px; }
+  .eu-modal .register .simple-btn {
+    margin-top: 31px;
+    margin-bottom: 30px; }
+
+.eu-modal .recover_password {
+  padding-bottom: 57px; }
+  .eu-modal .recover_password .common-text {
+    margin-right: -4px;
+    margin-bottom: 33px; }
+  .eu-modal .recover_password .form-input {
+    margin-bottom: 24px; }
+  .eu-modal .recover_password .form-verify .form-input {
+    margin-bottom: 14px; }
+  .eu-modal .recover_password .simple-btn {
+    margin-top: 6px;
+    margin-bottom: 30px; }
+
+.eu-modal .success {
+  padding-bottom: 71px; }
+  .eu-modal .success .common-text {
+    margin-bottom: 20px; }
+  .eu-modal .success .link {
+    margin-bottom: 10px;
+    letter-spacing: .3px; }
+  .eu-modal .success .simple-btn {
+    margin-top: 26px; }
+
+.eu-modal .request {
+  padding-bottom: 53px; }
+  .eu-modal .request .modal-title {
+    margin-bottom: 52px; }
+  .eu-modal .request .simple-btn {
+    margin-top: 7px;
+    margin-bottom: 29px; }
+
+.breadcrumbs {
+  margin-bottom: 10px; }
+  .breadcrumbs__item {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #4087BE;
+    margin-right: 5px;
+    white-space: nowrap;
+    transition: all .2s; }
+    .breadcrumbs__item:hover {
+      text-decoration: none;
+      color: #FF6F00; }
+    .breadcrumbs__item:after {
+      content: '/';
+      margin-left: 5px;
+      color: #5F5F5F; }
+    .breadcrumbs__item:last-of-type {
+      color: #5F5F5F;
+      pointer-events: none;
+      letter-spacing: .4px; }
+      .breadcrumbs__item:last-of-type:after {
+        content: ''; }
+    @media (min-width: 800px) {
+      .breadcrumbs__item {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.9px;
+        margin-right: 6px; }
+        .breadcrumbs__item:after {
+          margin-left: 10px; }
+        .breadcrumbs__item:last-of-type {
+          letter-spacing: 0; } }
+  @media (min-width: 1200px) {
+    .breadcrumbs {
+      margin-bottom: 30px; } }
+
 .l1 {
   background: url("../assets/landing-promo-decor-1.svg");
   background-position-y: -23px;
@@ -2025,195 +2214,6 @@ body {
     height: 190px;
     margin-bottom: 20px;
     border-radius: 3px; }
-
-.socials-links {
-  display: flex;
-  justify-content: space-between; }
-  .socials-links.--dark .item {
-    background: #5F5F5F; }
-    .socials-links.--dark .item:hover {
-      background: #FF6F00; }
-  .socials-links.--blue .item {
-    background: #B3CCD9;
-    width: 45px;
-    height: 45px; }
-    .socials-links.--blue .item:hover {
-      background: #FF6F00; }
-  .socials-links .item {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .2s;
-    border-radius: 100%; }
-
-.eu-modal .modal-header {
-  border-bottom: 0;
-  padding-bottom: 22px;
-  padding-top: 14px; }
-  .eu-modal .modal-header .close {
-    transition: all .2s;
-    padding: 19px 19px 0; }
-
-.eu-modal .modal-content {
-  border: 0;
-  border-radius: 0; }
-
-.eu-modal .modal-dialog {
-  max-width: 480px; }
-
-.eu-modal .modal-body {
-  padding: 0 22px; }
-  @media (min-width: 800px) {
-    .eu-modal .modal-body {
-      padding: 0 60px; } }
-
-.eu-modal .modal-title {
-  font-size: 24px;
-  line-height: 30px;
-  color: #000;
-  position: relative;
-  margin-bottom: 36px;
-  margin-right: 5px;
-  letter-spacing: -0.2px; }
-  .eu-modal .modal-title[data-title] {
-    cursor: pointer; }
-  .eu-modal .modal-title:after {
-    display: block;
-    content: '';
-    width: 30px;
-    height: 4px;
-    background: #FF6F00;
-    margin-top: 20px; }
-  .eu-modal .modal-title.not-active {
-    opacity: .3; }
-    .eu-modal .modal-title.not-active:hover {
-      opacity: .8; }
-    .eu-modal .modal-title.not-active:after {
-      opacity: 0; }
-
-.eu-modal .common-text {
-  color: #5f5f5f;
-  line-height: 22px; }
-
-.eu-modal .socials {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px; }
-  .eu-modal .socials .text {
-    color: #5f5f5f;
-    width: 155px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: -0.4px;
-    margin-bottom: 0; }
-  .eu-modal .socials .socials-links {
-    width: 195px; }
-
-.eu-modal .agreement {
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 22px;
-  color: #5f5f5f;
-  letter-spacing: -0.2px; }
-  .eu-modal .agreement a {
-    color: #4087BE;
-    transition: all .2s; }
-    .eu-modal .agreement a:hover {
-      text-decoration: none;
-      color: #FF6F00; }
-
-.eu-modal .login .common-text {
-  margin-bottom: 33px; }
-
-.eu-modal .login .simple-btn {
-  margin-bottom: 58px;
-  margin-top: 13px; }
-
-.eu-modal .login .socials {
-  background: #F4F8FA;
-  padding: 34px 60px 36px;
-  margin: 0 -60px; }
-  .eu-modal .login .socials .text {
-    padding-right: 20px; }
-
-.eu-modal .register {
-  padding-bottom: 40px; }
-  .eu-modal .register .common-text {
-    margin-bottom: 33px; }
-  .eu-modal .register .simple-btn {
-    margin-top: 31px;
-    margin-bottom: 30px; }
-
-.eu-modal .recover_password {
-  padding-bottom: 57px; }
-  .eu-modal .recover_password .common-text {
-    margin-right: -4px;
-    margin-bottom: 33px; }
-  .eu-modal .recover_password .form-input {
-    margin-bottom: 24px; }
-  .eu-modal .recover_password .form-verify .form-input {
-    margin-bottom: 14px; }
-  .eu-modal .recover_password .simple-btn {
-    margin-top: 6px;
-    margin-bottom: 30px; }
-
-.eu-modal .success {
-  padding-bottom: 71px; }
-  .eu-modal .success .common-text {
-    margin-bottom: 20px; }
-  .eu-modal .success .link {
-    margin-bottom: 10px;
-    letter-spacing: .3px; }
-  .eu-modal .success .simple-btn {
-    margin-top: 26px; }
-
-.eu-modal .request {
-  padding-bottom: 53px; }
-  .eu-modal .request .modal-title {
-    margin-bottom: 52px; }
-  .eu-modal .request .simple-btn {
-    margin-top: 7px;
-    margin-bottom: 29px; }
-
-.breadcrumbs {
-  margin-bottom: 10px; }
-  .breadcrumbs__item {
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 20px;
-    color: #4087BE;
-    margin-right: 5px;
-    white-space: nowrap;
-    transition: all .2s; }
-    .breadcrumbs__item:hover {
-      text-decoration: none;
-      color: #FF6F00; }
-    .breadcrumbs__item:after {
-      content: '/';
-      margin-left: 5px;
-      color: #5F5F5F; }
-    .breadcrumbs__item:last-of-type {
-      color: #5F5F5F;
-      pointer-events: none;
-      letter-spacing: .4px; }
-      .breadcrumbs__item:last-of-type:after {
-        content: ''; }
-    @media (min-width: 800px) {
-      .breadcrumbs__item {
-        font-size: 15px;
-        line-height: 20px;
-        letter-spacing: -0.9px;
-        margin-right: 6px; }
-        .breadcrumbs__item:after {
-          margin-left: 10px; }
-        .breadcrumbs__item:last-of-type {
-          letter-spacing: 0; } }
-  @media (min-width: 1200px) {
-    .breadcrumbs {
-      margin-bottom: 30px; } }
 
 .catalog {
   padding-top: 12px;
@@ -6223,6 +6223,484 @@ body {
           padding-left: 5px; }
         .about-company__team .team__item .value {
           padding-left: 5px; } }
+
+.buyout {
+  padding-top: 13px;
+  padding-bottom: 39px;
+  background: white;
+  overflow: hidden; }
+  .buyout .breadcrumbs {
+    margin-bottom: 15px; }
+  .buyout .heading-1 {
+    margin-bottom: 30px; }
+  .buyout .common-text {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -.3px;
+    margin-bottom: 30px; }
+  .buyout .simple-btn {
+    margin-left: -5px;
+    letter-spacing: .15px;
+    margin-bottom: 30px; }
+  .buyout__promo {
+    display: none; }
+  @media (min-width: 800px) {
+    .buyout {
+      padding-top: 15px;
+      padding-bottom: 50px;
+      position: relative; }
+      .buyout:before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        top: 110px;
+        border-top-left-radius: 25px;
+        background: #F4F8FA;
+        height: 210px;
+        width: calc(50% - 140px); }
+      .buyout .common-text {
+        letter-spacing: -0.1px;
+        width: 341px; }
+      .buyout .breadcrumbs {
+        margin-bottom: 13px; }
+      .buyout .simple-btn {
+        margin-bottom: 40px; }
+      .buyout__promo {
+        display: block;
+        position: absolute;
+        right: -114px;
+        top: 109px;
+        z-index: 2; }
+        .buyout__promo:before {
+          content: '';
+          position: absolute;
+          width: 427px;
+          height: 38px;
+          background: url("../assets/landing-promo-decor-2.svg");
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          top: -52px;
+          z-index: 1;
+          right: -104px; }
+        .buyout__promo img {
+          height: 204px; } }
+  @media (min-width: 1200px) {
+    .buyout {
+      padding-top: 26px;
+      padding-bottom: 82px; }
+      .buyout .breadcrumbs {
+        margin-bottom: 34px; }
+      .buyout:before {
+        top: 121px;
+        z-index: 1;
+        width: calc(50% - 310px); }
+      .buyout .heading-1 {
+        margin-bottom: 50px; }
+        .buyout .heading-1:after {
+          margin-top: 16px; }
+      .buyout .common-text {
+        width: 656px;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 50px; }
+      .buyout__promo {
+        right: -205px;
+        top: 123px; }
+        .buyout__promo:before {
+          width: 459px;
+          height: 208px;
+          top: -22px;
+          right: 315px;
+          z-index: 2; }
+        .buyout__promo img {
+          position: relative;
+          z-index: 3;
+          height: 370px; } }
+  .buyout__advantages {
+    padding-top: 9px; }
+    .buyout__advantages .item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 15px;
+      min-height: 40px; }
+      .buyout__advantages .item:last-of-type {
+        margin-bottom: 0; }
+      .buyout__advantages .item .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px; }
+      .buyout__advantages .item .common-text {
+        margin-bottom: 0; }
+    @media (min-width: 800px) {
+      .buyout__advantages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        .buyout__advantages .item {
+          width: calc(50% - 15px);
+          margin-bottom: 20px; } }
+    @media (min-width: 1200px) {
+      .buyout__advantages {
+        padding-top: 110px; }
+        .buyout__advantages .item {
+          width: calc(33.3333% - 20px);
+          align-items: center;
+          margin-bottom: 29px; }
+          .buyout__advantages .item:last-of-type {
+            margin-bottom: 29px; }
+          .buyout__advantages .item .icon {
+            margin-right: 15px;
+            width: auto;
+            height: auto; }
+            .buyout__advantages .item .icon img {
+              width: 50px;
+              height: 50px; }
+          .buyout__advantages .item .common-text {
+            width: 257px;
+            font-size: 16px;
+            line-height: 22px; } }
+  .buyout__title {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 45px;
+    letter-spacing: -0.5px; }
+    .buyout__title:after {
+      margin-top: 20px; }
+    @media (min-width: 1200px) {
+      .buyout__title {
+        font-size: 30px;
+        line-height: 40px; } }
+  .buyout__timeline {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    .buyout__timeline .steps-row {
+      padding-top: 5px; }
+    .buyout__timeline .step-item .title {
+      letter-spacing: -1.9px; }
+    .buyout__timeline .step-item .link {
+      border-bottom: 1px solid #4087BE; }
+    .buyout__timeline .step-item .text {
+      letter-spacing: -0.4px; }
+    @media (min-width: 800px) {
+      .buyout__timeline .steps-row {
+        padding-top: 2px; }
+        .buyout__timeline .steps-row:before {
+          top: 253px; }
+      .buyout__timeline .step-item .text {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -0.1px; } }
+    @media (min-width: 1200px) {
+      .buyout__timeline {
+        padding-bottom: 0; }
+        .buyout__timeline .buyout__title {
+          margin-bottom: 77px; }
+        .buyout__timeline .steps-row:before {
+          top: 368px; }
+        .buyout__timeline .step-item .text {
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: .1px;
+          padding-right: 28px; } }
+  .buyout__sale {
+    position: relative;
+    padding-top: 50px;
+    overflow: hidden;
+    background: white; }
+    .buyout__sale:before {
+      content: '';
+      position: absolute;
+      height: 757px;
+      width: 100%;
+      border-top-right-radius: 25px;
+      background: #F4F8FA;
+      top: 0;
+      left: 0; }
+    .buyout__sale__main {
+      position: relative;
+      z-index: 3;
+      padding-bottom: 130px; }
+    .buyout__sale .buyout__title {
+      margin-bottom: 30px; }
+    .buyout__sale .subtitle {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 25px; }
+    .buyout__sale .list {
+      padding-left: 0;
+      margin-bottom: 19px; }
+      .buyout__sale .list li {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(95, 95, 95, 0.9);
+        position: relative;
+        margin-bottom: 10px; }
+        .buyout__sale .list li .icon {
+          width: 30px;
+          height: 30px;
+          margin-right: 10px;
+          align-self: flex-start; }
+        .buyout__sale .list li:last-of-type {
+          margin-bottom: 0; }
+    .buyout__sale .common-text {
+      font-size: 15px;
+      line-height: 22px;
+      color: rgba(95, 95, 95, 0.91);
+      margin-bottom: 30px; }
+    .buyout__sale .simple-btn {
+      margin-left: -5px; }
+      @media (max-width: 799px) {
+        .buyout__sale .simple-btn {
+          display: flex;
+          align-items: center;
+          width: 244px;
+          line-height: 18px;
+          text-align: left;
+          letter-spacing: .2px; } }
+    .buyout__sale .people {
+      width: 100%;
+      position: absolute;
+      bottom: -65px; }
+      .buyout__sale .people img {
+        width: 280px; }
+    .buyout__sale__info {
+      padding-top: 85px;
+      margin-bottom: 50px; }
+      .buyout__sale__info .common-text {
+        margin-bottom: 15px; }
+      .buyout__sale__info .phone {
+        color: #5f5f5f;
+        font-size: 18px;
+        line-height: 24px;
+        transition: all .2s; }
+        .buyout__sale__info .phone img {
+          margin-right: 7px;
+          margin-top: -4px; }
+        .buyout__sale__info .phone:hover {
+          text-decoration: none;
+          color: #FF6F00; }
+    @media (min-width: 800px) {
+      .buyout__sale {
+        padding-top: 110px; }
+        .buyout__sale:before {
+          top: 60px;
+          width: calc(50% + 300px);
+          height: 584px;
+          z-index: 2; }
+        .buyout__sale:after {
+          content: '';
+          position: absolute;
+          width: 427px;
+          height: 218px;
+          background: url(../assets/landing-promo-decor-2.svg);
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          top: 10px;
+          z-index: 1;
+          right: -232px; }
+        .buyout__sale .buyout__title {
+          margin-bottom: 35px; }
+        .buyout__sale__main {
+          padding-bottom: 14px; }
+          .buyout__sale__main .subtitle {
+            letter-spacing: -.6px;
+            margin-bottom: 32px; }
+          .buyout__sale__main .list {
+            width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-top: 5px;
+            margin-bottom: 15px; }
+            .buyout__sale__main .list li {
+              align-items: flex-start;
+              width: 285px;
+              min-height: 30px; }
+              .buyout__sale__main .list li .icon {
+                margin-top: -3px; }
+          .buyout__sale__main .common-text {
+            width: 600px; }
+          .buyout__sale__main .simple-btn {
+            letter-spacing: .3px; }
+          .buyout__sale__main .people {
+            width: auto;
+            left: calc(50% + 218px);
+            transform: translateX(-50%) translateY(65%);
+            bottom: 0; }
+            .buyout__sale__main .people img {
+              width: auto;
+              height: 177px; } }
+    @media (min-width: 1200px) {
+      .buyout__sale {
+        padding-top: 135px;
+        padding-bottom: 130px; }
+        .buyout__sale:before {
+          height: 665px;
+          top: 56px;
+          width: calc(50% + 279px); }
+        .buyout__sale:after {
+          top: 6px;
+          right: -121px; }
+        .buyout__sale .buyout__title {
+          margin-bottom: 45px; }
+        .buyout__sale__main {
+          padding-bottom: 111px; }
+          .buyout__sale__main .subtitle {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 30px; }
+          .buyout__sale__main .list {
+            padding-top: 4px;
+            width: 784px;
+            margin-bottom: 19px; }
+            .buyout__sale__main .list li {
+              width: 362px;
+              letter-spacing: 0.3px; }
+          .buyout__sale__main .common-text {
+            width: 754px;
+            font-size: 16px;
+            line-height: 22px;
+            margin-bottom: 50px; }
+          .buyout__sale__main .people {
+            left: calc(50% + 441px);
+            bottom: 84px; }
+            .buyout__sale__main .people img {
+              width: 558px;
+              height: auto; }
+        .buyout__sale__info {
+          padding-left: 30px;
+          padding-top: 209px; }
+          .buyout__sale__info .common-text {
+            font-size: 16px;
+            line-height: 24px; } }
+  .buyout__deposit {
+    background: white;
+    padding-top: 9px;
+    padding-bottom: 40px; }
+    .buyout__deposit .buyout__title {
+      margin-bottom: 30px; }
+    .buyout__deposit .common-text {
+      margin-bottom: 20px;
+      font-size: 15px;
+      line-height: 22px;
+      letter-spacing: -.4px; }
+      .buyout__deposit .common-text p {
+        margin-bottom: 10px;
+        letter-spacing: 0; }
+    .buyout__deposit .arrows-list {
+      padding-top: 4px;
+      padding-left: 0;
+      list-style: none;
+      margin-bottom: 20px; }
+      .buyout__deposit .arrows-list li {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        line-height: 22px;
+        color: #5f5f5f;
+        margin-bottom: 14px; }
+        .buyout__deposit .arrows-list li img {
+          align-self: self-start;
+          margin-right: 10px;
+          margin-top: -4px; }
+    .buyout__deposit__subinfo {
+      margin-top: 20px;
+      background: #F4F8FA;
+      padding: 40px 16px 20px 20px; }
+      .buyout__deposit__subinfo .title {
+        margin-bottom: 20px;
+        color: #5f5f5f;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: -.5px; }
+      .buyout__deposit__subinfo .list {
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 20px; }
+        .buyout__deposit__subinfo .list li {
+          display: flex;
+          align-items: flex-start;
+          font-size: 15px;
+          line-height: 22px;
+          color: #5f5f5f;
+          margin-bottom: 15px; }
+          .buyout__deposit__subinfo .list li img {
+            align-self: self-start;
+            margin-right: 10px; }
+    @media (min-width: 800px) {
+      .buyout__deposit {
+        padding-top: 29px;
+        padding-bottom: 60px; }
+        .buyout__deposit .buyout__title {
+          margin-bottom: 35px; }
+        .buyout__deposit .common-text {
+          margin-bottom: 30px; }
+          .buyout__deposit .common-text p {
+            margin-bottom: 21px; }
+        .buyout__deposit .arrows-list {
+          margin-top: -7px;
+          padding-top: 0;
+          margin-bottom: 30px; }
+        .buyout__deposit__subinfo {
+          margin-top: 10px;
+          padding-left: 30px;
+          padding-right: 30px; }
+          .buyout__deposit__subinfo .title {
+            margin-bottom: 29px; }
+          .buyout__deposit__subinfo .list {
+            padding-top: 0; } }
+    @media (min-width: 1200px) {
+      .buyout__deposit {
+        padding-bottom: 112px;
+        margin-top: -46px;
+        position: relative;
+        overflow: hidden; }
+        .buyout__deposit:after {
+          content: '';
+          position: absolute;
+          width: 235px;
+          height: 218px;
+          background: url(../assets/landing-promo-decor-2.svg);
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          bottom: 169px;
+          z-index: 1;
+          right: 105px; }
+        .buyout__deposit .buyout__title {
+          margin-bottom: 45px; }
+        .buyout__deposit .common-text {
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.2px;
+          margin-bottom: 35px; }
+          .buyout__deposit .common-text p {
+            padding-right: 30px; }
+        .buyout__deposit .arrows-list {
+          padding-top: 0;
+          margin-top: -20px;
+          margin-bottom: 40px; }
+          .buyout__deposit .arrows-list li {
+            margin-bottom: 10px;
+            letter-spacing: .4px; }
+            .buyout__deposit .arrows-list li img {
+              margin-top: 0;
+              align-self: flex-start; }
+        .buyout__deposit__subinfo {
+          margin-top: 79px;
+          padding: 30px 40px; }
+          .buyout__deposit__subinfo .title {
+            letter-spacing: .1px;
+            line-height: 24px;
+            margin-bottom: 30px; }
+          .buyout__deposit__subinfo .list li {
+            letter-spacing: .3px; } }
 
 .pagination {
   display: flex;
