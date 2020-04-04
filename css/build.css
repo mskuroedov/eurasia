@@ -1283,6 +1283,128 @@ body {
     margin-top: 7px;
     margin-bottom: 29px; }
 
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+  .pagination__row {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+    order: 0; }
+    @media (min-width: 800px) {
+      .pagination__row {
+        width: auto; } }
+    @media (min-width: 1200px) {
+      .pagination__row {
+        width: auto; } }
+  .pagination .item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 40px;
+    color: #5f5f5f;
+    border-radius: 100%;
+    transition: all .2s; }
+    .pagination .item:hover {
+      background: rgba(244, 248, 250, 0.51);
+      text-decoration: none; }
+    .pagination .item.current {
+      background: #F4F8FA; }
+  .pagination .prev-item, .pagination .next-item {
+    order: 1;
+    width: auto;
+    padding: 0 10px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center; }
+  .pagination .prev-item {
+    margin-left: 20px; }
+    .pagination .prev-item .icon {
+      margin-right: 12px; }
+  .pagination .next-item {
+    margin-right: 20px; }
+    .pagination .next-item .icon {
+      margin-left: 12px; }
+  @media (min-width: 800px) {
+    .pagination {
+      margin-bottom: 54px; }
+      .pagination .pagination__row {
+        margin-bottom: 0; }
+      .pagination .prev-item, .pagination .next-item {
+        order: unset; }
+      .pagination .prev-item {
+        margin-left: 6px; }
+        .pagination .prev-item .icon {
+          margin-right: 12px; }
+      .pagination .next-item {
+        margin-right: 6px; }
+        .pagination .next-item .icon {
+          margin-left: 12px; } }
+  @media (min-width: 1200px) {
+    .pagination {
+      margin-bottom: 54px;
+      justify-content: center; }
+      .pagination .prev-item, .pagination .next-item {
+        order: unset; }
+      .pagination .prev-item {
+        margin-left: 6px;
+        margin-right: 40px; }
+        .pagination .prev-item .d-xl-inline {
+          margin-right: 3px; }
+        .pagination .prev-item .icon {
+          margin-right: 12px; }
+      .pagination .next-item {
+        margin-right: 6px;
+        margin-left: 40px; }
+        .pagination .next-item .d-xl-inline {
+          margin-left: 3px; }
+        .pagination .next-item .icon {
+          margin-left: 12px; } }
+
+.noUi-horizontal {
+  height: 3px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 0;
+  background: #E5E9EB; }
+  .noUi-horizontal .noUi-connect {
+    background: #FF6F00; }
+  .noUi-horizontal .noUi-handle {
+    width: 19px;
+    height: 19px;
+    border: 0;
+    top: -8px;
+    border-radius: 100%;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
+    transition: all .2s; }
+    .noUi-horizontal .noUi-handle:hover {
+      background: #FF6F00; }
+      .noUi-horizontal .noUi-handle:hover:after {
+        background: #FF5C00; }
+    .noUi-horizontal .noUi-handle:active, .noUi-horizontal .noUi-handle:focus {
+      outline: none; }
+    .noUi-horizontal .noUi-handle:after {
+      width: 9px;
+      height: 9px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: #FF6F00;
+      border-radius: 100%; }
+    .noUi-horizontal .noUi-handle:before {
+      display: none; }
+
 .breadcrumbs {
   margin-bottom: 10px; }
   .breadcrumbs__item {
@@ -6702,124 +6824,353 @@ body {
           .buyout__deposit__subinfo .list li {
             letter-spacing: .3px; } }
 
-.pagination {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 40px; }
-  .pagination__row {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 15px;
-    order: 0; }
-    @media (min-width: 800px) {
-      .pagination__row {
-        width: auto; } }
-    @media (min-width: 1200px) {
-      .pagination__row {
-        width: auto; } }
-  .pagination .item {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
+.comission-sale {
+  padding-top: 13px;
+  padding-bottom: 39px;
+  background: white;
+  overflow: hidden; }
+  .comission-sale .breadcrumbs {
+    margin-bottom: 15px; }
+  .comission-sale .heading-1 {
+    margin-bottom: 30px; }
+  .comission-sale .common-text {
     font-size: 15px;
-    line-height: 40px;
-    color: #5f5f5f;
-    border-radius: 100%;
-    transition: all .2s; }
-    .pagination .item:hover {
-      background: rgba(244, 248, 250, 0.51);
-      text-decoration: none; }
-    .pagination .item.current {
-      background: #F4F8FA; }
-  .pagination .prev-item, .pagination .next-item {
-    order: 1;
-    width: auto;
-    padding: 0 10px;
-    border-radius: 3px;
-    display: flex;
-    align-items: center; }
-  .pagination .prev-item {
-    margin-left: 20px; }
-    .pagination .prev-item .icon {
-      margin-right: 12px; }
-  .pagination .next-item {
-    margin-right: 20px; }
-    .pagination .next-item .icon {
-      margin-left: 12px; }
+    line-height: 22px;
+    letter-spacing: -.1px;
+    margin-bottom: 30px; }
   @media (min-width: 800px) {
-    .pagination {
-      margin-bottom: 54px; }
-      .pagination .pagination__row {
-        margin-bottom: 0; }
-      .pagination .prev-item, .pagination .next-item {
-        order: unset; }
-      .pagination .prev-item {
-        margin-left: 6px; }
-        .pagination .prev-item .icon {
-          margin-right: 12px; }
-      .pagination .next-item {
-        margin-right: 6px; }
-        .pagination .next-item .icon {
-          margin-left: 12px; } }
+    .comission-sale {
+      padding-top: 15px;
+      padding-bottom: 50px;
+      position: relative; }
+      .comission-sale:before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 110px;
+        border-top-left-radius: 25px;
+        background: #F4F8FA;
+        height: 210px;
+        width: calc(50% - 140px); }
+      .comission-sale .common-text {
+        letter-spacing: -0.1px;
+        font-size: 18px;
+        line-height: 26px;
+        width: 342px; }
+      .comission-sale .breadcrumbs {
+        margin-bottom: 13px; }
+      .comission-sale__promo {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 133px; }
+        .comission-sale__promo:before {
+          content: '';
+          position: absolute;
+          width: 427px;
+          height: 208px;
+          background: url(../assets/landing-promo-decor-2.svg);
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          top: -43px;
+          z-index: 1;
+          right: -91px; }
+        .comission-sale__promo img {
+          position: relative;
+          z-index: 12;
+          height: 167px; } }
   @media (min-width: 1200px) {
-    .pagination {
-      margin-bottom: 54px;
-      justify-content: center; }
-      .pagination .prev-item, .pagination .next-item {
-        order: unset; }
-      .pagination .prev-item {
-        margin-left: 6px;
-        margin-right: 40px; }
-        .pagination .prev-item .d-xl-inline {
-          margin-right: 3px; }
-        .pagination .prev-item .icon {
-          margin-right: 12px; }
-      .pagination .next-item {
-        margin-right: 6px;
-        margin-left: 40px; }
-        .pagination .next-item .d-xl-inline {
-          margin-left: 3px; }
-        .pagination .next-item .icon {
-          margin-left: 12px; } }
-
-.noUi-horizontal {
-  height: 3px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border: 0;
-  background: #E5E9EB; }
-  .noUi-horizontal .noUi-connect {
-    background: #FF6F00; }
-  .noUi-horizontal .noUi-handle {
-    width: 19px;
-    height: 19px;
-    border: 0;
-    top: -8px;
-    border-radius: 100%;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.3);
-    transition: all .2s; }
-    .noUi-horizontal .noUi-handle:hover {
-      background: #FF6F00; }
-      .noUi-horizontal .noUi-handle:hover:after {
-        background: #FF5C00; }
-    .noUi-horizontal .noUi-handle:active, .noUi-horizontal .noUi-handle:focus {
-      outline: none; }
-    .noUi-horizontal .noUi-handle:after {
-      width: 9px;
-      height: 9px;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      background: #FF6F00;
-      border-radius: 100%; }
-    .noUi-horizontal .noUi-handle:before {
-      display: none; }
+    .comission-sale {
+      padding-top: 26px;
+      padding-bottom: 82px; }
+      .comission-sale .breadcrumbs {
+        margin-bottom: 34px; }
+      .comission-sale:before {
+        top: 121px;
+        width: calc(50% - 310px); }
+      .comission-sale .heading-1 {
+        margin-bottom: 50px; }
+        .comission-sale .heading-1:after {
+          margin-top: 16px; }
+      .comission-sale .common-text {
+        width: 656px;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 30px; }
+      .comission-sale__promo {
+        top: 170px; }
+        .comission-sale__promo:before {
+          width: 459px;
+          height: 208px;
+          top: -69px;
+          right: 108px; }
+        .comission-sale__promo img {
+          height: 284px; } }
+  .comission-sale__advantages .item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    min-height: 40px; }
+    .comission-sale__advantages .item:last-of-type {
+      margin-bottom: 0; }
+    .comission-sale__advantages .item .icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px; }
+    .comission-sale__advantages .item .title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 5px; }
+    .comission-sale__advantages .item .common-text {
+      margin-bottom: 0;
+      padding-right: 3px; }
+  @media (min-width: 800px) {
+    .comission-sale__advantages {
+      padding-top: 19px;
+      position: relative; }
+      .comission-sale__advantages:before {
+        content: '';
+        position: absolute;
+        width: 427px;
+        height: 128px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        top: 5px;
+        z-index: 1;
+        right: -318px; }
+      .comission-sale__advantages .item {
+        margin-bottom: 25px; }
+        .comission-sale__advantages .item .common-text {
+          width: 100%;
+          font-size: 15px;
+          line-height: 22px; } }
+  @media (min-width: 1200px) {
+    .comission-sale__advantages {
+      padding-top: 10px; }
+      .comission-sale__advantages:before {
+        width: 297px;
+        height: 274px;
+        top: auto;
+        bottom: -159px;
+        right: -608px; }
+      .comission-sale__advantages .item .icon {
+        min-width: 50px;
+        height: 50px;
+        margin-right: 20px; }
+        .comission-sale__advantages .item .icon img {
+          height: 100%;
+          width: 100%; }
+      .comission-sale__advantages .item .title {
+        margin-top: 5px;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px; }
+      .comission-sale__advantages .item .common-text {
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 20px; } }
+  .comission-sale__timeline {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+    .comission-sale__timeline .buyout__title {
+      letter-spacing: -.9px;
+      margin-right: -20px;
+      margin-bottom: 40px; }
+    @media (max-width: 799px) {
+      .comission-sale__timeline .step-item.js-animated:after {
+        height: 119%; } }
+    .comission-sale__timeline .step-item .image {
+      margin-bottom: 20px; }
+    .comission-sale__timeline .step-item .title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 7px; }
+    .comission-sale__timeline .step-item .text {
+      letter-spacing: -.4px;
+      margin-bottom: 17px; }
+    .comission-sale__timeline .step-item .primary-text {
+      font-size: 15px;
+      line-height: 20px;
+      color: #FF6F00;
+      opacity: 0.9; }
+    .comission-sale__timeline .step-item .simple-btn {
+      margin-left: 0;
+      width: 221px;
+      white-space: nowrap; }
+      .comission-sale__timeline .step-item .simple-btn.--black {
+        width: 236px; }
+    .comission-sale__timeline .step-item:last-of-type {
+      margin-bottom: 0; }
+    @media (min-width: 800px) {
+      .comission-sale__timeline {
+        padding-top: 30px; }
+        .comission-sale__timeline .buyout__title {
+          margin-bottom: 45px; }
+        .comission-sale__timeline .steps-row:before {
+          top: 272px; }
+        .comission-sale__timeline .step-item .image {
+          margin-bottom: 50px; }
+        .comission-sale__timeline .step-item .text {
+          font-size: 15px;
+          line-height: 22px;
+          padding-right: 17px;
+          margin-bottom: 19px; }
+        .comission-sale__timeline .step-item .simple-btn, .comission-sale__timeline .step-item .simple-btn.--black {
+          margin-left: -5px;
+          width: 177px;
+          display: flex;
+          align-items: center;
+          white-space: unset;
+          line-height: 18px;
+          text-align: left; } }
+    @media (min-width: 1200px) {
+      .comission-sale__timeline {
+        padding-top: 37px; }
+        .comission-sale__timeline:before {
+          content: '';
+          position: absolute;
+          width: 305px;
+          height: 168px;
+          background: url(../assets/landing-promo-decor-2.svg);
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          top: 1px;
+          z-index: 1;
+          right: 1px; }
+        .comission-sale__timeline .buyout__title {
+          margin-bottom: 80px; }
+        .comission-sale__timeline .steps-row:before {
+          top: 397px; }
+        .comission-sale__timeline .step-item .image {
+          margin-bottom: 77px; }
+        .comission-sale__timeline .step-item .title {
+          font-size: 20px;
+          line-height: 26px;
+          margin-bottom: 10px; }
+        .comission-sale__timeline .step-item .text {
+          font-size: 16px;
+          line-height: 24px;
+          padding-right: 47px;
+          letter-spacing: -.2px;
+          margin-bottom: 30px; }
+        .comission-sale__timeline .step-item .primary-text {
+          letter-spacing: .3px;
+          margin-bottom: 7px; }
+        .comission-sale__timeline .step-item .simple-btn, .comission-sale__timeline .step-item .simple-btn.--black {
+          width: auto; } }
+  .comission-sale__price {
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 40px; }
+    .comission-sale__price .buyout__title {
+      margin-bottom: 30px; }
+    .comission-sale__price .subheader {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: -.6px;
+      margin-bottom: 20px; }
+    .comission-sale__price .pricing__list {
+      display: block; }
+      .comission-sale__price .pricing__list__title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        letter-spacing: -0.6px; }
+      .comission-sale__price .pricing__list__item {
+        display: flex;
+        align-items: flex-end;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 15px;
+        position: relative;
+        color: #5f5f5f; }
+        .comission-sale__price .pricing__list__item .name {
+          position: relative;
+          z-index: 3;
+          max-width: 244px;
+          padding-right: 4px;
+          display: contents; }
+        .comission-sale__price .pricing__list__item .val {
+          text-align: right;
+          margin-left: auto;
+          padding-left: 4px;
+          white-space: nowrap; }
+        .comission-sale__price .pricing__list__item .name, .comission-sale__price .pricing__list__item .val {
+          position: relative;
+          z-index: 3;
+          background: white; }
+        .comission-sale__price .pricing__list__item .dots {
+          position: absolute;
+          width: calc(100% - 10px);
+          bottom: 5px;
+          left: 5px;
+          flex-grow: 1;
+          border-bottom: 1px dashed rgba(95, 95, 95, 0.2); }
+    .comission-sale__price .buyout__deposit__subinfo {
+      margin-top: 25px; }
+      .comission-sale__price .buyout__deposit__subinfo .title {
+        font-size: 16px;
+        line-height: 24px; }
+      .comission-sale__price .buyout__deposit__subinfo .list li {
+        padding-right: 30px; }
+    @media (min-width: 800px) {
+      .comission-sale__price {
+        padding-top: 51px;
+        padding-bottom: 60px; }
+        .comission-sale__price .container {
+          position: relative; }
+          .comission-sale__price .container:after {
+            content: '';
+            position: absolute;
+            width: 133px;
+            height: 102px;
+            background: url(../assets/landing-promo-decor-2.svg);
+            background-repeat: repeat-x;
+            background-position-x: 13px;
+            top: 19px;
+            z-index: 1;
+            right: -15px; }
+        .comission-sale__price .buyout__title {
+          margin-bottom: 35px; }
+        .comission-sale__price .subheader {
+          margin-bottom: 30px; }
+        .comission-sale__price .buyout__deposit__subinfo .title {
+          margin-bottom: 20px; }
+        .comission-sale__price .buyout__deposit__subinfo .list li {
+          padding-right: 19px; } }
+    @media (min-width: 1200px) {
+      .comission-sale__price {
+        padding-top: 60px;
+        padding-bottom: 150px; }
+        .comission-sale__price .buyout__title {
+          margin-bottom: 45px; }
+        .comission-sale__price .subheader {
+          font-size: 20px;
+          line-height: 26px; }
+        .comission-sale__price .pricing__list {
+          padding-right: 30px; }
+          .comission-sale__price .pricing__list__item {
+            margin-bottom: 20px; }
+            .comission-sale__price .pricing__list__item .val {
+              font-size: 16px;
+              line-height: 22px; }
+        .comission-sale__price .buyout__deposit__subinfo {
+          position: relative;
+          z-index: 2;
+          margin-top: 110px;
+          padding-top: 40px;
+          padding-bottom: 21px; }
+          .comission-sale__price .buyout__deposit__subinfo .title {
+            letter-spacing: -.5px;
+            margin-bottom: 30px; }
+          .comission-sale__price .buyout__deposit__subinfo .list li {
+            padding-right: 0; }
+        .comission-sale__price .container:after {
+          width: 461px;
+          height: 362px;
+          top: 35px;
+          right: -70px;
+          transform: rotate(90deg); } }
