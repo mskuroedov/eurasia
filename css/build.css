@@ -7741,7 +7741,8 @@ body {
     padding-top: 7px; }
   .job__list .body .list {
     color: #5f5f5f;
-    border-bottom: 1px solid rgba(95, 95, 95, 0.2); }
+    border-bottom: 1px solid rgba(95, 95, 95, 0.2);
+    margin-bottom: 20px; }
     .job__list .body .list:last-of-type {
       border: 0; }
     .job__list .body .list .list-title {
@@ -7752,7 +7753,7 @@ body {
       list-style: none;
       padding-left: 0;
       padding-bottom: 14px;
-      margin-bottom: 20px; }
+      margin-bottom: 0; }
       .job__list .body .list ul li {
         position: relative;
         padding-left: 13px;
