@@ -7179,3 +7179,473 @@ body {
           top: 35px;
           right: -70px;
           transform: rotate(90deg); } }
+
+.trade-in {
+  padding-top: 13px;
+  padding-bottom: 61px;
+  background: white;
+  overflow: hidden; }
+  .trade-in .breadcrumbs {
+    margin-bottom: 15px; }
+  .trade-in .heading-1 {
+    margin-bottom: 30px; }
+  .trade-in .common-text {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -.1px;
+    margin-bottom: 30px; }
+  @media (min-width: 800px) {
+    .trade-in {
+      padding-top: 15px;
+      padding-bottom: 80px;
+      position: relative; }
+      .trade-in:before {
+        content: '';
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 110px;
+        border-top-left-radius: 25px;
+        background: #F4F8FA;
+        height: 210px;
+        width: calc(50% - 140px); }
+      .trade-in .common-text {
+        padding-right: 80px;
+        letter-spacing: -.1px; }
+      .trade-in .breadcrumbs {
+        margin-bottom: 13px; } }
+  @media (min-width: 1200px) {
+    .trade-in {
+      padding-top: 26px;
+      padding-bottom: 121px; }
+      .trade-in .breadcrumbs {
+        margin-bottom: 34px; }
+      .trade-in:before {
+        top: 121px;
+        height: 370px;
+        width: calc(50% - 310px); }
+      .trade-in .heading-1 {
+        margin-bottom: 50px; }
+        .trade-in .heading-1:after {
+          margin-top: 16px; }
+      .trade-in .common-text {
+        width: 656px;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 30px; } }
+  .trade-in__promo {
+    width: 100%;
+    margin-bottom: 40px; }
+    .trade-in__promo img {
+      max-width: 100%; }
+    @media (min-width: 800px) {
+      .trade-in__promo {
+        width: 98.7%;
+        height: 295px;
+        margin-top: 79px;
+        margin-left: 5px;
+        position: relative;
+        z-index: 25;
+        margin-bottom: -150px; } }
+    @media (min-width: 1200px) {
+      .trade-in__promo {
+        margin-top: 67px;
+        margin-left: 52px; }
+        .trade-in__promo img {
+          width: 433px;
+          height: auto; } }
+  .trade-in__advantages .item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    min-height: 40px; }
+    .trade-in__advantages .item .icon {
+      margin-right: 10px; }
+      .trade-in__advantages .item .icon img {
+        width: 40px;
+        height: 40px; }
+    .trade-in__advantages .item .title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 5px; }
+    .trade-in__advantages .item .common-text {
+      margin-bottom: 0;
+      padding-right: 3px; }
+    .trade-in__advantages .item .text-partners {
+      margin-top: 4px;
+      opacity: .7;
+      letter-spacing: -.4px;
+      line-height: 22px; }
+    .trade-in__advantages .item + .simple-btn {
+      margin-left: 45px; }
+  @media (min-width: 800px) {
+    .trade-in__advantages {
+      padding-top: 10px;
+      position: relative; }
+      .trade-in__advantages:before {
+        content: '';
+        position: absolute;
+        width: 126px;
+        height: 148px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        top: 46px;
+        z-index: 1;
+        right: -328px; }
+      .trade-in__advantages .item {
+        margin-bottom: 25px; }
+        .trade-in__advantages .item .common-text {
+          width: 100%;
+          font-size: 15px;
+          line-height: 22px; }
+        .trade-in__advantages .item .text-partners {
+          margin-bottom: 5px; } }
+  @media (min-width: 1200px) {
+    .trade-in__advantages {
+      padding-top: 3px; }
+      .trade-in__advantages:before {
+        width: 297px;
+        height: 274px;
+        top: 122px;
+        bottom: auto;
+        right: -616px; }
+      .trade-in__advantages .item .icon {
+        min-width: 50px;
+        height: 50px;
+        margin-right: 20px; }
+        .trade-in__advantages .item .icon img {
+          height: 100%;
+          width: 100%; }
+      .trade-in__advantages .item .title {
+        margin-top: 5px;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px; }
+      .trade-in__advantages .item .common-text {
+        font-size: 16px;
+        line-height: 24px;
+        width: 448px; }
+      .trade-in__advantages .item .text-partners {
+        width: 448px;
+        margin-top: 10px; }
+      .trade-in__advantages .item + .simple-btn {
+        margin-left: 66px;
+        letter-spacing: .2px; } }
+  .trade-in__offers {
+    position: relative;
+    padding-bottom: 50px; }
+    .trade-in__offers:before {
+      content: '';
+      position: absolute;
+      letter-spacing: 0;
+      top: 0;
+      width: 100%;
+      height: 270px;
+      background: #F4F8FA; }
+    .trade-in__offers__title {
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 33px;
+      letter-spacing: -0.7px; }
+      .trade-in__offers__title .skew {
+        position: relative;
+        font-family: 'Magistral', sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+        color: white;
+        padding: 0 7px 0 10px;
+        margin-left: 0;
+        margin-right: 7px;
+        display: inline-block;
+        top: -2px; }
+        .trade-in__offers__title .skew .num {
+          position: relative;
+          z-index: 2;
+          top: 2px; }
+        .trade-in__offers__title .skew:before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          border-radius: 4px;
+          left: 2px;
+          transform: skew(-12deg, 0deg);
+          background: #FF6F00; }
+    .trade-in__offers .specs-slider {
+      margin-bottom: 25px; }
+    @media (min-width: 800px) {
+      .trade-in__offers {
+        padding-top: 42px;
+        padding-bottom: 54px; }
+        .trade-in__offers:before {
+          height: 237px; }
+        .trade-in__offers__title {
+          padding-top: 10px;
+          font-size: 26px;
+          line-height: 30px;
+          margin-bottom: 31px; }
+          .trade-in__offers__title br:first-of-type {
+            display: none; }
+          .trade-in__offers__title .skew {
+            font-size: 25px;
+            line-height: 34px;
+            margin: 0 5px; }
+            .trade-in__offers__title .skew:before {
+              top: -3px; }
+            .trade-in__offers__title .skew .num {
+              top: -1px; } }
+    @media (min-width: 1200px) {
+      .trade-in__offers {
+        padding-top: 62px;
+        padding-bottom: 119px; }
+        .trade-in__offers:before {
+          height: 230px; }
+        .trade-in__offers__title {
+          margin-bottom: 37px; }
+          .trade-in__offers__title br {
+            display: none; } }
+  .trade-in__map {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    background: white; }
+    .trade-in__map:before {
+      content: '';
+      position: absolute;
+      letter-spacing: 0;
+      top: 0;
+      width: 100%;
+      height: 270px;
+      background: #F4F8FA;
+      border-top-right-radius: 25px; }
+    .trade-in__map .buyout__title {
+      margin-bottom: 33px; }
+    .trade-in__map .map {
+      width: 100%;
+      height: 200px;
+      transition: all .2s;
+      position: relative;
+      z-index: 10; }
+      .trade-in__map .map iframe {
+        width: 100%;
+        height: 100%; }
+      .trade-in__map .map.--open {
+        height: 410px; }
+    .trade-in__map .control {
+      display: block;
+      margin: 0 auto;
+      background: white;
+      margin-top: -43px;
+      width: 203px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      z-index: 20; }
+      .trade-in__map .control .link {
+        font-size: 15px;
+        line-height: 24px;
+        position: relative;
+        margin-left: -6px; }
+        .trade-in__map .control .link span {
+          border-bottom: 1px dashed #4087BE; }
+        .trade-in__map .control .link svg {
+          position: relative;
+          margin-left: 2px;
+          top: 2px; }
+        .trade-in__map .control .link:hover {
+          color: #FF6F00; }
+          .trade-in__map .control .link:hover span {
+            border-color: #FF6F00; }
+          .trade-in__map .control .link:hover svg path {
+            fill: #FF6F00; }
+        .trade-in__map .control .link[aria-expanded=true] .show-text {
+          display: none; }
+        .trade-in__map .control .link[aria-expanded=true] .hide-text {
+          display: inline; }
+        .trade-in__map .control .link[aria-expanded=false] .show-text {
+          display: inline; }
+        .trade-in__map .control .link[aria-expanded=false] .hide-text {
+          display: none; }
+        .trade-in__map .control .link[aria-expanded=false] svg {
+          transform: scale(1, -1); }
+    @media (min-width: 800px) {
+      .trade-in__map {
+        padding-top: 60px;
+        padding-bottom: 50px; }
+        .trade-in__map:before {
+          height: 282px;
+          width: calc(50% + 174px); }
+        .trade-in__map .container {
+          position: relative; }
+          .trade-in__map .container:after {
+            content: '';
+            position: absolute;
+            width: 312px;
+            height: 188px;
+            background: url(../assets/landing-promo-decor-2.svg);
+            background-repeat: repeat-x;
+            background-position-x: 13px;
+            top: 50px;
+            z-index: 1;
+            right: -61px;
+            transform: rotate(90deg); }
+        .trade-in__map .buyout__title {
+          margin-bottom: 31px; } }
+    @media (min-width: 1200px) {
+      .trade-in__map {
+        padding-top: 80px;
+        padding-bottom: 49px; }
+        .trade-in__map:before {
+          width: calc(50% + 83px);
+          height: 339px; }
+        .trade-in__map .container:after {
+          width: 395.56px;
+          height: 310px;
+          background-repeat: repeat;
+          top: -29px;
+          right: -104px;
+          transform: none; }
+        .trade-in__map .buyout__title {
+          margin-bottom: 50px; } }
+  .trade-in__models {
+    overflow: hidden;
+    background: white;
+    padding-bottom: 40px; }
+    .trade-in__models .owl-stage-outer {
+      overflow: visible; }
+    .trade-in__models .title {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 22px; }
+    .trade-in__models__row {
+      padding-top: 5px;
+      border-bottom: 1px solid rgba(95, 95, 95, 0.2); }
+      .trade-in__models__row:first-of-type {
+        border-top: 1px solid rgba(95, 95, 95, 0.2); }
+      .trade-in__models__row .info {
+        display: flex;
+        align-items: flex-start; }
+        .trade-in__models__row .info .image {
+          width: 60px;
+          height: 60px;
+          margin-right: 20px;
+          margin-bottom: 15px; }
+          .trade-in__models__row .info .image img {
+            width: 100%; }
+        .trade-in__models__row .info .contacts-block {
+          padding-top: 10px;
+          margin-bottom: 18px; }
+        .trade-in__models__row .info .text {
+          color: #5f5f5f;
+          font-size: 15px;
+          line-height: 22px; }
+      .trade-in__models__row .slider {
+        padding-bottom: 21px; }
+        .trade-in__models__row .slider .item {
+          margin-bottom: 18px; }
+          .trade-in__models__row .slider .item .image {
+            margin-bottom: 15px;
+            max-height: 135px;
+            width: 180px; }
+            .trade-in__models__row .slider .item .image img {
+              max-width: 100%; }
+          .trade-in__models__row .slider .item .name {
+            font-size: 16px;
+            line-height: 22px;
+            color: #000; }
+          .trade-in__models__row .slider .item.special-offer {
+            position: relative;
+            margin-bottom: 8px; }
+            .trade-in__models__row .slider .item.special-offer .special-offer__label {
+              position: absolute;
+              top: 64px;
+              left: -50px;
+              padding: 0 6px;
+              font-size: 10px;
+              line-height: 22px;
+              letter-spacing: 0.01em;
+              text-transform: uppercase;
+              color: white;
+              background: #FF6F00;
+              border-radius: 0px 0px 4px 0px;
+              transform: rotate(-90deg); }
+            .trade-in__models__row .slider .item.special-offer .special-offer__text {
+              color: #FF6F00;
+              font-size: 14px;
+              line-height: 22px; }
+    @media (min-width: 800px) {
+      .trade-in__models {
+        padding-bottom: 57px; }
+        .trade-in__models__row .info .text br {
+          display: none; } }
+    @media (min-width: 1200px) {
+      .trade-in__models {
+        padding-bottom: 142px; }
+        .trade-in__models .title {
+          font-size: 20px;
+          line-height: 26px;
+          margin-bottom: 20px; }
+        .trade-in__models .owl-stage-outer {
+          overflow: hidden; }
+        .trade-in__models .owl-nav button.owl-next, .trade-in__models .owl-nav button.owl-prev {
+          width: 50px;
+          height: 50px;
+          margin-top: -64px;
+          z-index: 20;
+          position: absolute;
+          top: 50%;
+          border-radius: 100%;
+          background: white;
+          box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all .2s; }
+          .trade-in__models .owl-nav button.owl-next svg path, .trade-in__models .owl-nav button.owl-prev svg path {
+            transition: all .2s; }
+          .trade-in__models .owl-nav button.owl-next:hover, .trade-in__models .owl-nav button.owl-prev:hover {
+            background: #FF6F00; }
+            .trade-in__models .owl-nav button.owl-next:hover svg path, .trade-in__models .owl-nav button.owl-prev:hover svg path {
+              fill: white; }
+          .trade-in__models .owl-nav button.owl-next.disabled, .trade-in__models .owl-nav button.owl-prev.disabled {
+            opacity: 0;
+            background: #c5c5c5; }
+            .trade-in__models .owl-nav button.owl-next.disabled:hover svg path, .trade-in__models .owl-nav button.owl-prev.disabled:hover svg path {
+              fill: #5f5f5f; }
+        .trade-in__models .owl-nav .owl-prev {
+          left: -24px; }
+        .trade-in__models .owl-nav .owl-next {
+          right: -24px; }
+        .trade-in__models__row {
+          display: flex;
+          align-items: flex-start;
+          padding-top: 29px;
+          margin-bottom: 6px; }
+          .trade-in__models__row .info {
+            flex-wrap: wrap;
+            width: 190px;
+            margin-right: 40px; }
+            .trade-in__models__row .info .image {
+              width: 100px;
+              height: 100px;
+              margin-bottom: 10px; }
+              .trade-in__models__row .info .image img {
+                width: 100%; }
+            .trade-in__models__row .info .contacts-block {
+              padding-top: 0; }
+              .trade-in__models__row .info .contacts-block .text br {
+                display: block; }
+          .trade-in__models__row .slider {
+            width: 914px; }
+            .trade-in__models__row .slider .item .image {
+              width: 227px;
+              max-height: 170px; }
+            .trade-in__models__row .slider .item.special-offer .special-offer__label {
+              top: 100px; }
+            .trade-in__models__row .slider .item.special-offer .special-offer__text {
+              margin-bottom: -10px; } }
