@@ -1,0 +1,466 @@
+.job {
+  padding-top: 13px;
+  padding-bottom: 20px;
+  background: white;
+  overflow: hidden;
+
+  .breadcrumbs {
+    margin-bottom: 15px;
+  }
+
+  .heading-1 {
+    margin-bottom: 30px;
+  }
+
+  .common-text {
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -.1px;
+    margin-bottom: 30px;
+  }
+
+  @media(min-width: 800px) {
+    padding-top: 15px;
+    padding-bottom: 79px;
+    position: relative;
+    .heading-1 {
+      margin-bottom: 34px;
+    }
+    .common-text {
+      padding-right: 80px;
+      letter-spacing: -.1px;
+    }
+    .breadcrumbs {
+      margin-bottom: 13px;
+    }
+  }
+  @media(min-width: 1200px) {
+    padding-top: 26px;
+    padding-bottom: 97px;
+    position: relative;
+    .breadcrumbs {
+      margin-bottom: 34px;
+    }
+    .heading-1 {
+      margin-bottom: 60px;
+
+      &:after {
+        margin-top: 16px;
+      }
+    }
+    .common-text {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 30px;
+    }
+    .container {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 441px;
+        height: 278px;
+        background: url(../assets/landing-promo-decor-2.svg);
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        top: 30px;
+        z-index: 1;
+        right: -67px;
+      }
+    }
+  }
+
+  &__list {
+
+    .item-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $secondary;
+      transition: all .2s;
+      padding: 15px 20px;
+      margin-bottom: 2px;
+
+      .text {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      .icon {
+        margin-left: 20px;
+        min-width: 26px;
+        height: 26px;
+        opacity: .5;
+        transition: all .2s;
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+
+        &:hover {
+          opacity: .8;
+        }
+      }
+
+      &[aria-expanded='true'] {
+        background: white;
+
+        .icon-show {
+          display: none;
+        }
+
+        .icon-hide {
+          display: block;
+        }
+      }
+
+      &[aria-expanded='false'] {
+        .icon-show {
+          display: block;
+        }
+
+        .icon-hide {
+          display: none;
+        }
+      }
+    }
+
+    .body {
+
+      .container {
+        padding-top: 7px;
+      }
+
+      .list {
+        color: $gray;
+        border-bottom: 1px solid rgba(95, 95, 95, 0.2);
+
+        &:last-of-type {
+          border: 0;
+        }
+
+        .list-title {
+          font-size: 15px;
+          line-height: 22px;
+          margin-bottom: 10px;
+        }
+
+        ul {
+          list-style: none;
+          padding-left: 0;
+          padding-bottom: 14px;
+          margin-bottom: 20px;
+
+          li {
+            position: relative;
+            padding-left: 13px;
+            margin-bottom: 6px;
+            font-size: 15px;
+            line-height: 20px;
+
+            &:before {
+              content: '';
+              position: absolute;
+              top: 10px;
+              left: 0;
+              width: 3px;
+              height: 3px;
+              border-radius: 100%;
+              background: $primary;
+
+            }
+          }
+        }
+      }
+    }
+
+    @media(min-width: 800px) {
+      position: relative;
+      z-index: 10;
+      .body {
+        .container {
+          padding: 0 20px 19px 20px;
+        }
+
+        .list {
+          padding-top: 10px;
+          display: flex;
+          margin-bottom: 11px;
+
+          .list-title {
+            margin-right: auto;
+          }
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 114px;
+            width: 556px;
+            margin-bottom: 2px;
+
+            li {
+              width: 263px;
+            }
+          }
+        }
+      }
+    }
+
+    @media(min-width: 1200px) {
+
+      .item-title {
+        padding: 20px;
+
+        .text {
+          font-size: 20px;
+          line-height: 26px;
+        }
+      }
+
+      .body {
+        .container {
+          padding: 0 4px 19px 20px;
+
+          .list {
+
+            ul {
+              width: 600px;
+
+              li {
+                width: 308px;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+
+  &__promo {
+
+    @media(min-width: 800px) {
+      margin-top: 79px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      border-top-left-radius: 25px;
+      padding-top: 40px;
+      padding-left: 30px;
+      padding-bottom: 46px;
+      background: $secondary;
+
+      &__block {
+        &:before {
+          content: '';
+          position: absolute;
+          width: 246px;
+          height: 218px;
+          background: url(../assets/landing-promo-decor-2.svg);
+          background-repeat: repeat-x;
+          background-position-x: 13px;
+          top: -32px;
+          z-index: 1;
+          right: -1px;
+        }
+      }
+      .title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-right: 15px;
+        letter-spacing: .2px;
+      }
+      .mail {
+        img {
+          margin-right: 5px;
+        }
+
+        a {
+          color: $black;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: .4px;
+
+          &:hover {
+            color: $primary;
+            text-decoration: none;
+          }
+        }
+      }
+      .man {
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        width: 131px;
+        bottom: 0;
+      }
+    }
+    @media(min-width: 1200px) {
+      margin-top: -91px;
+      position: absolute;
+      top: 212px;
+      right: 0;
+      width: calc(50% - 310px);
+      padding-top: 95px;
+      padding-left: 60px;
+      height: 659px;
+      display: block;
+      &__block:before {
+        top: auto;
+        width: 307px;
+        height: 219px;
+        right: -1px;
+        bottom: -50px;
+      }
+      .title {
+        font-size: 20px;
+        line-height: 26px;
+        width: 204px;
+        margin-bottom: 18px;
+      }
+      .mail {
+        margin-left: -5px;
+      }
+      .man {
+        width: 391px;
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+
+  &__team {
+    background: white;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    .buyout__title {
+      margin-bottom: 51px;
+    }
+
+    .owl-stage-outer {
+      overflow: visible;
+    }
+
+    .team-slider {
+      &.owl-theme-default {
+
+
+        .owl-next, .owl-prev {
+          width: 50px;
+          height: 50px;
+          z-index: 20;
+          border-radius: 100%;
+          background: $primary;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all .2s;
+          margin: 0 5px;
+
+          svg path {
+            transition: all .2s;
+          }
+
+          &:hover {
+            background: #FF5C00;
+          }
+
+          &:active {
+            background: #FF5200;
+          }
+
+          &.disabled {
+            opacity: .9;
+
+            &:hover {
+              svg path {
+                fill: $gray;
+              }
+            }
+          }
+        }
+      }
+
+      .team__item {
+        width: 164px;
+
+        .avatar {
+          width: 100px;
+          height: 100px;
+          margin-left: -5px;
+          margin-bottom: 20px;
+        }
+
+        .name {
+          margin-bottom: 5px;
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        .value {
+          font-size: 15px;
+          line-height: 20px;
+          color: $gray;
+        }
+      }
+    }
+
+    @media(min-width: 800px) {
+      padding-top: 0;
+
+      .buyout__title {
+        margin-bottom: 40px;
+      }
+      .team-slider {
+
+        .team__item {
+          width: 169px;
+        }
+      }
+    }
+    @media(min-width: 1200px) {
+      padding-top: 20px;
+      padding-bottom: 150px;
+      .owl-stage-outer {
+        overflow: hidden;
+      }
+      .owl-nav {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+      }
+      .buyout__title {
+        margin-bottom: 70px;
+      }
+      .team-slider {
+        margin: 0 -5px;
+
+        .team__item {
+          width: 196px;
+
+          .avatar {
+            width: 140px;
+            height: 140px;
+            margin-bottom: 25px;
+            margin-left: 0;
+          }
+
+          .name {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 28px;
+          }
+
+          .name, .value {
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}
