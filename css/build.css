@@ -7952,3 +7952,163 @@ body {
               line-height: 28px; }
             .job__team .team-slider .team__item .name, .job__team .team-slider .team__item .value {
               padding-left: 5px; } }
+
+.news {
+  padding-top: 13px;
+  padding-bottom: 48px;
+  background: white;
+  overflow: hidden; }
+  .news .breadcrumbs {
+    margin-bottom: 15px; }
+  .news .heading-1 {
+    margin-bottom: 30px; }
+  @media (min-width: 800px) {
+    .news {
+      padding-top: 15px;
+      padding-bottom: 61px;
+      position: relative; }
+      .news .heading-1 {
+        margin-bottom: 40px; }
+      .news .breadcrumbs {
+        margin-bottom: 13px; } }
+  @media (min-width: 1200px) {
+    .news {
+      padding-top: 26px;
+      padding-bottom: 150px;
+      position: relative; }
+      .news .breadcrumbs {
+        margin-bottom: 34px; }
+      .news .heading-1 {
+        margin-bottom: 50px; }
+        .news .heading-1:after {
+          margin-top: 16px; } }
+  .news__tabs {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px; }
+    .news__tabs .tab {
+      display: block;
+      border-radius: 4px;
+      padding: 0 25px;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 45px;
+      color: #5f5f5f;
+      text-transform: uppercase;
+      background: transparent;
+      transition: all .2s; }
+      .news__tabs .tab.active {
+        background: #F4F8FA; }
+      .news__tabs .tab:hover {
+        text-decoration: none;
+        color: black; }
+      @media (min-width: 1200px) {
+        .news__tabs .tab {
+          padding: 0 35px;
+          font-size: 13px;
+          line-height: 55px; } }
+    @media (min-width: 1200px) {
+      .news__tabs {
+        margin-bottom: 40px; } }
+  @media (min-width: 800px) {
+    .news__row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -1px; } }
+  @media (min-width: 1200px) {
+    .news__row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -1px; } }
+  .news__tile {
+    margin-bottom: 30px; }
+    .news__tile .album {
+      width: 320px;
+      height: 168px;
+      overflow: hidden;
+      margin-bottom: 5px;
+      background: #F4F8FA; }
+      .news__tile .album img {
+        max-width: 100%;
+        width: 100%; }
+    .news__tile .date {
+      font-size: 13px;
+      line-height: 25px;
+      color: #5F5F5F;
+      opacity: 0.6;
+      margin-bottom: 5px; }
+    .news__tile .title {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 5px; }
+    .news__tile .text {
+      font-size: 16px;
+      line-height: 22px;
+      color: #5F5F5F;
+      max-height: 66px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical; }
+    @media (min-width: 800px) {
+      .news__tile {
+        width: calc(33.3% - 2px);
+        margin: 0 1px 30px; }
+        .news__tile .album {
+          width: 100%;
+          height: 126.58px; }
+        .news__tile .text {
+          font-size: 15px;
+          line-height: 20px;
+          max-height: 60px;
+          padding-right: 30px; } }
+    @media (min-width: 1200px) {
+      .news__tile {
+        margin-bottom: 40px; }
+        .news__tile .album {
+          width: 380px;
+          height: 200px;
+          margin-bottom: 10px; }
+        .news__tile .title {
+          font-size: 20px;
+          line-height: 28px;
+          margin-bottom: 10px;
+          padding-right: 40px; }
+        .news__tile .text {
+          padding-right: 40px;
+          line-height: 22px;
+          max-height: 66px; } }
+  .news .load-more {
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 33px;
+    width: 100%;
+    padding: 0;
+    border: 1px solid rgba(95, 95, 95, 0.2);
+    background: white;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 53px;
+    color: #5F5F5F;
+    transition: all .2s; }
+    .news .load-more:hover {
+      background: #F4F8FA; }
+    .news .load-more .icon {
+      margin-right: 12px;
+      margin-left: -12px; }
+    @media (min-width: 800px) {
+      .news .load-more {
+        margin-top: 26px;
+        margin-bottom: 29px; } }
+    @media (min-width: 1200px) {
+      .news .load-more {
+        margin-top: 1px;
+        margin-bottom: 70px; } }
+  .news .pagination {
+    margin: 0 -3px; }
