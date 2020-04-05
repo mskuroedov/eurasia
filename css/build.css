@@ -7691,9 +7691,9 @@ body {
         font-size: 18px;
         line-height: 26px;
         margin-bottom: 30px; }
-      .job .container {
+      .job > .container {
         position: relative; }
-        .job .container:before {
+        .job > .container:before {
           content: '';
           position: absolute;
           width: 441px;
