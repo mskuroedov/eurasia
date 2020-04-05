@@ -7720,12 +7720,13 @@ body {
       min-width: 26px;
       height: 26px;
       opacity: .5;
-      transition: all .2s; }
+      transition: all .2s;
+      cursor: pointer; }
       .job__list .item-title .icon svg {
         width: 100%;
         height: 100%; }
       .job__list .item-title .icon:hover {
-        opacity: .8; }
+        opacity: 1; }
     .job__list .item-title[aria-expanded='true'] {
       background: white; }
       .job__list .item-title[aria-expanded='true'] .icon-show {
