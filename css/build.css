@@ -7680,7 +7680,8 @@ body {
     .job {
       padding-top: 26px;
       padding-bottom: 97px;
-      position: relative; }
+      position: relative;
+      min-height: 1009px; }
       .job .breadcrumbs {
         margin-bottom: 34px; }
       .job .heading-1 {
@@ -7711,7 +7712,8 @@ body {
     background: #F4F8FA;
     transition: all .2s;
     padding: 15px 20px;
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    cursor: pointer; }
     .job__list .item-title .text {
       font-size: 18px;
       line-height: 24px; }

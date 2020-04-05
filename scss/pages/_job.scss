@@ -38,6 +38,7 @@
     padding-top: 26px;
     padding-bottom: 97px;
     position: relative;
+    min-height: 1009px;
     .breadcrumbs {
       margin-bottom: 34px;
     }
@@ -81,7 +82,7 @@
       transition: all .2s;
       padding: 15px 20px;
       margin-bottom: 2px;
-
+      cursor: pointer;
       .text {
         font-size: 18px;
         line-height: 24px;
