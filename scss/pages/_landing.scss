@@ -2,17 +2,17 @@
   background: url("../assets/landing-promo-decor-1.svg");
   background-position-y: -23px;
   background-position-x: 3px;
-  padding: 40px 0px 70px;
+  padding: 43px 0px 40px;
   overflow: hidden;
   @media(min-width: 800px) {
     background-position-y: 14px;
     background-position-x: 2px;
-    padding-top: 60px;
-    padding-bottom: 84px;
+    padding-top: 63px;
+    padding-bottom: 59px;
   }
   @media(min-width: 1200px) {
-    padding-top: 197px;
-    padding-bottom: 102px;
+    padding-top: 191px;
+    padding-bottom: 82px;
     margin-top: -92px;
     background-position-y: 22px;
     background-position-x: center;
@@ -22,7 +22,7 @@
   .heading-1 {
     font-size: 26px;
     line-height: 33px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 
     br {
       display: none;
@@ -32,7 +32,7 @@
       width: 60%;
       font-size: 32px;
       line-height: 42px;
-      margin-bottom: 35px;
+      margin-bottom: 32px;
       br {
         display: block;
       }
@@ -43,7 +43,7 @@
       }
       font-size: 38px;
       line-height: 48px;
-      margin-bottom: 42px;
+      margin-bottom: 39px;
     }
   }
 
@@ -171,7 +171,7 @@
       display: inline-flex;
       justify-content: space-between;
       width: 39.8%;
-      margin-top: 95px;
+      margin-top: 98px;
       float: right;
     }
 
@@ -186,7 +186,7 @@
         white-space: nowrap;
         font-size: 36px;
         line-height: 42px;
-        margin-bottom: 3px;
+        margin-bottom: 1px;
       }
 
       .text {
@@ -200,10 +200,119 @@
   }
 }
 
+.banner {
+  background: url("../assets/landing-promo-decor-1.svg");
+  background-position-x: 3px;
+  background-position-y: -15px;
+
+  .owl-dots {
+    display: flex;
+    align-items: center;
+    height: 3px;
+    //background: $gray;
+    width: calc(100% + 2px);
+    margin: -3px -1px 0;
+    position: relative;
+    z-index: 10;
+  }
+
+  .owl-carousel {
+    button.owl-dot {
+      background: #D2D2D7;
+      margin: 0 1px;
+      height: 3px;
+      flex-grow: 1;
+
+      &.active {
+        background: $primary;
+      }
+
+    }
+  }
+
+  .l1__banner {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: -140px;
+
+    .owl-item .tablet {
+      display: none;
+    }
+  }
+
+  @media(min-width: 800px) {
+    //width: 100%;
+    .l1__banner {
+      max-width: none;
+      margin-bottom: -60px;
+    }
+    .l1__banner .owl-item .mobile {
+      display: none;
+    }
+    .l1__banner .owl-item .tablet {
+      display: block;
+    }
+  }
+  @media(min-width: 1200px) {
+    background-position-x: 179px;
+    background-position-y: -6px;
+    .owl-theme-default {
+      button.owl-next, button.owl-prev {
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+        position: absolute;
+        top: 50%;
+        border-radius: 100%;
+        background: white;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s;
+
+        svg path {
+          transition: all .2s;
+        }
+
+        &:hover {
+          background: $primary;
+
+          svg path {
+            fill: white
+          }
+        }
+
+        &.disabled {
+          opacity: 1;
+          background: lighten($gray, 40);
+
+          &:hover {
+            svg path {
+              fill: $gray;
+            }
+          }
+        }
+      }
+
+      .owl-prev {
+        left: -24px;
+      }
+
+      .owl-next {
+        right: -24px;
+      }
+    }
+    .l1__banner {
+      margin-bottom: -95px;
+    }
+  }
+}
+
 .l2 {
   background: white;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 179px;
+  padding-bottom: 2px;
   overflow: hidden;
 
   &__title {
@@ -224,8 +333,8 @@
   }
 
   @media(min-width: 800px) {
-    padding-top: 69px;
-    padding-bottom: 97px;
+    padding-top: 120px;
+    padding-bottom: 0;
     .l2__title {
       font-size: 26px;
       line-height: 50px;
@@ -233,8 +342,8 @@
     }
   }
   @media(min-width: 1200px) {
-    padding-top: 110px;
-    padding-bottom: 100px;
+    padding-top: 173px;
+    padding-bottom: 102px;
     .l2__title {
       font-weight: 800;
       font-size: 30px;
@@ -414,38 +523,41 @@
 
 .l3 {
   padding-top: 50px;
-  padding-bottom: 70px;
+  padding-bottom: 59px;
   background: white;
   position: relative;
 
   @media (min-width: 800px) {
-    padding-top: 51px;
-    padding-bottom: 82px;
+    padding-top: 53px;
+    padding-bottom: 80px;
   }
   @media(min-width: 1200px) {
-    padding-top: 141px;
+    padding-top: 143px;
     padding-bottom: 120px;
   }
 
   .heading-1 {
-    margin-bottom: 52px;
+    margin-bottom: 50px;
     @media (min-width: 800px) {
       margin-left: -1px;
       margin-bottom: 48px;
     }
     @media (min-width: 1200px) {
-      margin-bottom: 72px;
+      margin-bottom: 70px;
     }
   }
 
   .simple-btn {
     margin-left: 19px;
-    margin-top: 3px;
+    margin-top: -8px;
     letter-spacing: 0.4px;
     @media (min-width: 800px) {
-      margin-top: 0;
+      margin-top: 30px;
       margin-left: -5px;
       letter-spacing: 0.2px;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 0px;
     }
   }
 
@@ -537,8 +649,8 @@
     @media (min-width: 800px) {
       width: 100%;
       padding-left: 0;
-      margin-top: 0px;
-      margin-bottom: 14px;
+      margin-top: -1px;
+      margin-bottom: 15px;
     }
     @media (min-width: 1200px) {
       margin-bottom: 20px;
@@ -548,14 +660,18 @@
   .title {
     width: 100%;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 24px;
     color: $black;
     letter-spacing: -0.7px;
     margin-bottom: 9px;
     padding-left: 5px;
     @media (min-width: 800px) {
       padding-left: 0;
+    }
+    @media (min-width: 1200px) {
+      font-size: 20px;
+      line-height: 26px;
     }
   }
 
@@ -570,10 +686,12 @@
     padding-right: 6px;
     @media (min-width: 800px) {
       padding-left: 0;
-      line-height: 25px;
+      font-size: 15px;
+      line-height: 22px;
     }
     @media (min-width: 1200px) {
-      padding-right: 30px;
+      padding-right: 40px;
+      letter-spacing: .2px;
       line-height: 22px;
     }
   }
@@ -591,7 +709,7 @@
     transition: all .2s;
     @media(min-width: 800px) {
       left: 30px;
-      top: 100px;
+      top: 98px;
     }
     @media(min-width: 1200px) {
       left: 54px;
@@ -615,7 +733,7 @@
       //width: 117%;
       width: 0;
       left: 30px;
-      top: 104px;
+      top: 102px;
     }
     @media (min-width: 1200px) {
       opacity: 1;
@@ -692,11 +810,11 @@
 .l4 {
   position: relative;
   background: white;
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding-top: 53px;
+  padding-bottom: 61px;
   @media (min-width: 800px) {
-    padding-top: 70px;
-    padding-bottom: 44px;
+    padding-top: 63px;
+    padding-bottom: 34px;
     &:after {
       content: '';
       position: absolute;
@@ -708,7 +826,7 @@
     }
   }
   @media(min-width: 1200px) {
-    padding-top: 95px;
+    padding-top: 98px;
     padding-bottom: 90px;
     &:after {
       content: '';
@@ -726,13 +844,12 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    border-radius: 0 27px 27px 0;
+    border-radius: 0 27px 0 0;
     left: 0;
     top: 0;
     background: $secondary;
     @media (min-width: 800px) {
       width: 56%;
-      border-radius: 0 27px 0 0;
     };
     @media (min-width: 1200px) {
       width: 49%;
@@ -743,38 +860,43 @@
   .heading-1 {
     margin-bottom: 25px;
     @media (min-width: 800px) {
-      margin-bottom: 38px;
+      margin-bottom: 34px;
     }
     @media (min-width: 1200px) {
-      margin-bottom: 47px;
+      margin-bottom: 45px;
     }
   }
 
   .common-text {
+    font-size: 15px;
     line-height: 22px;
     margin-bottom: 27px;
     @media (min-width: 800px) {
-      letter-spacing: .1px;
-      line-height: 24px;
+
       margin-bottom: 40px;
     }
     @media (min-width: 1200px) {
       font-size: 18px;
       line-height: 26px;
       letter-spacing: .1px;
-      margin-bottom: 70px;
+      margin-bottom: 68px;
     }
   }
 
   .img {
-    width: 100%;
-    margin-bottom: 26px;
+    margin: 0 -10px 26px;
+    width: calc(100% + 20px);
+
+    img {
+      width: 100%;
+    }
+
     @media (min-width: 800px) {
       width: 348.5px;
       margin-left: -10px;
     }
     @media (min-width: 1200px) {
-      width: 100%;
+      width: 501px;
       margin-left: -20px;
     }
   }
@@ -786,13 +908,13 @@
   }
 
   &__about {
-    padding-top: 140px;
+    padding-top: 137px;
     padding-left: 26px;
 
     .about-item {
       display: flex;
       align-items: center;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
 
       .icon {
         margin-right: 20px;
@@ -802,7 +924,7 @@
 
       .text {
         //font-weight: 600;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 22px;
         color: $black;
         margin-top: -7px;
@@ -811,11 +933,11 @@
     }
 
     .simple-btn {
-      margin: 41px 0 0;
+      margin: 30px 0 0;
     }
 
     @media (min-width: 1200px) {
-      padding-top: 14px;
+      padding-top: 11px;
       padding-left: 40px;
       .about-item {
         flex-wrap: wrap;
@@ -862,23 +984,23 @@
 
 .l5 {
   background: white;
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding-top: 53px;
+  padding-bottom: 23px;
   overflow: hidden;
   @media (min-width: 800px) {
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
     .l5__slider {
       overflow: hidden;
       position: relative;
       left: 36.3%;
-      margin-top: -439px;
+      margin-top: -412px;
     }
   }
   @media(min-width: 1200px) {
-    padding-top: 159px;
+    padding-top: 148px;
     .l5__slider {
-      margin-top: -424px;
+      margin-top: -398px;
       left: 36.7%;
 
     }
@@ -888,7 +1010,7 @@
     margin-bottom: 24px;
 
     &:after {
-      margin-top: 25px;
+      margin-top: 22px;
     }
 
     @media (min-width: 800px) {
@@ -901,22 +1023,26 @@
     @media (min-width: 1200px) {
       width: 200px;
       margin-bottom: 45px;
+      padding-top: 4px;
       &:after {
-        margin-top: 24px;
+        margin-top: 20px;
       }
     }
   }
 
   .common-text {
+    font-size: 15px;
     line-height: 22px;
     margin-bottom: 24px;
+    letter-spacing: 0;
+    padding-right: 2px;
     @media (min-width: 800px) {
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
     @media (min-width: 1200px) {
       font-size: 18px;
       line-height: 26px;
-      margin-bottom: 40px;
+      margin-bottom: 45px;
       letter-spacing: 0;
     }
   }
@@ -1006,7 +1132,7 @@
       margin-top: -33px;
       padding: 50px 29px 42px;
       .common-text {
-        letter-spacing: -0.6px;
+        letter-spacing: 0;
         margin-bottom: 25px;
       }
       .name {
@@ -1036,7 +1162,7 @@
 
 .l6 {
   padding-top: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   background: white;
   overflow: hidden;
   @media (min-width: 800px) {
@@ -1047,7 +1173,7 @@
     }
   }
   @media (min-width: 1200px) {
-    padding-top: 132px;
+    padding-top: 123px;
     padding-bottom: 98px;
     .arrow-btn {
       padding-top: 0;
@@ -1055,14 +1181,14 @@
   }
 
   .heading-1 {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
 
     br {
       display: none;
     }
 
     @media (min-width: 800px) {
-      margin-bottom: 70px;
+      margin-bottom: 68px;
     }
     @media (min-width: 800px) and (max-width: 1200px) {
       br {
@@ -1070,7 +1196,7 @@
       }
     }
     @media (min-width: 1200px) {
-      margin-bottom: 66px;
+      margin-bottom: 65px;
     }
   }
 
@@ -1084,7 +1210,7 @@
 
 .news-item {
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
   @media (max-width: 800px) {
     max-width: 260px;
   }
@@ -1156,12 +1282,13 @@
 .l7 {
   background: white;
   padding-top: 41px;
-  padding-bottom: 39px;
+  padding-bottom: 18px;
   @media (min-width: 800px) {
     padding-top: 13px;
+    padding-bottom: 41px;
   }
   @media (min-width: 1200px) {
-    padding-bottom: 99px;
+    padding-bottom: 128px;
   }
 
   .widget-block {
