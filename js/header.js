@@ -117,3 +117,19 @@ $('.header .popup-link[data-popover="company"]').popover({
     template: '<div class="header-menu-popover popover" role="tooltip"><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
     content: menu_content.company
 })
+
+//logged user popup
+$('.header [data-popover="user"]').popover({
+    html: true,
+    placement: 'bottom',
+    trigger: 'focus',
+    offset: -25,
+    template: '<div class="popover header-user-popover" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
+    content: '<a href="#">Профиль</a>\n' +
+        '                    <a href="#">Мои объявления</a>\n' +
+        '                    <a href="#">Мои фильтры</a>\n' +
+        '                    <a href="#">Сообщения</a>\n' +
+        '                    <a href="#">Избранное</a>\n' +
+        '                    <a href="#">История просмотров</a>\n' +
+        '                    <a href="#">Выйти</a>'
+})
