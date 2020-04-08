@@ -458,6 +458,9 @@ body {
 
     .footer__geo {
       margin-bottom: 20px;
+      .text{
+        white-space: nowrap;
+      }
     }
 
     .footer__phone {

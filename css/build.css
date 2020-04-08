@@ -1003,6 +1003,8 @@ body {
       margin-bottom: 25px; }
     .mobile__menu .contacts-block .footer__geo {
       margin-bottom: 20px; }
+      .mobile__menu .contacts-block .footer__geo .text {
+        white-space: nowrap; }
     .mobile__menu .contacts-block .footer__phone {
       margin-bottom: 25px; }
     .mobile__menu .contacts-block .socials-links {
