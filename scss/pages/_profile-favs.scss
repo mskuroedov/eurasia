@@ -1,0 +1,246 @@
+.profile-favs {
+  padding-top: 13px;
+  padding-bottom: 39px;
+  background: white;
+  overflow: hidden;
+
+  .breadcrumbs {
+    margin-bottom: 15px;
+  }
+
+  .heading-1 {
+    margin-bottom: 30px;
+
+    &:after {
+      margin-top: 17px;
+    }
+
+  }
+
+  @media(min-width: 800px) {
+    padding-top: 15px;
+    padding-bottom: 61px;
+    position: relative;
+    .common-text {
+      letter-spacing: -0.1px;
+    }
+    .breadcrumbs {
+      margin-bottom: 13px;
+    }
+  }
+  @media(min-width: 1200px) {
+    padding-top: 26px;
+    padding-bottom: 150px;
+    .breadcrumbs {
+      margin-bottom: 34px;
+    }
+
+    .heading-1 {
+      margin-bottom: 60px;
+
+      &:after {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+.profile-auto-items {
+
+  .sort {
+    padding-top: 0;
+
+    .catalog-view-control {
+      margin-left: auto;
+
+      a {
+        opacity: .5;
+        margin-left: 17px;
+        transition: all .2s;
+
+        &.active {
+          opacity: 1
+
+        }
+      }
+    }
+  }
+
+  @media(min-width: 800px) {
+    .sort {
+      padding-bottom: 19px;
+    }
+
+    .auto-items-container.tiles {
+      .auto-items-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-top: 16px;
+        position: relative;
+        border-top: 1px solid rgba(95, 95, 95, 0.21);
+        border-left: 1px solid rgba(95, 95, 95, 0.21);
+
+        &:before {
+          content: '';
+          width: 100%;
+          position: absolute;
+          height: 1px;
+          background: $gray;
+          opacity: .2;
+          left: 0;
+          top: -16px;
+        }
+      }
+
+      .catalog__item {
+        width: 33.33333333%;
+        display: flex;
+        flex-direction: column;
+        min-height: 345px;
+        padding: 20px;
+        border-top: 0;
+        border-right: 1px solid rgba(95, 95, 95, 0.21);
+        border-bottom: 1px solid rgba(95, 95, 95, 0.21);
+
+        margin-bottom: 0;
+
+        .preview {
+          position: initial;
+          width: calc(100% + 12px);
+          margin: -6px;
+          margin-bottom: 15px;
+          height: 159.27px;
+        }
+
+        .name {
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          flex-wrap: nowrap;
+          margin: 0;
+          margin-bottom: 5px;
+
+          a {
+            letter-spacing: -0.9px;
+          }
+
+          .icon {
+            margin-left: auto;
+            margin-right: -1px;
+          }
+        }
+
+        .run {
+          display: none;
+        }
+
+        .price {
+          width: calc(100% + 30px);
+          padding: 0 0 0 14px;
+          margin: 0 -15px 15px -15px;
+          display: flex;
+          align-items: center;
+
+          .main {
+            font-size: 15px;
+            line-height: 20px;
+            margin-right: 10px;
+            margin-bottom: 0;
+          }
+
+          .old {
+            display: none;
+          }
+
+          .credit {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0;
+          }
+        }
+
+        .description {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          height: auto;
+          margin: 0 -2px;
+          width: calc(100% + 4px);
+
+
+          .item {
+            min-width: auto;
+            width: auto;
+            display: block;
+            font-size: 14px;
+            line-height: 18px;
+            margin-right: 4px;
+            margin-bottom: 0;
+
+            &.tile-run {
+
+            }
+
+            &:not(:last-of-type):after {
+              content: ',';
+            }
+          }
+        }
+      }
+    }
+  }
+  @media(min-width: 1200px) {
+    .catalog-view-control {
+      margin-right: 0px;
+    }
+    .auto-items-container.tiles {
+      .auto-items-row {
+        margin-top: 22px;
+
+        &:before {
+          top: -22px;
+        }
+      }
+
+      .catalog__item {
+        min-height: 445px;
+
+        .preview {
+          height: 256.48px;
+          width: 100%;
+          margin: 0 0 14px;
+        }
+
+        .name {
+
+          padding: 0 4px;
+          margin-bottom: 9px;
+
+          a {
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 0.1px;
+          }
+        }
+
+        .price {
+          order: 3;
+          width: 100%;
+          padding: 0 4px;
+          margin: 0 0 16px;
+        }
+
+        .description {
+          width: 100%;
+          padding: 0 5px;
+
+          .item {
+            font-size: 15px;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}
