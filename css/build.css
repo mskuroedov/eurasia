@@ -142,6 +142,9 @@ a:focus, button:focus, input:focus {
 .select2 > * {
   outline: none !important; }
 
+.select2-container--default.select2-container--disabled .select2-selection--single {
+  background: #F4F8FA; }
+
 .select2-container .select2-selection--single {
   font-size: 15px;
   line-height: 50px;
@@ -2860,7 +2863,8 @@ body {
       border-radius: 4px 4px 0px 0px;
       padding: 3px 33px 0;
       word-spacing: 2.1px;
-      letter-spacing: 0.2px; }
+      letter-spacing: 0.2px;
+      text-transform: uppercase; }
       .catalog__filters__tabs .item img {
         margin-right: 10px; }
       .catalog__filters__tabs .item.--active {
@@ -9071,3 +9075,101 @@ body {
           align-items: center; }
           .profile-ads .catalog__item .actions .link svg {
             margin-right: 5px; } }
+
+.profile-filters {
+  padding-top: 13px;
+  padding-bottom: 10px;
+  background: white;
+  overflow: hidden; }
+  .profile-filters .breadcrumbs {
+    margin-bottom: 15px; }
+  .profile-filters .heading-1 {
+    margin-bottom: 61px; }
+    .profile-filters .heading-1:after {
+      margin-top: 17px; }
+  .profile-filters .catalog__filters {
+    padding-bottom: 40px;
+    margin-bottom: 30px; }
+  .profile-filters .catalog__filters__tabs .item {
+    padding: 3px 20px 0; }
+  .profile-filters .catalog__filters__actions .notifies {
+    margin-bottom: 16px; }
+    .profile-filters .catalog__filters__actions .notifies .label {
+      color: #5f5f5f;
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 9px; }
+    .profile-filters .catalog__filters__actions .notifies .form-checkbox {
+      margin-bottom: 8px; }
+  .profile-filters .catalog__filters__actions .link {
+    margin-bottom: 19px;
+    width: 100%; }
+  .profile-filters .catalog__filters__actions .link.w-icon {
+    width: 100%;
+    justify-content: center;
+    margin: 0; }
+  @media (min-width: 800px) {
+    .profile-filters {
+      padding-top: 15px;
+      padding-bottom: 22px;
+      position: relative; }
+      .profile-filters .heading-1 {
+        margin-bottom: 40px; }
+      .profile-filters .breadcrumbs {
+        margin-bottom: 13px; }
+      .profile-filters .catalog__filters__tabs .link.w-icon {
+        padding-top: 13px; }
+      .profile-filters .catalog__filters {
+        padding-bottom: 11px;
+        margin-bottom: 40px; }
+      .profile-filters .catalog__filters__tabs .item {
+        padding: 3px 33px 0; }
+      .profile-filters .catalog__filters__actions .notifies {
+        margin-bottom: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 64px;
+        margin-left: 5px; }
+        .profile-filters .catalog__filters__actions .notifies .label {
+          width: 99px;
+          margin-right: 30px;
+          padding-top: 1px; }
+      .profile-filters .catalog__filters__actions .link {
+        margin: 0 0 17px;
+        width: 100%;
+        justify-content: flex-end; }
+      .profile-filters .catalog__filters__actions .simple-btn {
+        margin-top: 2px;
+        width: auto;
+        letter-spacing: .2px;
+        margin-right: 0; } }
+  @media (min-width: 1200px) {
+    .profile-filters {
+      padding-top: 26px;
+      padding-bottom: 100px; }
+      .profile-filters .breadcrumbs {
+        margin-bottom: 34px; }
+      .profile-filters .heading-1 {
+        margin-bottom: 60px; }
+        .profile-filters .heading-1:after {
+          margin-top: 16px; }
+      .profile-filters .catalog__filters {
+        padding-bottom: 19px;
+        margin-bottom: 50px; }
+      .profile-filters .catalog__filters__tabs .item {
+        padding: 3px 33px 0; }
+      .profile-filters .catalog__filters__actions .notifies {
+        margin-bottom: 16px;
+        flex-direction: row;
+        margin-left: 0; }
+        .profile-filters .catalog__filters__actions .notifies .label {
+          width: 100%;
+          margin-right: 30px;
+          padding-top: 1px; }
+        .profile-filters .catalog__filters__actions .notifies .form-checkbox {
+          margin-right: 25px; }
+      .profile-filters .catalog__filters__actions .link {
+        margin: 0 0 12px; }
+      .profile-filters .catalog__filters__actions .simple-btn {
+        margin-top: 5px; } }

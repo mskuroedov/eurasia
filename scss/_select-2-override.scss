@@ -1,7 +1,9 @@
 .select2 > * {
   outline: none !important;
 }
-
+.select2-container--default.select2-container--disabled .select2-selection--single{
+  background: $secondary;
+}
 .select2-container .select2-selection--single {
   font-size: 15px;
   line-height: 50px;
