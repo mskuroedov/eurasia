@@ -9527,6 +9527,12 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     padding: 10px 20px; }
+    @media (max-width: 799px) {
+      .chat__input-field {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%; } }
     .chat__input-field a.icon {
       opacity: .5;
       transition: all .2s;
