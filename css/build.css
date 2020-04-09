@@ -9382,7 +9382,7 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         background: #F4F8FA;
         z-index: 250;
@@ -9420,7 +9420,7 @@ body {
         .chat__view__header {
           display: none; } }
   .chat__window {
-    padding: 0 18px 10px;
+    padding: 0 18px 70px;
     margin-top: 70px;
     background: #F4F8FA;
     height: calc(100vh - 140px);
