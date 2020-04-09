@@ -9254,10 +9254,12 @@ body {
       .chat__nav__menu .item svg path {
         fill: #5f5f5f;
         transition: all .2s; }
-      .chat__nav__menu .item.active .text, .chat__nav__menu .item:hover .text {
-        color: #FF6F00; }
-      .chat__nav__menu .item.active svg path, .chat__nav__menu .item:hover svg path {
-        fill: #FF6F00; }
+      .chat__nav__menu .item.active, .chat__nav__menu .item:hover {
+        text-decoration: none; }
+        .chat__nav__menu .item.active .text, .chat__nav__menu .item:hover .text {
+          color: #FF6F00; }
+        .chat__nav__menu .item.active svg path, .chat__nav__menu .item:hover svg path {
+          fill: #FF6F00; }
     @media (min-width: 800px) {
       .chat__nav__menu .item {
         margin: 0 15px; } }
