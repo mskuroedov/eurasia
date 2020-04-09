@@ -9281,9 +9281,12 @@ body {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      height: 73px; }
+      height: 73px;
+      cursor: pointer; }
       .chat__nav__list__item.active {
         background: #DFEAF0; }
+      .chat__nav__list__item:hover {
+        background: #F4F8FA; }
       .chat__nav__list__item .message {
         font-size: 15px;
         line-height: 22px;
