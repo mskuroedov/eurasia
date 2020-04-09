@@ -9313,7 +9313,8 @@ body {
       .chat__nav__list__item .right {
         display: flex;
         flex-wrap: wrap;
-        width: 75px; }
+        width: 75px;
+        margin-left: auto; }
         .chat__nav__list__item .right .date {
           width: 100%; }
         .chat__nav__list__item .right .notify-count {
