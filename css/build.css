@@ -601,7 +601,7 @@ a:focus, button:focus, input:focus {
   font-weight: bold;
   font-size: 13px;
   line-height: 54px;
-  letter-spacing: -0.1px;
+  letter-spacing: 0.2px;
   text-transform: uppercase;
   padding: 0 35px; }
   .simple-btn.--primary {
@@ -1673,7 +1673,9 @@ body {
       width: 125px;
       font-size: 20px;
       line-height: 28px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      letter-spacing: -0.7px;
+      font-weight: 600; }
     .l1__search__block .tab {
       border-radius: 3px 3px 0px 0px;
       background: #5f5f5f;
@@ -1690,7 +1692,8 @@ body {
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        line-height: 45px; }
+        line-height: 45px;
+        letter-spacing: 0; }
     .l1__search__block .search {
       position: relative;
       width: 100%; }
@@ -1944,6 +1947,7 @@ body {
         font-size: 16px;
         line-height: 22px;
         color: #000;
+        font-weight: 600;
         margin-bottom: 5px; }
       .l-desktop .items .item .text {
         font-size: 16px;
@@ -2268,7 +2272,8 @@ body {
         font-size: 18px;
         line-height: 26px;
         letter-spacing: .1px;
-        margin-bottom: 68px; } }
+        margin-bottom: 68px;
+        padding-right: 10px; } }
   .l4 .img {
     margin: 0 -10px 26px;
     width: calc(100% + 20px); }
