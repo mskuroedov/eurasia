@@ -39,9 +39,6 @@
     padding-left: 15px;
     padding-right: 15px; } }
 
-body {
-  font-family: 'Lato', sans-serif; }
-
 .head {
   font-family: 'Magistral',sans-serif;
   font-weight: bold;
@@ -807,7 +804,8 @@ body {
         margin-top: 16px;
         transition: all .2s; }
         .header .desktop .second-row .popup-link img {
-          margin-left: 5px; }
+          margin-left: 5px;
+          transition: all .3s; }
         .header .desktop .second-row .popup-link:hover {
           text-decoration: none;
           color: #FF6F00; }
@@ -815,6 +813,8 @@ body {
           margin-left: 24px; }
         .header .desktop .second-row .popup-link:last-of-type {
           margin-right: 0; }
+        .header .desktop .second-row .popup-link[aria-describedby] img {
+          transform: rotate(180deg); }
       .header .desktop .second-row .phone-block {
         margin-top: -2px;
         display: inline-block;
