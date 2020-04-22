@@ -93,3 +93,17 @@ $('.catalog__filters__tabs .item').on('click', function () {
     $(this).addClass('--active');
     setFilters(+$(this).attr('filter'));
 })
+
+$('.catalog__row .sort .item').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if ($(this).hasClass('primary')) {
+        $('.catalog__row .sort .item').removeClass('sort-desc')
+        return;
+    }
+    if ($(this).hasClass('sort-desc')) {
+        $(this).removeClass('sort-desc')
+    } else {
+        $(this).addClass('sort-desc')
+    }
+})

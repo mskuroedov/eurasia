@@ -2662,7 +2662,8 @@ body {
         .catalog__row .sort .item:last-of-type {
           margin-right: 20px; }
         .catalog__row .sort .item .icon {
-          margin-left: 5px; }
+          margin-left: 5px;
+          transition: all .2s; }
           .catalog__row .sort .item .icon svg path {
             transition: all .2s; }
         .catalog__row .sort .item:hover {
@@ -2670,6 +2671,8 @@ body {
           color: #FF6F00; }
           .catalog__row .sort .item:hover svg path {
             fill: #FF6F00; }
+        .catalog__row .sort .item.sort-desc .icon {
+          transform: scale(1, -1); }
         @media (min-width: 800px) {
           .catalog__row .sort .item {
             margin-right: 20px; } }
