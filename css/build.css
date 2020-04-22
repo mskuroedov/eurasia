@@ -1933,7 +1933,7 @@ body {
     width: 100%; }
     .l-desktop .items .item {
       margin-bottom: 55px;
-      transition: all .9s; }
+      transition: all 1.5s; }
       .l-desktop .items .item.pr {
         padding-right: 0;
         padding-left: 100px; }
@@ -1957,9 +1957,7 @@ body {
     padding-left: 0;
     padding-right: 100px; }
   .l-desktop.activated .animated__car .car {
-    transform: translateX(127px); }
-  .l-desktop.activated .animated__car .car-outlined {
-    transform: translateX(-127px); }
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
 
 .animated__car {
   width: 300px;
@@ -1974,7 +1972,8 @@ body {
   .animated__car .car, .animated__car .car-outlined {
     position: absolute;
     transform: translateX(0);
-    transition: all .9s; }
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    transition: all 1.5s; }
 
 .l3 {
   padding-top: 50px;
