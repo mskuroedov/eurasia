@@ -225,8 +225,8 @@
             </div>
             <div class="col-12">
                 <div class="catalog__filters__tabs">
-                    <div class="item --active"><img src="./assets/icons/add.svg" alt=""> ФИЛЬТР</div>
-                    <div class="item">HONDA, CIVIK</div>
+                    <div class="item --active" filter="0"><img src="./assets/icons/add.svg" alt=""> ФИЛЬТР</div>
+                    <div class="item" filter="1">HONDA, CIVIK</div>
                     <a href="#" class="link w-icon ml-auto d-none d-md-flex d-xl-none">
                         <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
@@ -247,7 +247,7 @@
                         <div class="form-select">
                             <select name="mark" class="select" data-placeholder="Марка">
                                 <option></option>
-                                <option value="Toyota">Toyota</option>
+                                <option value="1">Honda</option>
                                 <option value="Audi">Audi</option>
                                 <option value="BMW">BMW</option>
                             </select>
@@ -255,7 +255,7 @@
                         <div class="form-select">
                             <select name="model" class="select" data-placeholder="Модель">
                                 <option></option>
-                                <option value="1">Audi</option>
+                                <option value="1">Civik</option>
                                 <option value="2">BMW</option>
                                 <option value="">BMW</option>
                                 <option value="">BMW</option>
@@ -287,61 +287,60 @@
 </span>Сохранить поиск</a>
                         </div>
                         <div class="form-select groupped">
-                            <select name="model" class="select" data-placeholder="Год от">
+                            <select name="year_from" class="select" data-placeholder="Год от">
                                 <option></option>
                                 <option value="1">от 2014</option>
                             </select>
-                            <select name="model" class="select" data-placeholder="до ">
+                            <select name="yarn_to" class="select" data-placeholder="до ">
                                 <option></option>
-                                <option value="2">до 2018</option>
+                                <option value="1">до 2018</option>
                             </select>
                         </div>
                         <div class="form-select groupped">
-                            <select name="model" class="select" data-placeholder="Цена от, ₽">
+                            <select name="price_from" class="select" data-placeholder="Цена от, ₽">
                                 <option></option>
                                 <option value="1">от 30 000</option>
                             </select>
-                            <select name="model" class="select" data-placeholder="до">
+                            <select name="price_to" class="select" data-placeholder="до">
                                 <option></option>
                                 <option value="1">до 1 330 000</option>
                             </select>
                         </div>
                         <div class="form-select groupped d-none d-xl-flex">
-                            <select name="model" class="select" data-placeholder="Объем от, л">
+                            <select name="value_from" class="select" data-placeholder="Объем от, л">
                                 <option></option>
-                                <option value="Toyota">от 1.4</option>
+                                <option value="1">от 1.4</option>
                             </select>
-                            <select name="model" class="select" data-placeholder="до">
+                            <select name="value_to" class="select" data-placeholder="до">
                                 <option></option>
-                                <option value="Toyota">1.6</option>
+                                <option value="1">1.6</option>
                             </select>
                         </div>
                         <div id="more-filters" class="collapse w-100">
                             <div>
                                 <div class="catalog__filters__row p-0">
                                     <div class="form-select groupped d-xl-none">
-                                        <select name="model" class="select" data-placeholder="Объем от, л">
+                                        <select name="value_from" class="select" data-placeholder="Объем от, л">
                                             <option></option>
                                             <option value="Toyota">от 1.4</option>
                                         </select>
-                                        <select name="model" class="select" data-placeholder="до">
+                                        <select name="value_to" class="select" data-placeholder="до">
                                             <option></option>
                                             <option value="Toyota">1.6</option>
                                         </select>
                                     </div>
                                     <div class="form-select ">
-                                        <select name="mark" class="select" data-placeholder="Тип двигателя">
+                                        <select name="engine_type" class="select" data-placeholder="Тип двигателя">
                                             <option></option>
-                                            <option>Бензин</option>
-                                            <option value="Toyota">Toyota</option>
+                                            <option value="1">Бензин</option>
                                             <option value="Audi">Audi</option>
                                             <option value="BMW">BMW</option>
                                         </select>
                                     </div>
                                     <div class="form-select ">
-                                        <select name="model" class="select" data-placeholder="Коробка">
+                                        <select name="box" class="select" data-placeholder="Коробка">
                                             <option></option>
-                                            <option value="1">Audi</option>
+                                            <option value="1">Автомат</option>
                                             <option value="2">BMW</option>
                                             <option value="13">BMW</option>
                                             <option value="12">BMW</option>
@@ -360,9 +359,9 @@
                                         </select>
                                     </div>
                                     <div class="form-select ">
-                                        <select name="model" class="select" data-placeholder="Привод">
+                                        <select name="transmission" class="select" data-placeholder="Привод">
                                             <option></option>
-                                            <option value="1">Audi</option>
+                                            <option value="1">Передний привод</option>
                                             <option value="2">BMW</option>
                                             <option value="1">BMW</option>
                                             <option value="1">BMW</option>
@@ -421,7 +420,6 @@
 </span>Сохранить поиск</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -1056,7 +1054,9 @@
                             <span class="label-text">E-mail</span>
                             <span class="error-text">Email обязателен</span>
                         </label>
-                        <input type="text" id="log-mail" required data-inputmask="'mask':'*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]'" value="">
+                        <input type="text" id="log-mail" required
+                               data-inputmask="'mask':'*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]'"
+                               value="">
                     </div>
                     <div class="form-input password">
                         <label for="reg-password">
@@ -1144,7 +1144,9 @@
                             <span class="label-text">E-mail</span>
                             <span class="error-text">E-mail обязателен</span>
                         </label>
-                        <input type="text" id="reg-mail" data-inputmask="'mask':'*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]'" value="">
+                        <input type="text" id="reg-mail"
+                               data-inputmask="'mask':'*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]'"
+                               value="">
                     </div>
                     <div class="form-input password">
                         <label for="reg-password">

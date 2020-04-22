@@ -48,3 +48,48 @@ search_clear.on('click', function () {
     search_results.removeClass('shown');
     search.val('')
 })
+
+//filters tab menu
+const catalog_filters = {
+    0: {
+        mark: '',
+        model: '',
+        year_from: '',
+        yarn_to: '',
+        price_from: '',
+        price_to: '',
+        value_from: '',
+        value_to: '',
+        engine_type: '',
+        box: '',
+        transmission: ''
+
+    },
+    1: {
+        mark: 1,
+        model: 1,
+        year_from: 1,
+        yarn_to: 1,
+        price_from: 1,
+        price_to: 1,
+        value_from: 1,
+        value_to: 1,
+        engine_type: 1,
+        box: 1,
+        transmission: 1
+    }
+};
+
+function setFilters(filter_id) {
+    Object.keys(catalog_filters[filter_id]).forEach((item, i) => {
+        let select = $('[name=' + item + ']')
+        select.val(catalog_filters[filter_id][item]);
+        select.trigger('change');
+    })
+}
+
+$('.catalog__filters__tabs .item').on('click', function () {
+    $('.catalog__filters__tabs .item').removeClass('--active')
+    $(this).addClass('--active');
+    setFilters(+$(this).attr('filter'));
+})

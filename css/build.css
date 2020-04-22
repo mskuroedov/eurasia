@@ -2869,9 +2869,13 @@ body {
       padding: 3px 33px 0;
       word-spacing: 2.1px;
       letter-spacing: 0.2px;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      transition: all .2s;
+      cursor: pointer; }
       .catalog__filters__tabs .item img {
         margin-right: 10px; }
+      .catalog__filters__tabs .item:hover {
+        background: #F4F8FA; }
       .catalog__filters__tabs .item.--active {
         background: #F4F8FA; }
       .catalog__filters__tabs .item:last-of-type {
