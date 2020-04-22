@@ -104,6 +104,19 @@ $('.product__slider .show-more').on('click', function (e) {
     }
 });
 //product slider end
+
+//sticky slider content
+$(window).on('scroll', function (e) {
+    if (window.innerWidth < 1200) {
+        return;
+    }
+    let trigger_height = $('.product__head').offset().top ;
+    if (window.pageYOffset > trigger_height) {
+        $('.if-sticky').addClass('shown')
+    } else {
+        $('.if-sticky').removeClass('shown')
+    }
+})
 //floating bottom mobile/table block
 $(document).on('scroll', function () {
     let elem = document.querySelector('.product__description__row .product__price-block'),

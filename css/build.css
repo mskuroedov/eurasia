@@ -3356,8 +3356,7 @@ body {
 
 .product {
   padding-top: 12px;
-  background: white;
-  overflow: hidden; }
+  background: white; }
   @media (min-width: 800px) {
     .product {
       padding-top: 16px; }
@@ -3622,13 +3621,13 @@ body {
           .product__variants-to-buy .product__mark:after {
             content: '';
             position: absolute;
-            width: 427px;
+            width: 300px;
             height: 168px;
-            background: url("../assets/landing-promo-decor-2.svg");
+            background: url(../assets/landing-promo-decor-2.svg);
             background-position-x: 13px;
             top: -10px;
             z-index: 2;
-            right: -277px; }
+            right: -150px; }
           .product__variants-to-buy .product__mark img {
             position: relative;
             top: auto;
@@ -4048,12 +4047,38 @@ body {
 
 .product__slider {
   margin-bottom: 23px; }
+  .product__slider .if-sticky {
+    max-height: 0;
+    overflow: hidden;
+    display: none; }
   @media (min-width: 800px) {
     .product__slider {
       margin-bottom: 26px; } }
   @media (min-width: 1200px) {
     .product__slider {
-      margin-bottom: 44px; } }
+      margin-bottom: 44px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 100px;
+      z-index: 50; }
+      .product__slider:before {
+        content: '';
+        position: absolute;
+        width: 427px;
+        height: 208px;
+        background: url("../assets/landing-promo-decor-2.svg");
+        background-repeat: repeat-x;
+        background-position-x: 13px;
+        bottom: -344px;
+        z-index: 1;
+        left: -227px; }
+      .product__slider .if-sticky {
+        transition: all .5s;
+        max-height: 0;
+        overflow: hidden;
+        display: block; }
+        .product__slider .if-sticky.shown {
+          max-height: 300px; } }
   .product__slider #sync1 .item {
     margin: 0;
     color: #5f5f5f;
@@ -4258,7 +4283,10 @@ body {
   display: none; }
   @media (min-width: 1200px) {
     .product__more-data-desktop {
-      display: block; } }
+      display: block;
+      margin-bottom: 34px;
+      order: 10;
+      width: 100%; } }
   .product__more-data-desktop .subheader {
     letter-spacing: -0.6px;
     margin-bottom: 31px; }
@@ -4268,18 +4296,8 @@ body {
     position: relative;
     background: white;
     z-index: 2;
-    border: 1px solid rgba(95, 95, 95, 0.2); }
-    .product__more-data-desktop .main-container:before {
-      content: '';
-      position: absolute;
-      width: 427px;
-      height: 208px;
-      background: url("../assets/landing-promo-decor-2.svg");
-      background-repeat: repeat-x;
-      background-position-x: 13px;
-      top: 44px;
-      z-index: 1;
-      left: -227px; }
+    border: 1px solid rgba(95, 95, 95, 0.2);
+    height: 306px; }
     .product__more-data-desktop .main-container .nav {
       min-width: 196px;
       width: 196px;
