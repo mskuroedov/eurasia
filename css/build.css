@@ -6438,15 +6438,19 @@ body {
     height: 95px;
     justify-content: center;
     align-items: center;
-    background: #F4F8FA; }
-    .about-company__partners .owl-item div {
+    background: #F4F8FA;
+    transition: all .2s; }
+    .about-company__partners .owl-item a {
       width: 100%;
       height: 100%; }
+      .about-company__partners .owl-item a:hover {
+        text-decoration: none; }
     .about-company__partners .owl-item img {
       max-height: 100%;
       height: 100%;
       margin: 0 auto;
-      width: auto; }
+      width: auto;
+      cursor: pointer; }
   @media (min-width: 800px) {
     .about-company__partners {
       position: relative;
