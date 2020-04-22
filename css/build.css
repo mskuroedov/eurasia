@@ -8486,28 +8486,44 @@ body {
     font-size: 15px;
     line-height: 22px;
     letter-spacing: -.3px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-right: 10px; }
     .categories-page .common-text p {
       margin-bottom: 14px; }
   .categories-page__item {
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 22px;
     border-top: 1px solid rgba(95, 95, 95, 0.2); }
+    .categories-page__item:first-of-type {
+      border-top: 0; }
     .categories-page__item .name {
-      margin-bottom: 19px; }
+      margin-bottom: 19px;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap; }
       .categories-page__item .name .title {
         color: #000;
         font-size: 18px;
         line-height: 24px;
-        margin-bottom: 15px; }
+        font-weight: 600;
+        margin-bottom: 13px;
+        width: 200px; }
       .categories-page__item .name .icon img {
         height: 25px;
         width: auto; }
+      .categories-page__item .name .run {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: right;
+        color: #5F5F5F;
+        width: 90px;
+        margin-left: auto; }
     .categories-page__item .description .common-text {
       margin-bottom: 0; }
       .categories-page__item .description .common-text p {
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        letter-spacing: -.1px; }
     .categories-page__item .description ul {
       padding-left: 0;
       list-style: none;
@@ -8530,13 +8546,26 @@ body {
           background-size: cover; }
     @media (min-width: 800px) {
       .categories-page__item {
-        display: flex; }
+        display: flex;
+        padding-bottom: 20px; }
         .categories-page__item .name {
           min-width: 200px;
-          margin-right: 40px; }
+          margin-right: 40px;
+          flex-direction: column; }
           .categories-page__item .name .title {
             font-size: 18px;
             line-height: 24px; }
+          .categories-page__item .name .title {
+            order: 1; }
+          .categories-page__item .name .run {
+            order: 3;
+            width: 100%;
+            text-align: left;
+            font-size: 15px;
+            line-height: 24px; }
+          .categories-page__item .name .icon {
+            order: 2;
+            margin-bottom: 15px; }
         .categories-page__item .description .common-text {
           padding-right: 0; } }
     @media (min-width: 1200px) {
@@ -8544,21 +8573,35 @@ body {
         padding-top: 50px;
         padding-bottom: 40px; }
         .categories-page__item .name {
-          min-width: 230px;
-          margin-right: 50px; }
+          min-width: 380px;
+          margin-right: 50px;
+          flex-direction: row; }
           .categories-page__item .name .title {
             font-size: 20px;
             line-height: 26px;
-            margin-bottom: 20px; }
-          .categories-page__item .name .icon img {
-            height: 35px;
-            margin-left: -5px; }
+            order: 1;
+            letter-spacing: -1.1px;
+            width: 230px;
+            margin-bottom: 18px; }
+          .categories-page__item .name .icon {
+            order: 3; }
+            .categories-page__item .name .icon img {
+              height: 35px;
+              margin-left: -5px; }
+          .categories-page__item .name .run {
+            order: 2;
+            width: 120px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000; }
         .categories-page__item .description .common-text {
           width: auto;
           font-size: 16px;
           line-height: 24px; }
           .categories-page__item .description .common-text p {
-            margin-bottom: 15px; }
+            margin-bottom: 15px;
+            padding-right: 30px; }
         .categories-page__item .description ul li {
           font-size: 16px;
           line-height: 24px;
@@ -8568,7 +8611,7 @@ body {
   @media (min-width: 800px) {
     .categories-page {
       padding-top: 15px;
-      padding-bottom: 20px;
+      padding-bottom: 41px;
       position: relative; }
       .categories-page:before {
         content: '';
@@ -8579,7 +8622,7 @@ body {
         border-top-left-radius: 25px;
         background: #F4F8FA;
         height: 210px;
-        width: calc(50% - 82px); }
+        width: calc(50% - 141px); }
       .categories-page .container {
         position: relative; }
       .categories-page .heading-1 {
@@ -8587,7 +8630,7 @@ body {
       .categories-page .common-text {
         letter-spacing: -0.1px;
         padding-right: 80px;
-        margin-bottom: 54px; }
+        margin-bottom: 45px; }
         .categories-page .common-text p {
           margin-bottom: 19px; }
       .categories-page .breadcrumbs {
@@ -8595,7 +8638,7 @@ body {
       .categories-page__promo {
         display: block;
         position: absolute;
-        right: 45px;
+        right: -15px;
         top: 66px;
         z-index: 2; }
         .categories-page__promo img {
@@ -8603,7 +8646,7 @@ body {
   @media (min-width: 1200px) {
     .categories-page {
       padding-top: 26px;
-      padding-bottom: 91px; }
+      padding-bottom: 78px; }
       .categories-page .breadcrumbs {
         margin-bottom: 34px; }
       .categories-page:before {
@@ -8627,7 +8670,7 @@ body {
         .categories-page .heading-1:after {
           margin-top: 16px; }
         .categories-page .heading-1 + .common-text {
-          margin-bottom: 191px; }
+          margin-bottom: 152px; }
       .categories-page .common-text {
         width: 656px;
         font-size: 18px;
