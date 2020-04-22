@@ -4641,20 +4641,18 @@ body {
       .partners .heading-1 {
         margin-bottom: 30px; } }
   .partners__eu-logo {
+    margin-left: -15px;
     padding: 15px;
-    background: #F4F8FA;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.15); }
+    margin-bottom: 15px; }
     .partners__eu-logo img {
-      width: 160px; }
+      width: 130px; }
     @media (min-width: 800px) {
       .partners__eu-logo {
-        margin: -25px -25px 24px 0;
+        margin: -21px 0px 26px 16px;
         padding: 20px;
         position: relative;
         z-index: 2; }
@@ -4662,12 +4660,12 @@ body {
           width: 130px; } }
     @media (min-width: 1200px) {
       .partners__eu-logo {
-        margin: -20px 0px 19px 113px;
+        margin: -20px 0px 19px 108px;
         padding: 20px;
         position: relative;
         z-index: 2; }
         .partners__eu-logo img {
-          width: 178px; } }
+          width: 200px; } }
   .partners__title {
     font-weight: 600;
     font-size: 18px;
@@ -4712,7 +4710,7 @@ body {
     position: relative;
     z-index: 2;
     background: #F4F8FA;
-    padding: 0 5px 32px;
+    padding: 0 5px 26px;
     margin-bottom: 4px; }
     .partners__item .icon {
       width: 80px;
@@ -4734,7 +4732,7 @@ body {
       font-weight: normal;
       font-size: 15px;
       line-height: 22px;
-      margin-bottom: 5px; }
+      margin-bottom: 3px; }
     @media (min-width: 800px) {
       .partners__item {
         width: calc(50% - 4px);
@@ -4742,14 +4740,19 @@ body {
         padding: 0 10px 27px; } }
     @media (min-width: 1200px) {
       .partners__item {
-        padding: 0 33px 0 0;
+        padding: 0 33px 14px 0;
         display: flex;
         align-items: center; }
         .partners__item .icon {
           width: 160px;
           height: 150px; }
         .partners__item .description {
-          padding-left: 10px; } }
+          padding-left: 10px;
+          padding-top: 13px; }
+        .partners__item .title {
+          font-size: 20px;
+          line-height: 26px;
+          letter-spacing: -.6px; } }
 
 .contacts {
   padding-top: 14px;
