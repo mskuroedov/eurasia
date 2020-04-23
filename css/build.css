@@ -7225,11 +7225,13 @@ body {
         width: 342px; }
       .comission-sale .breadcrumbs {
         margin-bottom: 13px; }
+      .comission-sale .container {
+        position: relative; }
       .comission-sale__promo {
         display: block;
         position: absolute;
-        right: 0;
-        top: 133px; }
+        right: -140px;
+        top: 76px; }
         .comission-sale__promo:before {
           content: '';
           position: absolute;
@@ -7244,7 +7246,7 @@ body {
         .comission-sale__promo img {
           position: relative;
           z-index: 12;
-          height: 167px; } }
+          height: 275px; } }
   @media (min-width: 1200px) {
     .comission-sale {
       padding-top: 26px;
@@ -7264,14 +7266,15 @@ body {
         line-height: 26px;
         margin-bottom: 30px; }
       .comission-sale__promo {
-        top: 170px; }
+        top: 71px;
+        right: -298px; }
         .comission-sale__promo:before {
           width: 459px;
           height: 208px;
           top: -69px;
           right: 108px; }
         .comission-sale__promo img {
-          height: 284px; } }
+          height: 465px; } }
   .comission-sale__advantages .item {
     display: flex;
     align-items: flex-start;
