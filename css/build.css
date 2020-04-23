@@ -1654,18 +1654,18 @@ body {
       .l1__people {
         height: 0; } }
     .l1__people img {
-      margin-right: -131px;
-      width: 311px;
+      margin-right: -197px;
+      width: 377px;
       margin-top: -3px; }
       @media (min-width: 800px) {
         .l1__people img {
-          margin-right: -193px;
-          width: 565px;
+          margin-right: -309px;
+          width: 679px;
           margin-top: -246px; } }
       @media (min-width: 1200px) {
         .l1__people img {
-          margin-right: -127px;
-          width: 687px;
+          margin-right: -271px;
+          width: 833px;
           margin-top: -282px; } }
   .l1__search {
     margin-top: -137px; }
@@ -6751,11 +6751,13 @@ body {
         margin-bottom: 13px; }
       .buyout .simple-btn {
         margin-bottom: 40px; }
+      .buyout .container {
+        position: relative; }
       .buyout__promo {
         display: block;
         position: absolute;
-        right: -114px;
-        top: 109px;
+        right: -180px;
+        top: 95px;
         z-index: 2; }
         .buyout__promo:before {
           content: '';
@@ -6790,8 +6792,8 @@ body {
         line-height: 26px;
         margin-bottom: 50px; }
       .buyout__promo {
-        right: -205px;
-        top: 123px; }
+        right: -373px;
+        top: 97px; }
         .buyout__promo:before {
           width: 459px;
           height: 208px;
