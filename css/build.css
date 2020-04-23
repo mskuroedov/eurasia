@@ -6438,13 +6438,17 @@ body {
     height: 95px;
     justify-content: center;
     align-items: center;
-    background: #F4F8FA;
     transition: all .2s; }
     .about-company__partners .owl-item a {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      background: #F4F8FA;
+      transition: all .2s; }
       .about-company__partners .owl-item a:hover {
-        text-decoration: none; }
+        text-decoration: none;
+        background: #E9F1F5; }
+      .about-company__partners .owl-item a:active {
+        background: #DFEAF0; }
     .about-company__partners .owl-item img {
       max-height: 100%;
       height: 100%;
