@@ -3393,7 +3393,8 @@ body {
         align-self: center;
         margin-left: -17px; }
         .product .product__actions .action {
-          margin-right: 20px; } }
+          margin-right: 20px;
+          white-space: nowrap; } }
   .product__head .heading-1 {
     margin-bottom: 18px; }
   .product__info {
@@ -3638,7 +3639,9 @@ body {
             right: auto;
             z-index: 3; }
             .product__variants-to-buy .product__mark img:focus {
-              outline: none; } }
+              outline: none; }
+        .product__variants-to-buy .link {
+          white-space: nowrap; } }
   .product__description {
     order: 5;
     margin-bottom: 30px; }
