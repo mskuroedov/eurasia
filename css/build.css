@@ -3356,7 +3356,8 @@ body {
 
 .product {
   padding-top: 12px;
-  background: white; }
+  background: white;
+  overflow: hidden; }
   @media (min-width: 800px) {
     .product {
       padding-top: 16px; }
@@ -3375,7 +3376,8 @@ body {
   @media (min-width: 1200px) {
     .product {
       padding-top: 26px;
-      padding-bottom: 96px; }
+      padding-bottom: 96px;
+      overflow: visible; }
       .product .product__head {
         order: 1; }
         .product .product__head .heading-1 {
